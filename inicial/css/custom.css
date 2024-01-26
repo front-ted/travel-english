@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "rubik-bold";
+    src: url("../../assets/fonts/Rubik-Bold.ttf");
+}
+@font-face {
+    font-family: "rubik-italic";
+    src: url("../../assets/fonts/Rubik-Italic.ttf");
+}
+@font-face {
+    font-family: "rubik";
+    src: url("../../assets/fonts/Rubik-Regular.ttf");
+}
+p, li, th, td, a{font-family: rubik;}
+i, blockquote p, blockquote, em{font-family: rubik-italic;}
+h1, h2, h3, h4, h5, b, strong{font-family: rubik-bold;}
+body{
+	background: rgb(162,207,237);
+	background: linear-gradient(180deg, rgba(162,207,237,1) 0%, rgba(199,214,200,1) 100%);
+	min-height: 100vh;
+	padding: 40px;
+}
+.elementos-top{
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+.titulo{
+	max-width: 60%;
+    margin: 50px 0;
+}
+.menina{max-width: 500px;}
+.aviao{max-width: 700px;}
+.logo{max-width: 200px;}
+nav li{
+	margin-top: 20px;
+	list-style: none;
+}
+nav li img{transition: all .5s;}
+nav li:hover img{
+	transform: scale(1.1);
+}
+nav li.baseline{
+	margin-top: 80px;
+}
+.modal h2{
+	color: #c0111e;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: rubik-bold;
+}
+.modal-content{
+	border: none;
+	border-radius: 0;
+}
+.modal-header{
+	border: none;
+}
+@media screen and (max-width: 1350px){
+	nav{
+		transform: scale(0.7);
+		margin: 0 -100px;
+	}
+}
+@media screen and (max-width: 990px){
+	body{padding: 0;}
+	nav{
+		background: url('../img/fig_01.png') no-repeat left top 5% / 45%,
+		url('../img/fig_03.png') no-repeat right bottom 10% / 30%;
+		transform: scale(0.9);
+		margin: 0;
+	}
+	nav li{
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	nav li.baseline{
+		margin-top: unset;
+	}
+	nav li img{max-width: 60px;}
+	.titulo{margin-bottom: 0;}
+	.aviao{
+		max-width: 100%;
+		margin-top: 50px;
+	}
+	.logo{
+		display: block;
+		margin: auto;
+	}
+}

@@ -1,0 +1,203 @@
+body{
+	background: url('../img/background.jpg') no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+header{
+	background: url('../img/topo.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 120px;
+}
+h2{
+	text-align: left;
+	text-transform: unset;
+	font-size: 26px;
+	color: #7ed7bb;
+}
+.figure-caption{
+	font-family: rubik;
+	color: #000;
+}
+.bloco-azul{
+	background: url('../img/figura_topo_1.png') no-repeat left 2% center / 10%,
+	url('../img/figura_topo_2.png') no-repeat right 10% bottom 40px / 8%, #282f65;
+	padding: 40px 0;
+}
+.bloco-azul p, .bloco-azul li{color: #fff;}
+.bloco-azul li{
+	list-style: none;
+	background: url('../img/ico_check.png') no-repeat left center;
+	background-size: 20px;
+	padding-left: 30px;
+	margin-bottom: 10px;
+}
+.bloco-branco{padding: 40px 0;}
+h3{color: #c0101a;}
+#slots .box{
+	width: 210px;
+	margin: 7px;
+}
+.game-body .slot .card{width: 94%;}
+.game-body .slot{
+	border: 5px solid #c0101a;
+	border-radius: 10px;
+	background: #dbe1ec;
+	padding: 15px 0;
+}
+.game-titulo{
+	background: #c0101a;
+	width: 30px;
+	border-radius: 30px;
+	padding: 3px;
+}
+.game-body .card{
+	background: #abc1eb;
+	border: none;
+	color: #000;
+	text-transform: unset;
+	font-family: rubik;
+}
+.balao-dir{
+    background: #a3c2ed;
+    border-radius: 15px;
+    width: 220px;
+    min-height: 62px;
+    position: relative;
+	padding: 5px 10px;
+}
+.balao-dir:after{
+    content: "";
+    width: 0; 
+    height: 0;
+    position: absolute;
+    right: -10px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #a3c2ed;
+	bottom: -10px;
+    transform: rotate(-90deg);
+}
+.balao-esq{
+    background: #e3e5e9;
+    border-radius: 15px;
+    width: 220px;
+    min-height: 62px;
+    position: relative;
+	padding: 5px 10px;
+}
+.balao-esq:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #e3e5e9;
+	bottom: 0;
+    left: -20px;
+    transform: rotate(180deg);
+}
+.balao-dir p, .balao-esq p{margin: 0;}
+
+.practice{
+	background: #a3c2ed;
+	padding: 5px 20px;
+	border-radius: 20px;
+	padding-left: 250px;
+	position: relative;
+	margin: 100px auto;
+	display: block;
+}
+.practice::before{
+	content: '';
+	position: absolute;
+	width: 226px;
+	height: 131px;
+	background: url('../img/ico_practice.png') no-repeat;
+	left: 0;
+	top: -20px;
+}
+.practice p{margin-bottom: 0;}
+.important-note{
+	background: #a3c2ed;
+	padding: 5px 20px;
+	border-radius: 20px;
+	padding-left: 250px;
+	position: relative;
+	margin: 100px auto;
+	display: block;
+}
+.important-note::before{
+	content: '';
+	position: absolute;
+	width: 219px;
+	height: 128px;
+	background: url('../img/ico_important.png') no-repeat;
+	left: 0;
+	top: -20px;
+}
+.important-note p{margin-bottom: 0;}
+.bloco-azulclaro{
+	background: #a3c2ed;
+	padding: 40px 0;
+}
+.travel-vocabulary .audio-player{
+	background: #272f64;
+	border-radius: 10px;
+	margin: 10px auto;
+	height: 30px;
+}
+.travel-vocabulary > div{
+	width: 290px;
+	margin: 5px;
+}
+.travel-vocabulary .audio-player p{
+	color: #fff;
+    margin: 0;
+    display: contents;
+    vertical-align: bottom;
+}
+.travel-vocabulary .audio-player .btn-play{
+	background-image: url('../img/ico_player_pequeno.png');
+	background-size: 50%;
+	height: 25px;
+}
+.bloco-azulclaro .practice{background: #fff;}
+.info1{
+	background: url('../img/greetings_1.png') no-repeat left 7% top 8% / 8%,
+	url('../img/greetings_2.png') no-repeat left 5% top 200px / 10%,
+	url('../img/greetings_3.png') no-repeat right 15% top 50px / 25%;
+}
+.info-texto p{
+	margin-bottom: 0;
+	font-weight: bold;
+}
+.practice.dialogo{
+	padding: 40px 80px;
+}
+.practice.dialogo p{
+	min-height: 36px;
+	padding-left: 45px;
+	margin-bottom: 10px;
+}
+.practice.dialogo::before{
+	top: 40px;
+	left: -180px;
+}
+.dialogo .guide{background: url('../img/ico_sarah_guide.png') no-repeat left top;}
+.dialogo .guide b{color:#d8652a;}
+.dialogo .jack{background: url('../img/ico_jack.png') no-repeat left top;}
+.dialogo .jack b{color:#272f64;}
+.dialogo .marie{background: url('../img/ico_marie.png') no-repeat left top;}
+.dialogo .marie b{color:#be101b;}
+.practice.dialogo td{
+	width: 50%;
+	border-color:#a3c2ed;
+	border-bottom-color: #fff;
+}
+.practice.dialogo th{
+	color: #000;
+	text-align: center;
+	background-color: #fff;
+}

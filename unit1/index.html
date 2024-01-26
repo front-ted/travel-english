@@ -1,0 +1,1268 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- Inserir o tíutlo do conhecimento na tag title -->
+        <title>Unit 1</title>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS v5.0.2 -->
+        <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="../assets/css/animate.min.css" />
+        <!-- hover.css https://ianlunn.github.io/Hover/ -->
+        <link rel="stylesheet" href="../assets/css/hover-min.css" />
+        <!-- Print -->
+        <link rel="stylesheet" href="../assets/css/print.css">
+        <!-- Preloader -->
+        <link rel="stylesheet" href="../assets/css/preloader.css">
+        <!-- Áudio customizado -->
+        <link rel="stylesheet" href="css/player.css">
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+        <!--Atividade relacionar colunas-->
+        <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
+        <!--Atividade jogo da memória-->
+        <link rel="stylesheet" href="atividades/jogo_memoria/jogoMemoria.css">
+        <!-- Estilos do template -->
+        <link rel="stylesheet" href="../assets/css/cores.css">
+        <link rel="stylesheet" href="../assets/css/template.css">
+
+        <link rel="stylesheet" href="css/custom.css">
+    
+    </head>
+    <body>
+        <!-- Preloader OBRIGATÓRIO -->
+        <div class="preloader">
+            <div class="anim"></div>
+            <p>Aguarde enquanto o conteúdo é carregado.</p>
+        </div>
+        <!-- Marca d'água OBRIGATÓRIA -->
+        <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+        <header id="topo"></header>
+
+        <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
+        <section id="booklet">       
+            <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+            <section class="paginas">
+                <div class="pagina">
+                    <div class="bloco-azul">
+                        <div class="container">
+                            <h2>Unit 1 – Introduction to Travel English</h2>
+                            <p>Nesta unidade, você vai aprender a:</p>
+                            <ul>
+                                <li>Apresentar-se, apresentar outras pessoas;</li>
+                                <li>Saudar pessoas e despedir-se;</li>
+                                <li>Utilizar frases e expressões comuns em viagens;</li>
+                                <li>Soletrar palavras e valores;</li>
+                                <li>Utilizar etiqueta básica de viagem.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bloco-branco">
+                        <div class="container">
+                            <h3>Countries and nationalities</h3>
+                            <p>Match the names of the countries with the places indicated on the map.</p>
+                            <div class="d-none d-lg-block overflow-auto">
+                                <img src="img/mapa_mundi.png" class="img-fluid my-5">
+                            </div>
+                            <div class="d-block d-lg-none overflow-auto my-5">
+                                <img src="img/mapa_mundi.png">
+                            </div>
+
+                            <div class="game-body no-print">
+                                <div id="slots">
+                                    <div class="d-flex flex-wrap justify-content-around">
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>1</p>
+                                            </div>
+                                            <div id="slot-1" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>2</p>
+                                            </div>
+                                            <div id="slot-2" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>3</p>
+                                            </div>
+                                            <div id="slot-3" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>4</p>
+                                            </div>
+                                            <div id="slot-4" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>5</p>
+                                            </div>
+                                            <div id="slot-5" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>6</p>
+                                            </div>
+                                            <div id="slot-6" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>7</p>
+                                            </div>
+                                            <div id="slot-7" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>8</p>
+                                            </div>
+                                            <div id="slot-8" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>9</p>
+                                            </div>
+                                            <div id="slot-9" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>10</p>
+                                            </div>
+                                            <div id="slot-10" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>11</p>
+                                            </div>
+                                            <div id="slot-11" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>12</p>
+                                            </div>
+                                            <div id="slot-12" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>13</p>
+                                            </div>
+                                            <div id="slot-13" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>14</p>
+                                            </div>
+                                            <div id="slot-14" class="slot"></div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="game-titulo">
+                                                <p>15</p>
+                                            </div>
+                                            <div id="slot-15" class="slot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="cardPile" class="game-itens-container">
+                                    <div id="card-13" class="card" data-target="slot-13">
+                                        China
+                                    </div>
+                                    <div id="card-11" class="card" data-target="slot-11">
+                                        Egypt
+                                    </div>
+                                    <div id="card-2" class="card"  data-target="slot-2">
+                                        The United States
+                                    </div>
+                                    <div id="card-6" class="card" data-target="slot-6">
+                                        Australia
+                                    </div>
+                                    <div id="card-9" class="card" data-target="slot-9">
+                                        Russia
+                                    </div>
+                                    <div id="card-1" class="card" data-target="slot-1">
+                                        Brazil
+                                    </div>
+                                    <div id="card-4" class="card" data-target="slot-4">
+                                        Argentina
+                                    </div>
+                                    <div id="card-5" class="card" data-target="slot-5">
+                                        South Africa
+                                    </div>
+                                    <div id="card-14" class="card" data-target="slot-14">
+                                        Chile
+                                    </div>
+                                    <div id="card-7" class="card" data-target="slot-7">
+                                        Japan  
+                                    </div>
+                                    <div id="card-8" class="card" data-target="slot-8">
+                                        Germany
+                                    </div>
+                                    <div id="card-3" class="card" data-target="slot-3">
+                                        The United Kingdom
+                                    </div>
+                                    <div id="card-10" class="card" data-target="slot-10">
+                                        Canada
+                                    </div>
+                                    <div id="card-15" class="card" data-target="slot-15">
+                                        Turkey
+                                    </div>
+                                    <div id="card-12" class="card" data-target="slot-12">
+                                        Italy
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i> Parabéns, resposta correta! </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Muito bem!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-danger">
+                                            <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times"></i> Atenção! </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Tente novamente.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <h3>Where are you from?</h3>
+                                    <p>Read and listen to the dialogue below.</p>
+                                    <div class="row mb-3 align-items-center">
+                                        <div class="col-2">
+                                            <img src="img/personagem_leonard.png" class="img-fluid d-block mx-auto">
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="balao-esq"><p>Leonard: Where are you from, <b>David</b>?</p></div>
+                                        </div>
+                                        <div class="col-4 align-items-center">
+                                            <div class="audio-player no-print">
+                                                <audio>
+                                                    <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                                </audio>
+                                                <button title="Tocar" class="btn-play btn-player"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 align-items-center">
+                                        <div class="col-6">
+                                            <div class="balao-dir"><p>David: I’m from <b>Lima</b>, <b>Peru</b>, and you?</p></div>
+                                        </div>
+                                        <div class="col-2">
+                                            <img src="img/personagem_david.png" class="img-fluid d-block mx-auto">
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="audio-player no-print">
+                                                <audio>
+                                                    <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                                </audio>
+                                                <button title="Tocar" class="btn-play btn-player"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3 align-items-center">
+                                        <div class="col-2">
+                                            <img src="img/personagem_leonard.png" class="img-fluid d-block mx-auto">
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="balao-esq"><p>Leonard: Oh, that’s interesting! I’m from <b>Orlando</b>, in the <b>United States</b>. </p></div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="audio-player no-print">
+                                                <audio>
+                                                    <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                                </audio>
+                                                <button title="Tocar" class="btn-play btn-player"></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <figure class="my-5">
+                                        <div class="figure-img mx-auto mb-4">
+                                            <img class="img-fluid d-block" src="img/figura_2.png">
+                                        </div>
+                                        <figcaption class="figure-caption text-center">
+                                            Figure 2: Two men having a conversation<br>
+                                            Source: &lt;https://www.pexels.com/pt-br/foto/fotografia-de-homens-conversando-sentados-na-cadeira-1015568/> Accessed on: 12/04/2023.
+                                        </figcaption>
+                                        <p class="sr-only">Photograph of two men talking side by side, sitting on chairs. In the background there are two people standing on the right and one person sitting on the left.</p>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Now, practice the dialogue with a partner. Change the information in bold for your own information.</p>
+                            </div>
+
+                            <h3>Now, match the countries to the corresponding nationalities.</h3>
+                            <div class="game-associar-colunas no-print nao-imprimir">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 flexs itens">
+                                        <button data-resp="1" class="item item1">
+                                            <p>Brazil</p>
+                                        </button>
+                                        <button data-resp="2" class="item item2">
+                                            <p>The United States</p>
+                                        </button>
+                                        <button data-resp="3" class="item item3">
+                                            <p>The United Kingdom</p>
+                                        </button>
+                                        <button data-resp="4" class="item item4">
+                                            <p>Argentina</p>
+                                        </button>
+                                        <button data-resp="5" class="item item5">
+                                            <p>South Africa</p>
+                                        </button>
+                                        <button data-resp="6" class="item item6">
+                                            <p>Australia</p>
+                                        </button>
+                                        <button data-resp="7" class="item item7">
+                                            <p>Japan</p>
+                                        </button>
+                                        <button data-resp="8" class="item item8">
+                                            <p>Germany</p>
+                                        </button>
+                                        <button data-resp="9" class="item item9">
+                                            <p>Russia</p>
+                                        </button>
+                                        <button data-resp="10" class="item item10">
+                                            <p>Canada</p>
+                                        </button>
+                                        <button data-resp="11" class="item item11">
+                                            <p>Egypt</p>
+                                        </button>
+                                        <button data-resp="12" class="item item12">
+                                            <p>Italy</p>
+                                        </button>
+                                        <button data-resp="13" class="item item13">
+                                            <p>China</p>
+                                        </button>
+                                        <button data-resp="14" class="item item14">
+                                            <p>Chile</p>
+                                        </button>
+                                        <button data-resp="15" class="item item15">
+                                            <p>Turkey</p>
+                                        </button>
+                                    </div>
+                                    <div class="col-12 col-sm-8 flexs">
+                                        <button type="button" data-resp="1" class="resp resp1">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Brazilian</p>
+                                        </button>
+                                        <button type="button" data-resp="2" class="resp resp2">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>American</p>
+                                        </button>
+                                        <button type="button" data-resp="3" class="resp resp3">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>British</p>
+                                        </button>
+                                        <button type="button" data-resp="4" class="resp resp4">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Argentinian</p>
+                                        </button>
+                                        <button type="button" data-resp="5" class="resp resp5">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>South African</p>
+                                        </button>
+                                        <button type="button" data-resp="6" class="resp resp6">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Australian</p>
+                                        </button>
+                                        <button type="button" data-resp="7" class="resp resp7">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Japanese</p>
+                                        </button>
+                                        <button type="button" data-resp="8" class="resp resp8">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>German</p>
+                                        </button>
+                                        <button type="button" data-resp="9" class="resp resp9">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Russian</p>
+                                        </button>
+                                        <button type="button" data-resp="10" class="resp resp10">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Canadian</p>
+                                        </button>
+                                        <button type="button" data-resp="11" class="resp resp11">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Egyptian</p>
+                                        </button>
+                                        <button type="button" data-resp="12" class="resp resp12">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Italian</p>
+                                        </button>
+                                        <button type="button" data-resp="13" class="resp resp13">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Chinese</p>
+                                        </button>
+                                        <button type="button" data-resp="14" class="resp resp14">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Chilean</p>
+                                        </button>
+                                        <button type="button" data-resp="15" class="resp resp15">
+                                            <div class="txtacao"><i class="fas fa-question"></i></div>
+                                            <p>Turkish</p>
+                                        </button>
+                                    </div>
+                                </div>
+                        
+                                <!-- Modal -->
+                                <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_errou" tabindex="-1"
+                                    aria-labelledby="associarColunasErrou" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-4">
+                                                        <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg" class="img-fluid" alt="">
+                                                    </div>
+                                                    <div class="col-12 col-lg-8">
+                                                        <p>Ops, tente novamente!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade associar_colunas_modal no-print nao-imprimir" id="associar_colulas_acertou"
+                                    tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-12 col-lg-4">
+                                                        <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg" class="img-fluid" alt="">
+                                                    </div>
+                                                    <div class="col-12 col-lg-8">
+                                                        <p>Muito bem! Você acertou!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Do you know any other countries and nationalities?</p>
+                            </div>
+
+                            <h3>Where are these dishes from?</h3>
+                            <h2 class="m-0">Espera para ODA</h2>
+
+                            <div class="important-note">
+                                <h4 class="sr-only">Important note:</h4>
+                                <p>In English, countries and nationalities are always capitalized.</p>
+                                <p>E.g. I’m from Brazil. I’m Brazilian.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bloco-azulclaro">
+                        <div class="container">
+                            <h3>The Alphabet</h3>
+                            <p>Click on each letter to hear its pronunciation. Then, practice saying the letters yourself.</p>
+                            <h2 class="m-0">Espera para ODA</h2>
+
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Practice the following questions with a partner:</p>
+                                <p>How do you spell your first name?</p>
+                                <p>How do you spell your last name?</p>
+                            </div>
+
+                            <h3>Basic travel vocabulary</h3>
+                            <p>Read, listen and practice the pronunciation of the words below. Click on word to hear its pronunciation.</p>
+                            <div class="d-flex flex-wrap justify-content-around travel-vocabulary">
+                                <div>
+                                    <img src="img/img_airport.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Airport
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/img_checkin.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Check-in
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/img_airplane.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Airplane
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/img_luggage.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Luggage
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/img_hotel.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Hotel
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/img_vacation.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Vacation
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/img_passengers.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Passengers
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/img_sighseeing.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Sightseeing
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/img_busstop.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Bus stop
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/img_train.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Train station
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/img_subway.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Subway
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/img_cruise.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Cruise
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/img_camping.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Camping
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="img/img_destination.png" class="img-fluid">
+                                    <div class="audio-player no-print d-flex align-items-center justify-content-center">
+                                        <audio>
+                                            <source src="podcast/podcast.mp3" type="audio/mpeg">
+                                        </audio>
+                                        <p>
+                                            Destination
+                                            <button title="Tocar" class="btn-play btn-player"></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Practice spelling the words above with a partner. Follow the example below.</p>
+                                <p>How do you spell airport?</p>
+                                <p>A-I-R-P-O-R-T (colocar ícone de aúdio)</p>
+                            </div>
+                            <h3>Numbers</h3>
+                            <p>Click on the card to flip it. Practice the pronunciation of the numbers in English.</p>
+                            <h2 class="m-0">Espera para ODA</h2>
+                            <p>Write the following numbers in words:</p>
+                            <h2 class="m-0">Espera para ODA</h2>
+        
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Ask and answer the following questions with a partner:</p>
+                                <p>How old are you? I’m ____ years old.</p>
+                                <p>What’s your telephone number? My telephone number is ______________. </p>
+                                <p>What’s your passport number? My passport number is ______________. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bloco-branco info1">
+                        <div class="container">
+                            <h3>Greetings</h3>
+                            <div class="info-texto">
+                                <p>Hello (the most common greeting expression)</p>
+                                <p>Hi (informal greeting)</p>
+                                <p>Good morning (said from sunrise to noon)</p>
+                                <p>Good afternoon (said from noon to 5/6 pm)</p>
+                                <p>Good evening (said from 5/6 pm to midnight)</p>
+                                <p>(It’s) nice to meet you (said when you meet someone for the first time)</p>
+                                <p>How are you? (neutral expression)</p>
+                                <p>How is it going? (informal expression)</p>
+                                <p>What’s up? (casual expression)</p>
+                            </div>
+                            <div class="practice dialogo">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Practice the following dialogue with your partners:</p>
+                                <p class="guide"><b>Tour Guide:</b> Hello everyone, I am your tour guide for today. Good morning!</p>
+                                <p class="jack"><b>Jack:</b> Hi there! How are you?</p>
+                                <p class="guide"><b>Tour Guide:</b> I'm great, thanks for asking.</p>
+                                <p class="marie"><b>Marie:</b> And what's your name?</p>
+                                <p class="guide"><b>Tour Guide:</b> My name is Sarah. What about you?</p>
+                                <p class="marie"><b>Marie:</b> I'm Marie and this is my husband Jack.</p>
+                                <p class="guide"><b>Sarah:</b> Nice to meet you both. Where are you from?</p>
+                                <p class="jack"><b>Jack:</b> We're from Canada.</p>
+                                <p class="guide"><b>Sarah:</b> Oh, I love Canada. It's a beautiful country.</p>
+                                <p class="marie"><b>Marie:</b> Thank you. So, what's the plan for the tour today?</p>
+                                <p class="guide"><b>Sarah:</b> First, we'll visit the local market and then head to the historical sites in the city center. After that, we'll take a boat ride along the river.</p>
+                                <p class="jack"><b>Jack:</b> Sounds great! We've been looking forward to this tour.</p>
+                                <p class="guide"><b>Sarah:</b> That's wonderful to hear. Let's get started!</p>
+                                <p>Practice the dialogue again, replacing the underlined information with your own information.</p>
+                            </div>
+
+                            <h3>Filling out a form</h3>
+                            <p>Watch the video with a dialogue between Sarah and the receptionist at San Diego International School.</p>
+                            <h2 class="m-0">Espera para vídeo</h2>
+                            <div class="sr-only">
+                                <p>Receptionist: Good afternoon! Welcome to San Diego International School. How may I help you?</p>
+                                <p>Sarah: Oh, good afternoon. My name is Sarah and I want to enroll in the intermediate English course. Sorry, what’s your name?</p>
+                                <p>Receptionist: Excellent! My name is Andrea and I will help you with that. It’s very nice to meet you, Sarah.</p>
+                                <p>Sarah: Nice to meet you, too.</p>
+                                <p>Receptionist: Now, I will need some information to complete your registration. So, your first name is Sarah. How do you spell it?</p>
+                                <p>Sarah: It’s S-A-R-A-H.</p>
+                                <p>Receptionist: Okay. And what’s your last name?</p>
+                                <p>Sarah: My last name is Rodrigues.</p>
+                                <p>Receptionist: Can you spell that, please?</p>
+                                <p>Sarah: Oh, yes. It’s R-O-D-R-I-G-U-E-S.</p>
+                                <p>Receptionist: How old are you, Sarah?</p>
+                                <p>Sarah: I’m thirty-seven years old.</p>
+                                <p>Receptionist: Okay, thirty-seven...and what’s your nationality?</p>
+                                <p>Sarah: I’m Brazilian. I’m from Porto Alegre.</p>
+                                <p>Receptionist: That’s great. I have been to Brazil once and I love it! What’s your address in Brazil?</p>
+                                <p>Sarah: It’s four five zero, Ipiranga Avenue. Apartment six zero three.</p>
+                                <p>Receptionist: And what’s your zip code?</p>
+                                <p>Sarah: It’s 90610 100.</p>
+                                <p>Receptionist: Alright. Please give me your telephone number.</p>
+                                <p>Sarah: Sure. It’s 55 (that’s the code for Brazil) 51-99896-8829.</p>
+                                <p>Receptionist: Okay. 55-51-99896-8829. And what’s your passport number?</p>
+                                <p>Sarah: It’s XYZ9791.</p>
+                                <p>Receptionist: Sorry, could you repeat that, please?</p>
+                                <p>Sarah: Yes. It’s XYZ9791.</p>
+                                <p>Receptionist: Thank you. What’s your occupation, Sarah?</p>
+                                <p>Sarah: I’m a lawyer.</p>
+                                <p>Receptionist: Are you married?</p>
+                                <p>Sarah: No, I’m single.</p>
+                                <p>Receptionist: Finally, can you tell me your email address?</p>
+                                <p>Sarah: Yes. My email address is sarah_rodrigues@mail.com</p>
+                                <p>Receptionist: Okay, that’s all. You are now enrolled in the intermediate English course. You will receive all the information you need in your email.</p>
+                                <p>Sarah: Thank you, Andrea. Goodbye.</p>
+                                <p>Receptionist: Bye Sarah. Have a good day!</p>
+                            </div>
+
+                            <h3>Watch the video again and complete Sarah’s form:</h3>
+                            <h2 class="m-0">Espera para ODA</h2>
+                            <div class="practice dialogo">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Complete the following form with your own information.</p>
+                                <div class="table-responsive mb-5">
+                                    <table>
+                                        <thead>
+                                            <th colspan="2">San Diego International School Student Registration</th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>First name:</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Last name:</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Age:</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Address:</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>ZIP code:</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Telephone number:</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Passport number:</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Email address:</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Occupation:</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nationality:</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Marital status:</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p>Role-play the dialogue with a partner, filling in the gaps with your own information. Then, change roles.</p>
+                                <p>Receptionist: Good afternoon! Welcome to San Diego International School. How may I help you?</p>
+                                <p>Student: Oh, good afternoon. My name is _________ and I want to enroll in the intermediate English course. Sorry, what’s your name?</p>
+                                <p>Receptionist: Excellent! My name is _________ and I will help you with that. It’s very nice to meet you, Sarah.</p>
+                                <p>Student: Nice to meet you, too.</p>
+                                <p>Receptionist: Now, I will need some information to complete your registration. So, your first name is _________. How do you spell it?</p>
+                                <p>Student: It’s _________.</p>
+                                <p>Receptionist: Okay. And what’s your last name?</p>
+                                <p>Student: My last name is _________.</p>
+                                <p>Receptionist: Can you spell that, please?</p>
+                                <p>Student: Oh, yes. It’s _________.</p>
+                                <p>Receptionist: How old are you, _________?</p>
+                                <p>Student: I’m _________ years old.</p>
+                                <p>Receptionist: Okay, _________..and what’s your nationality?</p>
+                                <p>Student: I’m _________. I’m from _________.</p>
+                                <p>Receptionist: That’s great. I have been to _________ once and I love it! What’s your address in _________?</p>
+                                <p>Student: It’s  _________.</p>
+                                <p>Receptionist: And what’s your zip code?</p>
+                                <p>Student: It’s  _________.</p>
+                                <p>Receptionist: Alright. Please give me your telephone number.</p>
+                                <p>Student: Sure. It’s _________.</p>
+                                <p>Receptionist: Okay. _________. And what’s your passport number?</p>
+                                <p>Student: It’s _________.</p>
+                                <p>Receptionist: Sorry, could you repeat that, please?</p>
+                                <p>Student: Yes. It’s _________.</p>
+                                <p>Receptionist: Thank you. What’s your occupation, Sarah?</p>
+                                <p>Student: I’m a/an _________.</p>
+                                <p>Receptionist: Are you married?</p>
+                                <p>Student: _________.</p>
+                                <p>Receptionist: Finally, can you tell me your email address?</p>
+                                <p>Student: Yes. My email address is _________.</p>
+                                <p>Receptionist: Okay, that’s all. You are now enrolled in the intermediate English course. You will receive all the information you need in your email.</p>
+                                <p>Student: Thank you, _________. Goodbye.</p>
+                                <p>Receptionist: Bye _________. Have a good day!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bloco-azulclaro">
+                        <div class="container">
+                            <h3>Travel Etiquette</h3>
+                            <p>When traveling abroad, pay attention to these etiquette tips. They will make your life easier!</p>
+                            <div id="carousel1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                  <button type="button" data-bs-target="#carousel1" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <figure class="my-5">
+                                            <div class="figure-img mx-auto mb-4">
+                                                <img class="img-fluid d-block" src="img/slideshow_1.png">
+                                            </div>
+                                            <p><b>Dress appropriately</b></p>
+                                            <figcaption class="figure-caption text-center">
+                                                Figure 9: Dress appropriately.<br>
+                                                Source: &lt;https://www.freepik.com/free-photo/women-wearing-hijab-having-good-time_22127280.htm#query=woman%20mosque&position=12&from_view=search&track=ais&uuid=21627a5c-aa17-4a7a-b139-eed6f57b9726> Accessed on: 12/04/2023.
+                                            </figcaption>
+                                            <p class="sr-only">Photograph of two women holding each other, smiling, wearing heavy coats and veils over their heads. There is a mosque in the background.</p>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure class="my-5">
+                                            <div class="figure-img mx-auto mb-4">
+                                                <img class="img-fluid d-block" src="img/slideshow_2.png">
+                                            </div>
+                                            <p><b>Learn basic customs</b></p>
+                                            <figcaption class="figure-caption text-center">
+                                                Figure 10: Learn basic customs.<br>
+                                                Source: &lt;https://www.freepik.com/free-photo/japanese-business-concept-with-business-partners_22551575.htm#query=japanese%20respect&position=42&from_view=search&track=ais&uuid=21997923-7650-42c2-86ff-ef7ad02b0bee> Accessed on: 12/04/2023.
+                                            </figcaption>
+                                            <p class="sr-only">Photograph of two Asian people, a man and a woman, bowing at each other.</p>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure class="my-5">
+                                            <div class="figure-img mx-auto mb-4">
+                                                <img class="img-fluid d-block" src="img/slideshow_3.png">
+                                            </div>
+                                            <p><b>Mind your gestures</b></p>
+                                            <figcaption class="figure-caption text-center">
+                                                Figure 11: Mind your gestures.<br>
+                                                Source: &lt;https://www.freepik.com/free-photo/smiling-beautiful-redhead-girl-shows-okay-sign-praise-like-something-good-recommend-excellent-service-standing-satisfied-against-white-background_23112591.htm#query=ok%20gesture&position=1&from_view=search&track=ais&uuid=f2fe23db-9fce-4922-89a0-b601f95a8195> Accessed on: 12/04/2023.
+                                            </figcaption>
+                                            <p class="sr-only">Photograph of a woman smiling and doing the “okay” gesture with her right hand.</p>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure class="my-5">
+                                            <div class="figure-img mx-auto mb-4">
+                                                <img class="img-fluid d-block" src="img/slideshow_4.png">
+                                            </div>
+                                            <p><b>Be mindful of noise levels</b></p>
+                                            <figcaption class="figure-caption text-center">
+                                                Figure 12: Be mindful of noise levels.<br>
+                                                Source: &lt;https://www.freepik.com/free-photo/confused-curly-woman-covering-her-ears-while-second-girl-screaming-her-with-megaphone-white-wall_6730110.htm#query=loud%20people&position=1&from_view=search&track=ais&uuid=da050f35-0310-4d37-8290-a48da338bf1b> Accessed on: 12/04/2023.
+                                            </figcaption>
+                                            <p class="sr-only">Photograph of two women. One of them is shouting on a megaphone and the other is expressing disgust and covering her ears with her hands.</p>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure class="my-5">
+                                            <div class="figure-img mx-auto mb-4">
+                                                <img class="img-fluid d-block" src="img/slideshow_5.png">
+                                            </div>
+                                            <p><b>Learn the rules and follow them</b></p>
+                                            <figcaption class="figure-caption text-center">
+                                                Figure 13: Learn the rules and follow them.<br>
+                                                Source: &lt;https://www.freepik.com/free-photo/happy-diverse-people-holding-road-signs_18655106.htm#query=traffic%20rules&position=2&from_view=search&track=ais&uuid=1f8a4937-7b0a-4bc8-b14c-cc643f43c49d> Accessed on: 12/04/2023.
+                                            </figcaption>
+                                            <p class="sr-only">Photograh of four people holding traffic signs.</p>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure class="my-5">
+                                            <div class="figure-img mx-auto mb-4">
+                                                <img class="img-fluid d-block" src="img/slideshow_6.png">
+                                            </div>
+                                            <p><b>Learn a little about their language</b></p>
+                                            <figcaption class="figure-caption text-center">
+                                                Figure 14: Learn a little about their language.<br>
+                                                Source: &lt;https://www.freepik.com/free-photo/different-language-speech-bubble-hello-concept_18091695.htm#query=basic%20language%20expressions&position=1&from_view=search&track=ais&uuid=1f8b6e14-988d-4eb1-8101-ab10245ed933> Accessed on: 12/04/2023.
+                                            </figcaption>
+                                            <p class="sr-only">Photograph of a woman holding a tablet which shows the word “hello” in many different langugages.</p>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure class="my-5">
+                                            <div class="figure-img mx-auto mb-4">
+                                                <img class="img-fluid d-block" src="img/slideshow_7.png">
+                                            </div>
+                                            <p><b>Be punctual</b></p>
+                                            <figcaption class="figure-caption text-center">
+                                                Figure 15: Be punctual.<br>
+                                                Source: &lt;https://www.freepik.com/free-photo/african-american-business-man_1602832.htm#query=black%20person%20checking%20time&position=4&from_view=search&track=ais&uuid=b141dc4b-ae8b-4fbc-8ea4-7938071a4890> Acesso em: 04/12/2023.
+                                            </figcaption>
+                                            <p class="sr-only">Photograph of a man talking on the phone and checking the time on his watch.</p>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure class="my-5">
+                                            <div class="figure-img mx-auto mb-4">
+                                                <img class="img-fluid d-block" src="img/slideshow_8.png">
+                                            </div>
+                                            <p><b>Learn the geography</b></p>
+                                            <figcaption class="figure-caption text-center">
+                                                Figure 16: Learn the geography.<br>
+                                                Source: &lt;https://www.freepik.com/free-photo/young-african-american-traveler-man-holding-globe-looking-it-through-magnifying-glass-surprised_10638447.htm#query=learn%20geography&position=1&from_view=search&track=ais&uuid=6d1f97a9-6c29-4d60-b97b-6a045c01cc33> Accessed on: 12/04/2023.
+                                            </figcaption>
+                                            <p class="sr-only">Photograph of a man holding a terrestrial globe and analizing it with a magnifying glass.</p>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure class="my-5">
+                                            <div class="figure-img mx-auto mb-4">
+                                                <img class="img-fluid d-block" src="img/slideshow_9.png">
+                                            </div>
+                                            <p><b>Don’t criticize the food</b></p>
+                                            <figcaption class="figure-caption text-center">
+                                                Figure 17: Don’t criticize the food.<br>
+                                                Source: &lt;https://www.freepik.com/free-photo/sad-pretty-caucasian-cleaner-woman-holding-sponge-plate-thumbing-down_17472220.htm#query=bad%20food&position=4&from_view=search&track=ais&uuid=e5449a70-7b4b-412d-97bf-c2c99e90b2d1> Accessed on: 12/04/2023.
+                                            </figcaption>
+                                            <p class="sr-only">Photograph of a woman holding a plate of food with one hand and doing a negative gesture with the other one.</p>
+                                        </figure>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <figure class="my-5">
+                                            <div class="figure-img mx-auto mb-4">
+                                                <img class="img-fluid d-block" src="img/slideshow_10.png">
+                                            </div>
+                                            <p><b>Don’t leave trash behind</b></p>
+                                            <figcaption class="figure-caption text-center">
+                                                Figure 18: Don’t leave trash behind.<br>
+                                                Source: &lt;https://www.freepik.com/free-photo/kid-throwing-plastic-bottle-recycle-bin_7328667.htm#query=trash%20can%20park&position=14&from_view=search&track=ais&uuid=44704baa-7bd9-4317-a322-eaa2ebf39169> Acesso em: 04/12/2023.
+                                            </figcaption>
+                                            <p class="sr-only">Photograph of a boy putting a plastic bottle in a trash can.</p>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                            <h3>Play this memory game to remember the travel etiquette tips you have learned.</h3>
+                            <div class="jogoMemoria">
+                                <div class="cartaMemoria" data-par="3">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_3_par.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="1">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="10">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_10_par.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="2">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="3">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="4">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_4.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="5">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_5.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="9">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_9_par.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="6">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_6.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="1">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_1_par.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="2">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_2_par.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="7">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_7.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="8">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_8_par.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="7">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_7_par.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="8">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_8.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="4">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_4_par.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="9">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_9.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="5">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_5_par.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="3">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_3_par.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="10">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_10.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="cartaMemoria" data-par="6">
+                                    <div class="ladoFrente">
+                                        <img src="atividades/jogo_memoria/img/carta_virada.png" alt="">
+                                    </div>
+                                    <div class="ladoTras">
+                                        <img src="atividades/jogo_memoria/img/carta_6_par.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>What other things should you learn before you travel abroad? </p>
+                                <p>Share your ideas with your teacher and your partners.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            <!-- Paginação-->
+            <footer class="text-center no-print d-flex justify-content-center mx-auto">
+                <ul class="pagination">
+    
+                </ul>
+            </footer>   
+        </section>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
+        <!--Atividade arrasta e solta-->
+        <script src='atividades/arrasta_solta/dragula.min.js'></script>
+        <script src="atividades/arrasta_solta/game-custom.js"></script>
+        <!--Atividade associar colunas-->
+        <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
+        <!--Atividade de jogo da memória-->
+        <script src="atividades/jogo_memoria/jogoMemoria.js"></script>
+        <!--Prog'n'roll - barra de progresso conforme rola a página-->
+        <script src="../assets/js/prognroll.min.js"></script>
+        <!--Scripts gerais-->
+        <script src="../assets/js/geral.js"></script>
+
+        <script>
+            $(function() {
+                $("body").prognroll();
+            });
+        </script>
+
+        <!-- Handtalk -->
+        <script>
+            var scriptElem=document.createElement("script");
+            scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset="UTF-8",
+            scriptElem.onload=function(){
+                window.ht = new HT({
+                    token:"bf5b7efb148a829a126a0e0c9fd533bf",
+                    align:"top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,           
+                    mobileConfig:{align:"right",
+                                    actionsAlign:"top",
+                                    customButtonStyle:{
+                                        borderRadius:"6px",
+                                        size:"38px",
+                                        horizontalMargin:"13px",
+                                        bottomMargin:"140px",
+                                        rightMargin:"40px"}
+                                    }
+                    });        
+                $('.ht-skip').attr("aria-hidden","true")
+            },
+        document.body.appendChild(scriptElem);
+        
+        </script>
+    </body>
+</html>
