@@ -287,7 +287,7 @@ tbody td:first-child{border-left: 0;}
     border: unset;
     background: unset;
 }
-.modal-dialog-centered .modal-content::before{
+/* .modal-dialog-centered .modal-content::before{
     content: '';
     background: url('../images/asset_circulo.svg') no-repeat;
     height: 211px;
@@ -296,7 +296,7 @@ tbody td:first-child{border-left: 0;}
     bottom: -50px;
     left: -60px;
     z-index: -1;
-}
+} */
 .modal-footer{border-top: unset;}
 .modal-fullscreen .modal-body{
     border-radius: 0;
