@@ -1,0 +1,275 @@
+body{
+	background: url('../img/background.jpg') no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+header{
+	background: url('../img/topo.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 120px;
+}
+h2{
+	text-align: left;
+	text-transform: unset;
+	font-size: 26px;
+	color: #b92e90;
+	margin-left: 0;
+}
+.figure-caption{
+	font-family: rubik;
+	color: #000;
+}
+.bloco-azul{
+	background: url('../img/figura_topo_1.png') no-repeat left 2% center / 10%,
+	url('../img/figura_topo_2.png') no-repeat right 10% bottom 40px / 8%, #282f65;
+	padding: 40px 0;
+}
+.bloco-azul p, .bloco-azul li{color: #fff;}
+.bloco-azul li{
+	list-style: none;
+	background: url('../img/ico_check.png') no-repeat left center;
+	background-size: 20px;
+	padding-left: 30px;
+	margin-bottom: 10px;
+}
+.bloco-branco{padding: 40px 0;}
+h3{color: #c0101a;}
+#slots .box{
+	width: 210px;
+	margin: 7px;
+}
+.game-body .slot .card{width: 94%;}
+.game-body .slot{
+	border: 5px solid #c0101a;
+	border-radius: 10px;
+	background: #dbe1ec;
+	padding: 15px 0;
+}
+.game-titulo{
+	background: #c0101a;
+	width: 30px;
+	border-radius: 30px;
+	padding: 3px;
+}
+.game-body .card{
+	background: #abc1eb;
+	border: none;
+	color: #000;
+	text-transform: unset;
+	font-family: rubik;
+}
+.practice{
+	background: #a3c2ed;
+	padding: 5px 20px;
+	border-radius: 20px;
+	padding-left: 250px;
+	position: relative;
+	margin: 100px auto;
+	display: block;
+}
+.practice::before{
+	content: '';
+	position: absolute;
+	width: 226px;
+	height: 131px;
+	background: url('../img/ico_practice.png') no-repeat;
+	left: 0;
+	top: -20px;
+}
+.practice p{margin-bottom: 0;}
+.important-note{
+	background: #a3c2ed;
+	padding: 5px 20px;
+	border-radius: 20px;
+	padding-left: 250px;
+	position: relative;
+	margin: 100px auto;
+	display: block;
+}
+.important-note::before{
+	content: '';
+	position: absolute;
+	width: 219px;
+	height: 128px;
+	background: url('../img/ico_important.png') no-repeat;
+	left: 0;
+	top: -20px;
+}
+.important-note p{margin-bottom: 0;}
+.bloco-azulclaro{
+	background: #a3c2ed;
+	padding: 40px 0;
+}
+.bloco-azulclaro .practice{background: #fff;}
+.practice.dialogo{
+	padding: 40px 80px;
+}
+.practice.dialogo p{
+	min-height: 36px;
+	padding-left: 45px;
+	margin-bottom: 10px;
+}
+.practice.dialogo::before{
+	top: 40px;
+	left: -180px;
+}
+.carousel{margin-bottom: 0;}
+.carousel .carousel-item img{margin-bottom: 80px;}
+.carousel .carousel-item p{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.carousel .carousel-item p b{
+	color: #272f64;
+	font-size: 22px;
+}
+.carousel .carousel-item{min-height: 940px;}
+.carousel-indicators{bottom: 220px;}
+.carousel-indicators [data-bs-target]{
+	width: 20px;
+	height: 20px;
+	border: 2px solid #d8652a;
+	border-radius: 20px;
+	background: transparent;
+	opacity: 1;
+}
+.carousel-indicators .active{
+	border: 2px solid #d8652a;
+	background: #d8652a;
+}
+.carousel-control-next, .carousel-control-prev{
+	opacity: 1;
+	background: none;
+}
+figcaption{word-wrap: break-word;}
+
+.bg-time{
+	background-image: url('../img/relogio_1.png'), url('../img/relogio_2.png');
+	background-repeat: no-repeat;
+	background-position: left 10% top 200px, right 10% top 600px;
+	background-size: 10%, 10%;
+}
+.bloco-azulclaro .important-note{
+	background: #e88053;
+	padding-left: 20px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+.important-note::before{
+	left: 0;
+	right:0;
+	margin: auto;
+	top: -100px;
+}
+.exemples1, .exemples2{
+	background: #fff;
+	padding: 10px 20px;
+	padding-top: 80px;
+	border-radius: 20px;
+	position: relative;
+}
+.exemples1 p, .exemples2 p{
+	margin: 0;
+}
+.exemples1 p b, .exemples2 p b{
+	color: #b92e90;
+	margin: 20px 0;
+	display: block;
+}
+.exemples1::before{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 193px;
+	height: 314px;
+	background: url('../img/relogio_exemplos1.png') no-repeat;
+	top: -130px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.exemples2::before{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 193px;
+	height: 314px;
+	background: url('../img/relogio_exemplos2.png') no-repeat;
+	top: -130px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.semana button{
+	width: 306px;
+	height: 59px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	transition: all .6s;
+}
+.semana button:hover{transform: scale(1.1);}
+.semana .bt-monday{background: url('../img/dias_1.png') no-repeat;}
+.semana .bt-tuesday{background: url('../img/dias_2.png') no-repeat;}
+.semana .bt-wednesday{background: url('../img/dias_3.png') no-repeat;}
+.semana .bt-thursday{background: url('../img/dias_4.png') no-repeat;}
+.semana .bt-friday{background: url('../img/dias_5.png') no-repeat;}
+.semana .bt-saturday{background: url('../img/dias_6.png') no-repeat;}
+.semana .bt-sunday{background: url('../img/dias_7.png') no-repeat;}
+
+.bloco-azul{
+	background-image: url('../img/topo_1.png'), url('../img/topo_2.png');
+	background-repeat: no-repeat;
+	background-position: left 5% top 40px, right 5% bottom 40px;
+	background-size: 8%, 8%;
+}
+.bloco-semana{
+	background-image: url('../img/calendario_1.png'), url('../img/calendario_2.png');
+	background-repeat: no-repeat;
+	background-position: left 25% top 240px, right 25% top 500px;
+	background-size: 12%, 12%;
+}
+
+@media screen and (max-width: 1180px){
+	.bloco-azul{
+		background: url('../img/figura_topo_2.png') no-repeat right 10% bottom 40px / 8%, #282f65;
+	}
+	.practice.dialogo{margin-top: 160px;}
+	.practice.dialogo::before{
+		left: 0;
+		right:0;
+		margin: auto;
+		top: -100px;
+	}
+	.carousel-control-next{right: -55px;}
+	.carousel-control-prev{left: -55px;}
+}
+@media screen and (max-width: 940px){
+	.carousel .carousel-item{min-height: unset;}
+}
+@media screen and (max-width: 780px){
+	.carousel-control-next{
+		right: 0;
+		bottom: 200px;
+		top: unset;
+	}
+	.carousel-control-prev{
+		left: 0;
+		bottom: 200px;
+		top: unset;
+	}
+	.practice{
+		margin-top: 160px;
+		padding-left: 20px;
+		padding-top: 40px;
+	}
+	.practice::before{
+		left: 0;
+		right:0;
+		margin: auto;
+		top: -100px;
+	}
+}
