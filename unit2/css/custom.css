@@ -16,6 +16,7 @@ h2{
 	color: #b92e90;
 	margin-left: 0;
 }
+h4{color: #d8652a;}
 .figure-caption{
 	font-family: rubik;
 	color: #000;
@@ -124,7 +125,7 @@ h3{color: #c0101a;}
 	color: #272f64;
 	font-size: 22px;
 }
-.carousel .carousel-item{min-height: 940px;}
+.carousel .carousel-item{min-height: 720px;}
 .carousel-indicators{bottom: 220px;}
 .carousel-indicators [data-bs-target]{
 	width: 20px;
@@ -227,10 +228,100 @@ figcaption{word-wrap: break-word;}
 	background-size: 8%, 8%;
 }
 .bloco-semana{
-	background-image: url('../img/calendario_1.png'), url('../img/calendario_2.png');
+	background-image: url('../img/calendario_1.png'), url('../img/calendario_2.png'), 
+	url('../img/elemento_data_1.png'), url('../img/elemento_data_2.png');
 	background-repeat: no-repeat;
-	background-position: left 25% top 240px, right 25% top 500px;
-	background-size: 12%, 12%;
+	background-position: left 20% top 240px, right 20% top 500px, right 10% top 55%, left 10% bottom 20%;
+	background-size: 12%, 12%, 12%, 12%;
+}
+table{
+	border-radius: 0;
+	width: 225px !important;
+}
+table td{
+	background: #272f64;
+	color: #fff;
+	border-color: #fff;
+	border-left-width: 2px;
+}
+table tr td:first-child{
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+table tr td:last-child{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.bt-qrcode{
+	width: 315px;
+	height: 315px;
+	transition: all .6s;
+}
+.bt-qrcode:hover{transform: scale(1.1);}
+
+.multipla-escolha button::before{
+	color: #000;
+	font-weight: normal;
+	background: #fff;
+}
+.practice.flavors{
+	padding-left: unset;
+	padding: 85px 40px;
+}
+.practice.flavors::before{
+	left: -50px;
+	top: -55px;
+}
+.practice.flavors p::after{
+	content: '';
+	position: absolute;
+	background: url('../img/elemento_restaura_3.png') no-repeat;
+	width: 259px;
+	height: 197px;
+	bottom: -80px;
+	right: 20px;
+}
+.practice.dialogo p{padding: 0;}
+.practice.dialogo .part{
+	color: #d8652a;
+	margin: 20px 0;
+}
+.practice.dialogo .waiter{
+	margin: 0;
+	background: url('../img/ico_waiter.png') no-repeat;
+	padding-left: 30px;
+}
+.practice.dialogo .samantha{
+	margin: 0;
+	background: url('../img/ico_samantha.png') no-repeat;
+	padding-left: 30px;
+}
+.practice.dialogo .joseph{
+	margin: 0;
+	background: url('../img/ico_joseph.png') no-repeat;
+	padding-left: 30px;
+}
+
+.box-azul{
+	background: #272f64;
+	padding: 20px;
+	border-radius: 20px;
+}
+.box-azul p.laranja{color: #c25e31;}
+.box-azul p.roxo{color: #b92e90;}
+.box-azul p{
+	margin-bottom: 0;
+	color: #fff;
+}
+.bloco-flavors{
+	background-image: url('../img/elemento_restaura_1.png'), 
+	url('../img/elemento_restaura_2.png'),
+	url('../img/elemento_restaura_4.png'), 
+	url('../img/elemento_restaura_5.png');
+	background-repeat: no-repeat;
+	background-size: 15%;
+	background-position: left 5% top 4%, right 5% top 10%, left 10% top 52%, right 10% top 53%;
 }
 
 @media screen and (max-width: 1180px){
@@ -246,9 +337,14 @@ figcaption{word-wrap: break-word;}
 	}
 	.carousel-control-next{right: -55px;}
 	.carousel-control-prev{left: -55px;}
+	.bg-time, .bloco-semana{background-image: none;}
 }
-@media screen and (max-width: 940px){
+@media screen and (max-width: 990px){
 	.carousel .carousel-item{min-height: unset;}
+	.exemples1, .exemples2{
+		margin-top: 150px;
+		margin-bottom: 50px;
+	}
 }
 @media screen and (max-width: 780px){
 	.carousel-control-next{
@@ -272,4 +368,7 @@ figcaption{word-wrap: break-word;}
 		margin: auto;
 		top: -100px;
 	}
+}
+@media screen and (max-width: 690px){
+	.bloco-flavors{background-image: none;}
 }
