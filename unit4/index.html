@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- Inserir o tíutlo do conhecimento na tag title -->
+        <title>Unit 4</title>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS v5.0.2 -->
+        <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="../assets/css/animate.min.css" />
+        <!-- hover.css https://ianlunn.github.io/Hover/ -->
+        <link rel="stylesheet" href="../assets/css/hover-min.css" />
+        <!-- Print -->
+        <link rel="stylesheet" href="../assets/css/print.css">
+        <!-- Preloader -->
+        <link rel="stylesheet" href="../assets/css/preloader.css">
+        <!-- Áudio customizado -->
+        <link rel="stylesheet" href="css/player.css">
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+        <!--Atividade relacionar colunas-->
+        <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
+        <!--Atividade jogo da memória-->
+        <link rel="stylesheet" href="atividades/jogo_memoria/jogoMemoria.css">
+        <!-- Atividade de verdadeiro ou falso -->
+        <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
+        <!-- Estilos do template -->
+        <link rel="stylesheet" href="../assets/css/cores.css">
+        <link rel="stylesheet" href="../assets/css/template.css">
+
+        <link rel="stylesheet" href="css/custom.css">
+    
+    </head>
+    <body>
+        <!-- Preloader OBRIGATÓRIO -->
+        <div class="preloader">
+            <div class="anim"></div>
+            <p>Aguarde enquanto o conteúdo é carregado.</p>
+        </div>
+        <!-- Marca d'água OBRIGATÓRIA -->
+        <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+        <header id="topo"></header>
+
+        <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
+        <section id="booklet">       
+            <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+            <section class="paginas">
+                <div class="pagina">
+                    <div class="bloco-azul">
+                        <div class="container">
+                            <h2>Unit 4 – Accomodation</h2>
+                            <p>Nesta unidade, você vai aprender a:</p>
+                            <ul>
+                                <li>Fazer uma reserva em um hotel;</li>
+                                <li>Fazer check-in e check-out;</li>
+                                <li>Avaliar hotéis;</li>
+                                <li>Lidar com problemas em hotéis.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bloco-branco hotel">
+                        <div class="container">
+                            <h3>Types of accommodation</h3>
+                            <p>Read the text below and match the words in bold with the corresponding pictures.</p>
+                            <h2 class="m-0 text-dark">Espera para ODA</h2>
+                            <div class="sr-only">
+                                <h4>Travel Accommodation</h4>
+                                <p>When you plan a trip, you need a place to stay. There are different types of accommodations to choose from.</p>
+                                <p>Hotel: A hotel is a comfortable place to stay. You can find hotels in cities and towns. They have rooms with beds, a bathroom, and sometimes a TV. Hotels often provide services like room cleaning and breakfast.</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 1: Reception desk<br>
+                                        Source: &lt;https://www.freepik.com/free-photo/woman-talking-with-hotel-receptionist-lobby_23443108.htm#query=hotel%20reception&position=1&from_view=search&track=ais&uuid=5015a0df-6474-44b8-8846-acf0fd68ad8a> Accessed on: 12/19/2023.
+                                    </figcaption>
+                                    <p>Photograph of a guest and a receptionist at the reception desk.</p>
+                                </figure>
+                                <p>Hostel: A hostel is a budget-friendly option. It is like a big house with many rooms. You usually share a room with other travelers. Hostels are great for meeting new people. They may have a communal kitchen where you can cook your meals.</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 2: Bunk beds<br>
+                                        Source: &lt;https://www.freepik.com/free-photo/young-friends-hostel_60892046.htm#query=hostel&position=9&from_view=search&track=sph&uuid=9b804439-2b32-4042-bff7-47eb8e158190> Accessed on: 12/09/2023.
+                                    </figcaption>
+                                    <p>Photograph of three women sitting and lying on bunk beds.</p>
+                                </figure>
+                                <p>Camping: Camping is an adventurous way to stay close to nature. You can set up a tent in a camping site. It's fun to sleep under the stars. Camping sites often have bathrooms and places to cook.</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 3: Tent<br>
+                                        Source: &lt;https://www.freepik.com/free-photo/lifestyle-people-living-camping_32450165.htm#query=camping&position=4&from_view=search&track=sph&uuid=9f2106c8-f056-4e7d-a11d-0533d413fbd4> Accessed on: 12/19/2023.
+                                    </figcaption>
+                                    <p>Photograph of two women having a meal at a table near a tent. There is a lake in the background and a dog near them.</p>
+                                </figure>
+                                <p>Resort: A resort is like a holiday village. It has everything you need for a relaxing stay – swimming pools, restaurants, and entertainment. Resorts are often near the beach or in beautiful natural areas.</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 4: Swimming pool<br>
+                                        Source: &lt;https://www.freepik.com/free-photo/swimming-pool_3661257.htm#query=hotel&position=20&from_view=search&track=sph&uuid=8a97a1fc-c37e-4613-a26e-86674302d6f4> Accessed on: 12/19/2023.
+                                    </figcaption>
+                                    <p>Photograph of a swimming pool by the ocean, surrounded by palm trees, chairs and sun umbrellas.</p>
+                                </figure>
+                                <p>Apartment: An apartment is like a home away from home. It has a kitchen, a living room, and separate bedrooms. Apartments are perfect for families or groups of friends. You can find apartments in the city or near tourist attractions.</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 5: Kitchen<br>
+                                        Source: &lt;https://www.freepik.com/free-photo/airbnb-host-welcoming-guests_33752073.htm#query=airbnb%20black%20people&position=2&from_view=search&track=ais&uuid=c062916a-87d9-49e5-b226-cbc78dceb263> Accessed on: 12/19/2023.
+                                    </figcaption>
+                                    <p>Photograph of two guests and a host in a kitchen.</p>
+                                </figure>
+                                <p>Now, think about what kind of accommodation you would like for your next trip. Do you prefer the comfort of a hotel, the social atmosphere of a hostel, the adventure of camping, the luxury of a resort, or the homely feel of an apartment? Choose the one that suits your travel style and enjoy your stay!</p>
+                            </div>
+
+                            <p class="mt-5"><b>Take the quiz to check your comprehension of the text about types of accommodation.</b></p>
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">1) What is a hostel?</p>
+                                <button class="alt-e">A luxurious accommodation </button>
+                                <button class="alt-c">A budget-friendly option with shared rooms </button>
+                                <button class="alt-e">A holiday village with entertainment</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i
+                                            class="fas fa-check"></i> Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i
+                                            class="fas fa-times"></i> Você escolheu a resposta errada. Tente novamente.</p>
+                                </div>
+                            </div>
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">2) Where can you set up a tent for an adventurous stay? </p>
+                                <button class="alt-e">In a hotel </button>
+                                <button class="alt-e">In a resort </button>
+                                <button class="alt-c">In a camping site</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i
+                                            class="fas fa-check"></i> Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i
+                                            class="fas fa-times"></i> Você escolheu a resposta errada. Tente novamente.</p>
+                                </div>
+                            </div>
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">3) What is described as a "home away from home" in the text? </p>
+                                <button class="alt-e">In a hotel </button>
+                                <button class="alt-e">In a resort </button>
+                                <button class="alt-c">An apartment</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i
+                                            class="fas fa-check"></i> Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i
+                                            class="fas fa-times"></i> Você escolheu a resposta errada. Tente novamente.</p>
+                                </div>
+                            </div>
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">4) Where can you find swimming pools, restaurants, and entertainment? </p>
+                                <button class="alt-e">Hostel </button>
+                                <button class="alt-e">Camping site </button>
+                                <button class="alt-c">Resort</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i
+                                            class="fas fa-check"></i> Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i
+                                            class="fas fa-times"></i> Você escolheu a resposta errada. Tente novamente.</p>
+                                </div>
+                            </div>
+                            <div class="esquemaDaBru multipla-escolha">
+                                <p class="enunciado" tabindex="0">5) What is mentioned as having rooms, a bathroom, and sometimes a TV? </p>
+                                <button class="alt-e">Hostel </button>
+                                <button class="alt-e">Apartment </button>
+                                <button class="alt-c">Hotel</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i
+                                            class="fas fa-check"></i> Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i
+                                            class="fas fa-times"></i> Você escolheu a resposta errada. Tente novamente.</p>
+                                </div>
+                            </div>
+
+                            <h3>Booking a hotel online</h3>
+                            <p>George and Rita want to go on a winter break to Bordeaux, France, for three nights. They have a total budget of € 450 to spend on this long weekend. They want to relax, do some sightseeing and eat some good food. They will arrive by train. An online search shows that these three hotels in Bordeaux have rooms available on the right dates. Read the information and decide which type of accommodation each option is (hotel, hostel or apartment).</p>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="d-flex flex-wrap flex-xl-nowrap justify-content-evenly">
+                                <img src="img/booking_1.png" class="img-fluid">
+                                <img src="img/booking_2.png" class="img-fluid">
+                                <img src="img/booking_3.png" class="img-fluid">
+                            </div>
+                            <div class="sr-only">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Room</th>
+                                            <th>Picture of room</th>
+                                            <th>Price/night</th>
+                                            <th>Amenities</th>
+                                            <th>Location</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>The Loft</td>
+                                            <td>Full apartment</td>
+                                            <td>Full apartment</td>
+                                            <td>
+                                                Figure 6: The Loft<br>
+                                                Source: &lt;https://pixabay.com/photos/airbnb-air-bnb-apartment-3399753/> Accessed on: 12/21/2023.<br>
+                                                Photograph of a person holding a phone that reads “Airbnb”, with an apartment in the background.
+                                            </td>
+                                            <td>€75</td>
+                                            <td>Kitchen, Gym, Laundry</td>
+                                            <td>10 min walk to city center</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Château Dijon</td>
+                                            <td>Deluxe double room</td>
+                                            <td>
+                                                Figure 7: Château Dijon<br>
+                                                Source: &lt;https://unsplash.com/photos/white-bed-linen-on-bed-5BV56SdvLmo> Accessed on: 12/21/2023.<br>
+                                                Photograph of a deluxe double room.
+                                            </td>
+                                            <td>€135</td>
+                                            <td>Swimming pool, Breakfast, Balcony, Bar</td>
+                                            <td>Central</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Saint Jean</td>
+                                            <td>Shared room, 5 beds</td>
+                                            <td>
+                                                Figure 8: Saint Jean<br>
+                                                Source: &lt;https://pixabay.com/photos/bed-room-hostel-142517/> Accessed on: 12/21/2023.<br>
+                                                Photograph of a room with 5 beds.
+                                            </td>
+                                            <td>€35</td>
+                                            <td>TV room, Games room, Laundry</td>
+                                            <td>Near train station</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Complete the table below with information about the hotels. </p>
+                                <table>
+                                    <thead>
+                                        <th>Name</th>
+                                        <th>Advantages</th>
+                                        <th>Disadvantages</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>The Loft</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Château Dijon</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Saint Jean</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>Which one do you think George and Rita should choose? Why?</p>
+                            </div>
+                            <h3>Reviews</h3>
+                            <p>George and Rita decide to check some online reviews before they make a decision. </p>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="d-flex flex-wrap flex-xl-nowrap justify-content-evenly">
+                                <img src="img/review_1.png" class="img-fluid">
+                                <img src="img/review_2.png" class="img-fluid">
+                                <img src="img/review_3.png" class="img-fluid">
+                            </div>
+                            <div class="sr-only">
+                                <h4>The Loft</h4>
+                                <p>User review</p>
+                                <p>"I come to the city quite often on business and I always stay at The Loft. Anthony is a super host! The apartment is small, but clean, and Anthony is friendly and helpful - he even drove me to the city center once.”</p>
+                                <p>Sharon Johnson</p>
+                                <h4>Château Dijon</h4>
+                                <p>User review</p>
+                                <p>“What a great place for a special weekend! It is a bit pricey, but very comfortable. Excellent breakfast.”</p>
+                                <p>Pierre Dubois</p>
+                                <h4>Saint Jean</h4>
+                                <p>User review</p>
+                                <p>“The location next to the train station was convenient, but a bit noisy at night. The room and customer service were average, but the price is so low, so I guess it’s value for the money.”</p>
+                                <p>Justin Smith</p>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>What do you think the best option is for George and Rita? Why?</p>
+                            </div>
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>What was the last time you stayed in a hotel? </p>
+                                <p>Write a short review to post on their website. Use the prompts below to help you.</p>
+                                <p>The hotel is in ____.</p>
+                                <p>The location is <i>excellent / convenient</i>.</p>
+                                <p>The breakfast is <i>delicious / average</i>.</p>
+                                <p>The service is <i>amazing / average / not good</i>.</p>
+                                <p>The rooms are <i>small / large</i>.</p>
+                                <p>I liked ____ at this hotel.</p>
+                                <p>I didn’t like ____ at this hotel.</p>
+                                <p>Tell the rest of the group about the hotel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bloco-azulclaro items">
+                        <div class="container">
+                            <h3>Booking a hotel online</h3>
+                            <p>Choose one of the hotels seen in this class and fill in the information to book a room for two people. Invent any details you need.</p>
+                            <h2 class="text-black my-5">Espera para ODA</h2>
+
+                            <h3>Hotel Staff</h3>
+                            <p><b>Match the jobs with their definitions.</b></p>
+                            <h2 class="text-black my-5">Espera para ODA</h2>
+                            <div class="sr-only">
+                                <h4>Receptionist</h4>
+                                <p>Figure 9: Hotel Receptionist</p>
+                                <p>Source: &lt;https://www.freepik.com/free-photo/receptionist-elegant-suit-during-work-hours-with-customer_38661262.htm#query=hotel%20receptionist&position=4&from_view=search&track=ais&uuid=86a4d7f7-88e5-4181-8b66-0994b77eff5c> Accessed on: 12/21/2023.</p>
+                                <p>Photograph of a hotel receptionist giving a card to a guest.</p>
+                                <p>A person employed in a hotel to deal with reservations and to talk to guests.</p>
+                                <h4>Bellboy</h4>
+                                <p>Figure 10: Bellboy</p>
+                                <p>Source: &lt;https://www.pexels.com/pt-br/foto/adulto-caixas-baus-arcas-6474535/> Accessed on: 12/21/2023.</p>
+                                <p>Photograph of a bellboy carrying boxes on a cart.</p>
+                                <p>A person who helps the guests to take their luggage to their rooms.</p>
+                                <h4>Housekeeper</h4>
+                                <p>Figure 11: Housekeeper</p>
+                                <p>Source: &lt;https://www.freepik.com/free-photo/portrait-hotel-maid-holding-fresh-clean-folded-towels_7700714.htm#query=housekeeper&position=1&from_view=search&track=sph&uuid=e4a36303-b9a2-45f9-9dc6-621e40cea7a0> Accessed on: 12/21/2023.</p>
+                                <p>Photograph of a housekeeper carrying towels.</p>
+                                <p>A person who cleans hotel rooms.</p>
+                                <h4>Hotel Manager</h4>
+                                <p>Figure 12: Hotel manager</p>
+                                <p>Source: &lt;https://www.freepik.com/free-photo/elegant-business-girl-with-notebook_3153895.htm#query=hotel%20manager&position=0&from_view=search&track=ais&uuid=d8460463-a9e1-4ed9-83ba-39dd3374a765> Accessed on: 12/21/2023.</p>
+                                <p>Photograph of a woman holding a notebook and a pencil.</p>
+                                <p>A person who manages the operations of a hotel.</p>
+                                <h4>Bartender</h4>
+                                <p>Figure 13: Bartender</p>
+                                <p>Source: &lt;https://www.freepik.com/free-photo/medium-shot-man-preparing-drink_41253034.htm#query=bartender&position=0&from_view=search&track=sph&uuid=5c7da26b-280e-48ef-a5ae-75ca38f4dccc> Accessed on: 12/21/2023.</p>
+                                <p>Photograph of a man preparing a drink.</p>
+                                <p>A person who makes drinks at the hotel bar.</p>
+                                <h4>Valet</h4>
+                                <p>Figure 14: Valet</p>
+                                <p>Source: &lt;https://www.freepik.com/free-photo/parking-valet-helping-woman-park-her-car_34804604.htm#query=valet&position=2&from_view=search&track=sph&uuid=bc781fa5-46dc-4110-a213-003e9f7f25e5> Accessed on: 12/21/2023.</p>
+                                <p>Photograph of a man helping a woman park her car.</p>
+                                <p>A person who parks your car for you.</p>
+                                <h4>Chef</h4>
+                                <p>Figure 15: Chef</p>
+                                <p>Source: &lt;https://www.freepik.com/free-photo/female-chef-kitchen-preparing-plate-steak_32201706.htm#query=chef&position=21&from_view=search&track=sph&uuid=213af9b9-efb6-4160-bbc5-7261e3349a8d> Accessed on: 12/21/2023.</p>
+                                <p>Photograph of a woman preparing a steak.</p>
+                                <p>A person who cooks food at the hotel restaurant.</p>
+                                <h4>Concierge</h4>
+                                <p>Figure 16: Concierge</p>
+                                <p>Source: &lt;https://www.freepik.com/free-photo/attractive-woman-reception-desk-looking-camera_3716703.htm#query=concierge&position=3&from_view=search&track=sph&uuid=b2b5b2b2-e6b0-41f6-865c-91d0c8132e33> Accessed on: 12/21/2023.</p>
+                                <p>Photograph of a woman behind a reception counter.</p>
+                                <p>A person who handles luggage, mail, reservations and organizes excursions.</p>
+                            </div>
+
+                            <h3>Hotel Check-in</h3>
+                            <p>Listen to the dialogue between Rita and the hotel receptionist. Which hotel did Rita and George choose?</p>
+                            <h2 class="text-black my-5">Espera para vídeo</h2>
+                            <div class="sr-only">
+                                <p>Receptionist: Good morning! Welcome to Château Dijon. How can I help you?</p>
+                                <p>Rita: Hello! I have a reservation for three nights.</p>
+                                <p>Receptionist: Okay. Can I see your passport, please?</p>
+                                <p>Rita: Of course. Here you are.</p>
+                                <p>Receptionist: Thank you. You have a reservation for two people. Would you like a twin room or a double room?</p>
+                                <p>Rita: A double room, please.</p>
+                                <p>Receptionist: No problem. Here are your key cards.</p>
+                                <p>Rita: Thank you. Where is the room?</p>
+                                <p>Receptionist: It’s on the fifth floor. Take the lift on the right.</p>
+                                <p>Rita: Okay. Do you have room service?</p>
+                                <p>Receptionist: Yes, we do! Use the phone in the room to order food and drinks.</p>
+                                <p>Rita: Perfect! Thank you.</p>
+                                <p>Receptionist: You’re welcome! I hope you enjoy your stay with us.</p>
+                            </div>
+                            <p><b>Now, listen again and complete with the missing words.</b></p>
+                            <h2 class="text-black my-5">Espera para ODA</h2>
+                            <div class="sr-only">
+                                <p>Receptionist: Good morning! Welcome to Château Dijon. How can I _____(resposta: help) ______(resposta:you)?</p>
+                                <p>Rita: Hello! I have a ______(resposta: reservation) for three nights. </p>
+                                <p>Receptionist: Okay. Can I see your ______(resposta: passport), please? </p>
+                                <p>Rita: Of course. Here you are. </p>
+                                <p>Receptionist: Thank you. You have a reservation for two people. Would you like a twin room or a ______(resposta: double) ______(resposta: room)? </p>
+                                <p>Rita: A double room, ______(resposta: please). </p>
+                                <p>Receptionist: No problem. Here are your key cards. </p>
+                                <p>Rita: Thank you. Where ______(resposta: is) ______(resposta: the) ______(resposta: room)?</p>
+                                <p>Receptionist: It’s on the fifth floor. Take the lift ______(resposta: on) ______(resposta: the) ______(resposta: right).</p>
+                                <p>Rita: Okay. Do you have ______(resposta: room) ______(resposta: service)?</p>
+                                <p>Receptionist: Yes, we do! Use the phone in the room to order food and drinks. </p>
+                                <p>Rita: ______(resposta: Perfect)! Thank you. </p>
+                                <p>Receptionist: You’re welcome! I hope you ______(resposta: enjoy) ______(resposta: your) ______(resposta: stay) with us.</p>
+                            </div>
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Compare your answers with a partner, then take turns practicing the dialogue.</p>
+                            </div>
+
+                            <h3>Hotel problems</h3>
+                            <p>George and Rita are having problems in their room. Read the following comics about their complaints. What is the problem in each situation?</p>
+                            <h2 class="text-black my-5">Espera para ODA</h2>
+                            <div class="sr-only">
+                                <h4>Dialogue 1</h4>
+                                <p>Receptionist: Hello! How can I help you?</p>
+                                <p>George: I’m staying in Room 502. I can’t connect to the internet.</p>
+                                <p>Receptionist! Oh no! Do you have the correct password?</p>
+                                <p>George: What’s the correct password?</p>
+                                <p>Receptionist: It’s Hotel123.</p>
+                                <p>George: Ok, I’ll try it now...It works! Thank you!</p>
+                                <h4>Dialogue 2:</h4>
+                                <p>Receptionist: Hello! How can I help you?</p>
+                                <p>Rita: I’m staying in Room 502. The window is broken. I can’t open it.</p>
+                                <p>Receptionist: Oh no! Do you have the key?</p>
+                                <p>Rita: Yes, but the window doesn’t open.</p>
+                                <p>Receptionist: Okay. The maintenance team will come to your room at 2PM to fix it.</p>
+                                <p>Rita: Thank you so much!</p>
+                            </div>
+
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Look at these common hotel complaints. Which is the worst, in your opinion?</p>
+                                <ul>
+                                    <li>Noisy hotel </li>
+                                    <li>Dirty bathroom </li>
+                                    <li>Mice in the restaurant </li>
+                                    <li>No hot water </li>
+                                    <li>The internet isn’t working </li>
+                                    <li>Rude staff</li>
+                                    <li>An empty mini bar</li>
+                                </ul>
+                                <p>Choose two of the problems above and, in pairs, create dialogues. Then, practice with the dialogues with your partner.</p>
+                            </div>
+                            
+
+                            <h3>Hotel Check-out</h3>
+                            <p>Rita and George are returning home after four days and three nights in Bordeaux. Listen to them checking out of the hotel.</p>
+                            <h2 class="text-black my-5">Espera para vídeo</h2>
+                            <div class="sr-only">
+                                <p>Receptionist: Good morning! How can I help you today?</p>
+                                <p>George: Good morning. I'd like to check out, please.</p>
+                                <p>Receptionist: Of course. Could I have your room number, please?</p>
+                                <p>George: Yes, it's Room 502,</p>
+                                <p>Receptionist: Thank you. Could you please return your room key?</p>
+                                <p>George: Sure, here it is. </p>
+                                <p>Receptionist: Thank you. I hope you enjoyed your stay with us. How was everything?</p>
+                                <p>George: Everything was wonderful, thank you. The room was comfortable, and the staff was very friendly.</p>
+                                <p>Receptionist: I'm glad to hear that! How would you like to pay your bill? </p>
+                                <p>George: Yes, I'd like to pay with my credit card.</p>
+                                <p>Receptionist: Of course. Just give me a moment to process that for you...Here's your receipt. Please check if everything looks correct.</p>
+                                <p>George: It looks fine. Thank you.</p>
+                                <p>Receptionist: You're welcome. We hope to see you again soon at Hotel Château Dijon. Have a safe journey!</p>
+                                <p>George: Thank you. Goodbye!</p>
+                                <p>Receptionist: Goodbye and take care!</p>
+                            </div>
+                            <p><b>Now, listen again and complete with the missing words.</b></p>
+                            <h2 class="text-black my-5">Espera para ODA</h2>
+                            <div class="sr-only">
+                                <p>Receptionist: ____ (resposta: good) ____ (resposta: morning)! How can I help you today?</p>
+                                <p>George: Good morning. I'd like to ____ (resposta: check) ____ (resposta: out), please.</p>
+                                <p>Receptionist: Of course. Could I have your ____ (resposta: room) ____ (resposta: number), please?</p>
+                                <p>George: Yes, it's Room ____ (resposta: 502).</p>
+                                <p>Receptionist: Thank you. Could you please return your room key?</p>
+                                <p>George: Sure, here it is. </p>
+                                <p>Receptionist: Thank you. I hope you enjoyed ____ (resposta: your) ____ (resposta: stay) with us. How was everything?</p>
+                                <p>George: Everything was wonderful, thank you. The room was comfortable, and the ____ (resposta: staff) was very friendly.</p>
+                                <p>Receptionist: I'm glad to hear that! How would you like to ____ (resposta: pay) ____ (resposta: your) ____ (resposta: bill)? </p>
+                                <p>George: Yes, I'd like to pay with my ____ (resposta: credit) ____ (resposta: card).</p>
+                                <p>Receptionist: Of course. Just give me a moment to process that for you...Here's your receipt. Please check if everything looks correct.</p>
+                                <p>George: It looks fine. Thank you.</p>
+                                <p>Receptionist: You're welcome. We hope to see you again soon at Hotel Château Dijon. Have a ____ (resposta: safe) ____ (resposta: journey).</p>
+                                <p>George: Thank you. Goodbye!</p>
+                                <p>Receptionist: Goodbye and ____ (resposta: take) ____ (resposta: care)!</p>
+                            </div>
+
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Compare your answers with a partner, then take turns practicing the dialogue.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            <!-- Paginação-->
+            <!-- <footer class="text-center no-print d-flex justify-content-center mx-auto">
+                <ul class="pagination">
+    
+                </ul>
+            </footer> -->
+        </section>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
+        <!--Atividade arrasta e solta-->
+        <script src='atividades/arrasta_solta/dragula.min.js'></script>
+        <script src="atividades/arrasta_solta/game-custom.js"></script>
+        <!--Atividade associar colunas-->
+        <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
+        <!--Atividade de jogo da memória-->
+        <script src="atividades/jogo_memoria/jogoMemoria.js"></script>
+        <!--Atividade de verdadeiro ou falso-->
+        <script src="../assets/atividades/perguntas/perguntas.js"></script>
+        <!--Prog'n'roll - barra de progresso conforme rola a página-->
+        <script src="../assets/js/prognroll.min.js"></script>
+        <!--Scripts gerais-->
+        <script src="../assets/js/geral.js"></script>
+
+        <script>
+            $(function() {
+                $("body").prognroll();
+            });
+        </script>
+
+        <!-- Handtalk -->
+        <script>
+            var scriptElem=document.createElement("script");
+            scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset="UTF-8",
+            scriptElem.onload=function(){
+                window.ht = new HT({
+                    token:"bf5b7efb148a829a126a0e0c9fd533bf",
+                    align:"top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,           
+                    mobileConfig:{align:"right",
+                                    actionsAlign:"top",
+                                    customButtonStyle:{
+                                        borderRadius:"6px",
+                                        size:"38px",
+                                        horizontalMargin:"13px",
+                                        bottomMargin:"140px",
+                                        rightMargin:"40px"}
+                                    }
+                    });        
+                $('.ht-skip').attr("aria-hidden","true")
+            },
+        document.body.appendChild(scriptElem);
+        
+        </script>
+    </body>
+</html>
