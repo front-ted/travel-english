@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- Inserir o tíutlo do conhecimento na tag title -->
+        <title>Unit 5</title>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS v5.0.2 -->
+        <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="../assets/css/animate.min.css" />
+        <!-- hover.css https://ianlunn.github.io/Hover/ -->
+        <link rel="stylesheet" href="../assets/css/hover-min.css" />
+        <!-- Print -->
+        <link rel="stylesheet" href="../assets/css/print.css">
+        <!-- Preloader -->
+        <link rel="stylesheet" href="../assets/css/preloader.css">
+        <!-- Áudio customizado -->
+        <link rel="stylesheet" href="css/player.css">
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+        <!--Atividade relacionar colunas-->
+        <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
+        <!--Atividade jogo da memória-->
+        <link rel="stylesheet" href="atividades/jogo_memoria/jogoMemoria.css">
+        <!-- Atividade de verdadeiro ou falso -->
+        <link rel="stylesheet" href="../assets/atividades/perguntas/perguntas.css">
+        <!-- Estilos do template -->
+        <link rel="stylesheet" href="../assets/css/cores.css">
+        <link rel="stylesheet" href="../assets/css/template.css">
+
+        <link rel="stylesheet" href="css/custom.css">
+    
+    </head>
+    <body>
+        <!-- Preloader OBRIGATÓRIO -->
+        <div class="preloader">
+            <div class="anim"></div>
+            <p>Aguarde enquanto o conteúdo é carregado.</p>
+        </div>
+        <!-- Marca d'água OBRIGATÓRIA -->
+        <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+        <header id="topo"></header>
+
+        <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->    
+        <section id="booklet">       
+            <!-- Section .paginas OBRIGATÓRIA para funcionamento da paginação e do print -->
+            <section class="paginas">
+                <div class="pagina">
+                    <div class="bloco-azul">
+                        <div class="container">
+                            <h2>Unit 5 – Shopping and Souvenirs</h2>
+                            <p>Nesta unidade, você vai aprender a:</p>
+                            <ul>
+                                <li>Utilizar vocabulário relacionado a compras;</li>
+                                <li>Perguntar preços e tamanhos;</li>
+                                <li>Descrever produtos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bloco-branco stores">
+                        <div class="container">
+                            <h3>Types of stores</h3>
+                            <p>Match the products with the correspondent stores.</p>
+                            <h2 class="m-0 text-dark">Espera para ODA</h2>
+                            <div class="sr-only">
+                                <h4>Supermarket</h4>
+                                <figure>
+                                    <figcaption>
+                                        Figure 1: Supermarket<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/aisle-grocery-store-shelves-vector-background_39554879.htm#query=supermarket&position=4&from_view=search&track=sph&uuid=14c197c5-d116-4cd3-b0c0-8a8058a6291c> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a supermarket row.</p>
+                                </figure>
+                                <p>Bread</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 7: Bread<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/loaf-bread-single-slice_6903560.htm#query=bread&position=3&from_view=search&track=sph&uuid=37da1e60-880d-4403-94a5-9fd7c2b9ebb2> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a loaf of bread.</p>
+                                </figure>
+                                <p>Soda</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 8: Soda<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/soda-can-aluminium-white_5135995.htm#query=soda&position=0&from_view=search&track=sph&uuid=b76b666f-2c03-4f57-86e4-9ba25d0db077> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of two cans of soda.</p>
+                                </figure>
+                                <p>Cheese</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 9: Cheese<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/simple-cheese-isolated-cartoon_35093128.htm#query=cheese&position=0&from_view=search&track=sph&uuid=7e2a8634-263f-4bed-a4b4-6bf05df7aea5> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a piece of cheese.</p>
+                                </figure>
+                                <h4>Drugstore</h4>
+                                <figure>
+                                    <figcaption>
+                                        Figure 2: Drugstore<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/pharmacy-interior-with-computer-monitors-glass-counter-various-medicines-boxes-jars-tubes-shelves-racks-cartoon-vector-empty-drugstore-inside-with-medical-product-pills_79004451.htm#query=drugstore&position=22&from_view=search&track=sph&uuid=10e450e1-1064-457e-aa1b-882273f33a67> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a drugstore, with medications on shelves and computers on a counter.</p>
+                                </figure>
+                                <p>Pain killers</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 10: Pain killers<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/medicine-bottles-cartoon-style_24064993.htm#query=medication&position=4&from_view=search&track=sph&uuid=80894fe1-380a-4ee5-8b7d-554ff9350121> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of two bottles of medication.</p>
+                                </figure>
+                                <p>Deodorant</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 11: Deodorant<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/vector-realistic-dry-stick-deodorant_4182760.htm#query=deodorant&position=0&from_view=search&track=sph&uuid=20b03174-8662-4406-9420-ee535fd40aff> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a dry stick deodorant.</p>
+                                </figure>
+                                <p>Vitamins</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 12: Vitamins<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/vitamin-complex-package_7407776.htm#query=vitamins&position=4&from_view=search&track=sph&uuid=ab0f0f51-7b0d-4dc9-9f5a-20b848f2a7cf> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a bottle of vitamins.</p>
+                                </figure>
+                                <h4>Shoe store</h4>
+                                <figure>
+                                    <figcaption>
+                                        Figure 3: Shoe store<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/interior-design-shoe-store-department-sports-shoes-men-women-new-collection-sneakers-chairs-trying-buyers-fashion-footwear-boutique_25872498.htm#query=shoe%20store&position=2&from_view=search&track=ais&uuid=4a27640f-e585-49b0-aa65-7c664c669720> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of shoes displayed on shelves.</p>
+                                </figure>
+                                <p>Sneakers</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 14: Sneakers<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/hand-drawn-running-shoes-cartoon-illustration_74885014.htm#query=sneakers&position=25&from_view=search&track=sph&uuid=2c2e3610-444e-4a8d-9ea7-620935ab21f0> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a pair of running shoes.</p>
+                                </figure>
+                                <p>Boots</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 15: Boots<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/sticker-template-with-womens-boots-isolated_24062935.htm#query=boots&position=14&from_view=search&track=sph&uuid=905117c7-732c-4eeb-9879-56e866e9519a> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a pair of boots.</p>
+                                </figure>
+                                <p>Sandals</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 16: Sandals<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/man-brown-casual-flip-flop-sandal-shoes-vector_2903997.htm#query=sandals&position=3&from_view=search&track=sph&uuid=4c16482a-b6bf-45ae-b6c3-55d55530b9e5> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a pair of sandals.</p>
+                                </figure>
+                                <h4>Clothing store</h4>
+                                <figure>
+                                    <figcaption>
+                                        Figure 4: Clothing store<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/fashionable-clothes-boutique-background-with-woman-fashion-symbols-flat-vector-illustration_34379091.htm#query=clothing%20store&position=1&from_view=search&track=ais&uuid=44481ea8-bb75-40fa-8bbd-12c3a4a12b7c> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a store with different kinds of clothes on hangs.</p>
+                                </figure>
+                                <p>Jacket</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 17: Jacket<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/vector-brown-sport-winter-coat-with-fur-hood-front-view-isolated-white-background_11058847.htm#query=jacket&position=26&from_view=search&track=sph&uuid=95316298-58ec-43f9-8f51-e112ff56a28e> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a winter jacket.</p>
+                                </figure>
+                                <p>T-shirt</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 18: T-shirt<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/sticker-template-with-red-t-shirt-isolated_16845581.htm#page=4&query=t-shirt&position=18&from_view=search&track=sph&uuid=b9efb5e6-a86b-4de5-8dd7-c1568d5194a1> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a t-shirt.</p>
+                                </figure>
+                                <p>Pants</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 19: Pants<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/pair-jeans-white-background_20424256.htm#query=pants&position=0&from_view=search&track=sph&uuid=5574d928-7b03-4d5b-82e7-c7134de42298> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a pair of jeans pants.</p>
+                                </figure>
+                                <h4>Bookstore</h4>
+                                <figure>
+                                    <figcaption>
+                                        Figure 5: Bookstore<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/visitors-bookstore-with-people-choose-books_16445960.htm#query=bookstore&position=1&from_view=search&track=sph&uuid=6640a69b-d40b-4386-8d5b-cc7f97b96d6e> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of three customers and a saleswoman at a bookstore.</p>
+                                </figure>
+                                <p>Books</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 20: Books<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books_24005145.htm#query=book&position=1&from_view=search&track=sph&uuid=ba1431ab-67f5-4d55-be36-b333990485a8> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a pile of books.</p>
+                                </figure>
+                                <p>Notebooks</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 21: Notebooks<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/realistic-blue-yellow-notepads-pencil-isolated-white-background-vector-illustration_1158822.htm#page=2&query=notebook&position=12&from_view=search&track=sph&uuid=4e3d94ba-cd16-4dbd-9875-6218a84e7586> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of two notebooks and a pencil.</p>
+                                </figure>
+                                <p>Postcard</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 22: Postcard<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/cute-summer-postcard_2234050.htm#query=postcard&position=49&from_view=search&track=sph&uuid=21b29020-acec-4c79-ae92-9b98ee1b0558> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a postcard.</p>
+                                </figure>
+                                <h4>Electronics store</h4>
+                                <figure>
+                                    <figcaption>
+                                        Figure 6: Electronics store<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/shop-assistant-showing-phone-customer-electronics-store-young-woman-visitor-listening-smartphone-advantage-man-choosing-new-digital-device-hanged-wall_25872135.htm#query=electronics%20store&position=0&from_view=search&track=ais&uuid=a9e9a690-d8cc-43cf-93d1-68f1296ef403> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a salesman showing electronics to a customer.</p>
+                                </figure>
+                                <p>Smartphone</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 23: Smartphone<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/smartphone-cartoon_35202669.htm#query=smartphone&position=16&from_view=search&track=sph&uuid=7090b05d-9ed0-4d23-81a4-896a816e3087> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a smartphone.</p>
+                                </figure>
+                                <p>Laptop</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 24: Laptop<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/open-laptop-icon-cartoon-illustration_11297047.htm#query=laptop&position=16&from_view=search&track=sph&uuid=19bf4974-a243-411b-bd46-11376915f10b> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Illustration of a laptop.</p>
+                                </figure>
+                                <p>Earphones</p>
+                                <figure>
+                                    <figcaption>
+                                        Figure 25: Earphones<br>
+                                        Source: &lt;https://www.freepik.com/free-vector/pair-blue-wireless-earphones-3d-illustration-cartoon-drawing-equipment-device-listening-music-phone-computer-3d-style-white-background-music-technology-media-concept_41243501.htm#query=ear%20buds&position=1&from_view=search&track=ais&uuid=1f837e3a-156e-4443-9bf7-488d28b9a5ac> Accessed on: 01/04/2024.
+                                    </figcaption>
+                                    <p>Ilustration of a pair of wireless earphones.</p>
+                                </figure>
+                            </div>
+
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Ask and answer the following questions with a partner.</p>
+                                <ul>
+                                    <li>What is your favorite store?</li>
+                                    <li>Where do you usually buy clothes?</li>
+                                    <li>Where do you usually buy shoes?</li>
+                                    <li>
+                                        What else can you buy at:
+                                        <ul>
+                                            <li>a supermarket?</li>
+                                            <li>a clothing store?</li>
+                                            <li>an electronics store?</li>
+                                            <li>a bookstore?</li>
+                                            <li>a drugstore?</li>
+                                            <li>a shoe store?</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <h3>At the clothing store</h3>
+                                    <p>Today is Carlos’s first day in London, and he needs to shop for clothes, shoes and groceries.</p>
+                                    <p>His first stop is at the clothing store Brands. </p>
+                                    <p>Put the following sentences in order to complete a logical conversation between Carlos and the salesperson at the store.</p>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <figure class="my-5">
+                                        <div class="figure-img mx-auto mb-4">
+                                            <img class="img-fluid d-block" src="img/imagem.png">
+                                        </div>
+                                        <figcaption class="figure-caption text-center">
+                                            Figure 26: Clothing store<br>
+                                            Source: &lt;https://www.freepik.com/free-photo/young-man-shopping-menswear-store-talking-phone_26146272.htm#query=clothing%20store&position=29&from_view=search&track=ais&uuid=b707f73a-fbcc-4f4e-9de0-8d20c8adc714> Accessed on: 01/04/2024.
+                                        </figcaption>
+                                        <p class="sr-only">Photograph of a man talking on the phone and looking at clothes at a clothing store.</p>
+                                    </figure>
+                                </div>
+                            </div>
+                            
+                            <h2 class="m-0 text-dark">Espera para ODA</h2>
+                            <div class="sr-only">
+                                <p>Salesperson: Good morning! Welcome to Brands! How can I help you?</p>
+                                <p>Carlos: Good morning! I’m looking for a shirt.</p>
+                                <p>Salesperson: What color would you like?</p>
+                                <p>Carlos: Blue or green, please.</p>
+                                <p>Salesperson: Blue or green, I see. What is your size?</p>
+                                <p>Carlos: Large.</p>
+                                <p>Salesperson: Ok. How about this one?</p>
+                                <p>Carlos: Humm. Do you have it in a different color?</p>
+                                <p>Salesperson: Yes, I also have this one.</p>
+                                <p>Carlos: No, I don’t like this one.</p>
+                                <p>Salesperson: I’m sorry, but these are the only colors that we have.</p>
+                                <p>Carlos: That’s too bad.</p>
+                                <p>Salesperson: Oh, wait a minute! We do have this one!</p>
+                                <p>Carlos: It’s nice! How much is it?</p>
+                                <p>Salesperson: It’s 75 pounds.</p>
+                                <p>Carlos: 75 pounds! That’s a bit expensive!</p>
+                                <p>Salesperson: Yes, but it is hand embroidered in Italy.</p>
+                                <p>Carlos: Ok, I’ll take it. Can I pay by credit card?</p>
+                                <p>Salesperson: Yes, no problem. I’ll put it in a bag for you.</p>
+                                <p>Carlos: Thank you.</p>
+                            </div>
+
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Now, practice the dialogue with a partner, replacing the words in bold with the words below:</p>
+                                <ul>
+                                    <li>White / purple / red / brown / black</li>
+                                    <li>Small / medium / extra large</li>
+                                    <li>50 dollars / 60 euros</li>
+                                    <li>Debit card / cash</li>
+                                </ul>
+                            </div>
+
+                            <h3>At a shoe store</h3>
+                            <p>Carlos’s second stop is at a shoe store called Trendy Shoes. </p>
+                            <p>Listen to his conversation with a salesperson at the store and then do the exercise below.</p>
+                            <h2 class="my-3 text-dark">Espera para áudio</h2>
+                            <p class="salesperson"><span class="bege">Salesperson:</span> Hello! Welcome to Trendy Shoes. How can I assist you today?</p>
+                            <p class="carlos"><span class="azul">Carlos:</span> Hi! I'm looking for a pair of comfortable sneakers.</p>
+                            <p class="salesperson"><span class="bege">Salesperson:</span> Great choice! We have a variety of sneakers in different styles and colors. What color are you interested in? </p>
+                            <p class="carlos"><span class="azul">Carlos:</span> I like black or blue sneakers. </p>
+                            <p class="salesperson"><span class="bege">Salesperson:</span> Excellent! Let me show you our collection. Here are some black sneakers, and these are our blue ones. What size do you usually wear? </p>
+                            <p class="carlos"><span class="azul">Carlos:</span> I wear a size 7.</p>
+                            <p class="salesperson"><span class="bege">Salesperson:</span> Alright, let me check if we have that size available in both colors. (Checks inventory) Yes, we have size 7 in black and blue. Would you like to try them on? </p>
+                            <p class="carlos"><span class="azul">Carlos:</span> Yes, please.</p>
+                            <p class="carlos"><span class="azul">Carlos:</span> These black sneakers feel comfortable. Can I also try the blue ones? </p>
+                            <p class="salesperson"><span class="bege">Salesperson:</span> Of course! Here you go.   </p>
+                            <p class="carlos"><span class="azul">Carlos:</span> These blue ones fit well too. I think I'll take both pairs. </p>
+                            <p class="salesperson"><span class="bege">Salesperson:</span> Great choice! How would you like to pay? We accept cash, credit cards, and mobile payments. </p>
+                            <p class="carlos"><span class="azul">Carlos:</span> I'll pay with my credit card. </p>
+                            <p class="salesperson"><span class="bege">Salesperson:</span> Perfect! Please insert your card into the machine, and follow the instructions.  </p>
+                            <p class="salesperson"><span class="bege">Salesperson:</span> Thank you for shopping at Trendy Shoes! Here's your receipt, and your new sneakers. </p>
+                            <p class="carlos"><span class="azul">Carlos:</span> Thank you! They're very comfortable. Have a good day! </p>
+                            <p class="salesperson"><span class="bege">Salesperson:</span> You're welcome! Enjoy your new shoes, and have a fantastic day!</p>
+
+                            <p>Read the statements about the dialogue between Carlos and the salesperson at the shoe store. Are they True or False?</p>
+                            <div class="esquemaDaBru verdadeiro-falso">
+                                <p class="enunciado" tabindex="0">1) The customer is looking for a pair of comfortable sandals.</p>
+                                <button class="alt-e botao hvr-grow-shadow">True</button>
+                                <button class="alt-c botao hvr-grow-shadow">False</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i
+                                            class="fas fa-check"></i> Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i
+                                            class="fas fa-times"></i> Você escolheu a resposta errada. Tente novamente.</p>
+                                </div>
+                            </div>
+                            <div class="esquemaDaBru verdadeiro-falso">
+                                <p class="enunciado" tabindex="0">2) The customer prefers sneakers in colors like black or blue.</p>
+                                <button class="alt-c botao hvr-grow-shadow">True</button>
+                                <button class="alt-e botao hvr-grow-shadow">False</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i
+                                            class="fas fa-check"></i> Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i
+                                            class="fas fa-times"></i> Você escolheu a resposta errada. Tente novamente.</p>
+                                </div>
+                            </div>
+                            <div class="esquemaDaBru verdadeiro-falso">
+                                <p class="enunciado" tabindex="0">3) The salesperson informs the customer that they only have sneakers in one size. </p>
+                                <button class="alt-e botao hvr-grow-shadow">True</button>
+                                <button class="alt-c botao hvr-grow-shadow">False</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i
+                                            class="fas fa-check"></i> Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i
+                                            class="fas fa-times"></i> Você escolheu a resposta errada. Tente novamente.</p>
+                                </div>
+                            </div>
+                            <div class="esquemaDaBru verdadeiro-falso">
+                                <p class="enunciado" tabindex="0">4) The customer decides to pay for the sneakers with cash.</p>
+                                <button class="alt-e botao hvr-grow-shadow">True</button>
+                                <button class="alt-c botao hvr-grow-shadow">False</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i
+                                            class="fas fa-check"></i> Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i
+                                            class="fas fa-times"></i> Você escolheu a resposta errada. Tente novamente.</p>
+                                </div>
+                            </div>
+                            <div class="esquemaDaBru verdadeiro-falso">
+                                <p class="enunciado" tabindex="0">5) The salesperson thanks the customer and wishes them a good day after the purchase.</p>
+                                <button class="alt-c botao hvr-grow-shadow">True</button>
+                                <button class="alt-e botao hvr-grow-shadow">False</button>
+                                <div class="feedbacks">
+                                    <p class="f-positivo"><i
+                                            class="fas fa-check"></i> Você escolheu a resposta correta.</p>
+                                    <p class="f-negativo"><i
+                                            class="fas fa-times"></i> Você escolheu a resposta errada. Tente novamente.</p>
+                                </div>
+                            </div>
+                            <p class="sr-only">Gabarito: 1 – F / 2 – T / 3 – F / 4 – F / 5 - T</p>
+
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Practice the dialogue with a partner.</p>
+                                <p class="salesperson"><span class="bege">Salesperson:</span> Hello! Welcome to Trendy Shoes. How can I assist you today?</p>
+                                <p class="carlos"><span class="azul">Carlos:</span> Hi! I'm looking for a pair of comfortable sneakers.</p>
+                                <p class="salesperson"><span class="bege">Salesperson:</span> Great choice! We have a variety of sneakers in different styles and colors. What color are you interested in?</p>
+                                <p class="carlos"><span class="azul">Carlos:</span> I like black or blue sneakers.</p>
+                                <p class="salesperson"><span class="bege">Salesperson:</span> Excellent! Let me show you our collection. Here are some black sneakers, and these are our blue ones. What size do you usually wear?</p>
+                                <p class="carlos"><span class="azul">Carlos:</span> I wear a size 7.</p>
+                                <p class="salesperson"><span class="bege">Salesperson:</span> Alright, let me check if we have that size available in both colors. (Checks inventory) Yes, we have size 7 in black and blue. Would you like to try them on? </p>
+                                <p class="carlos"><span class="azul">Carlos:</span> Yes, please.</p>
+                                <p class="carlos"><span class="azul">Carlos:</span> These black sneakers feel comfortable. Can I also try the blue ones? </p>
+                                <p class="salesperson"><span class="bege">Salesperson:</span> Of course! Here you go.</p>
+                                <p class="carlos"><span class="azul">Carlos:</span> These blue ones fit well too. I think I'll take both pairs.</p>
+                                <p class="salesperson"><span class="bege">Salesperson:</span> Great choice! How would you like to pay? We accept cash, credit cards, and mobile payments.</p>
+                                <p class="carlos"><span class="azul">Carlos:</span> I'll pay with my credit card.</p>
+                                <p class="salesperson"><span class="bege">Salesperson:</span> Perfect! Please insert your card into the machine, and follow the instructions.</p>
+                                <p class="salesperson"><span class="bege">Salesperson:</span> Thank you for shopping at Trendy Shoes! Here's your receipt, and your new sneakers.</p>
+                                <p class="carlos"><span class="azul">Carlos:</span> Thank you! They're very comfortable. Have a good day!</p>
+                                <p class="salesperson"><span class="bege">Salesperson:</span> You're welcome! Enjoy your new shoes, and have a fantastic day!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bloco-azulclaro supermarket">
+                        <div class="container">
+                            <h3>At the supermarket</h3>
+                            <p>When you visit a new supermarket, it is sometimes difficult to find what you are looking for. You can read the signs over the aisles to help you find things.</p>
+                            <p>Add the following items to the correct aisle in the supermarket.</p>
+                            <h2 class="text-black my-5">Espera para ODA</h2>
+                            <div class="sr-only">
+                                <table>
+                                    <thead>
+                                        <th>The sign says</th>
+                                        <th>They sell</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Produce</td>
+                                            <td>Appes, onions, tomatoes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Delicatessen</td>
+                                            <td>Olives, cold pies, cheese</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Condiments</td>
+                                            <td>Mayonnaise, ketchup, mustard</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Beverages</td>
+                                            <td>Lemonade, juice, water</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dairy</td>
+                                            <td>Milk, butter, yoghurt</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bakery</td>
+                                            <td>Bread, pastries, cakes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Confectionery</td>
+                                            <td>Chocolate bars, boxes of chocolate, sweets</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Frozen Foods</td>
+                                            <td>Ready meals, pizza, lasagna</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h3>Dialogues in the supermarket</h3>
+                            <p>Listen to three conversations: customers are asking staff for help in the supermarket.</p>
+                            <p class="laranja"><b>Dialogue 1</b></p>
+                            <div class="sr-only">
+                                <p>Customer: Excuse me, do you work here?</p>
+                                <p>Staff: Yes, I do. Can I help you?</p>
+                                <p>Customer: Yes. I need some pastries.</p>
+                                <p>Staff: The pastries are in the bakery section - that’s in aisle 7. They’re next to the bread.</p>
+                                <p>Customer: Ok, thank you.</p>
+                            </div>
+                            <h2 class="text-black my-5">Espera para áudio</h2>
+                            <p class="laranja"><b>Dialogue 2</b></p>
+                            <div class="sr-only">
+                                <p>Customer: Excuse me, could I ask you a question?</p>
+                                <p>Staff: Of course. What can I do for you?</p>
+                                <p>Customer: Where can I find some butter?</p>
+                                <p>Staff: The butter is over there, where it says dairy. It’s in aisle 3, on the left.</p>
+                                <p>Customer: I see. Thanks for your help.</p>
+                            </div>
+                            <h2 class="text-black my-5">Espera para áudio</h2>
+                            <p class="laranja"><b>Dialogue 3</b></p>
+                            <div class="sr-only">
+                                <p>Customer: Excuse me, can you help me, please?</p>
+                                <p>Staff: I’ll try!</p>
+                                <p>Customer: I‘m looking for some apples.</p>
+                                <p>Staff: The produce section is in aisle 1, at the front of store, near the door where you came in.</p>
+                                <p>Customer: Sorry, can you repeat that?</p>
+                                <p>Staff: Of course. Go to the front of the store, and near the door, where you came in, you’ll see the fruit and vegetables.</p>
+                                <p>Customer: Right. Got it. Thanks so much.</p>
+                            </div>
+                            <h2 class="text-black my-5">Espera para áudio</h2>
+
+                            <p>Complete the table with the item, the section, the aisle number and the location for each dialogue.</p>
+                            <h2 class="text-black my-5">Espera para ODA</h2>
+
+                            <div class="practice">
+                                <h4 class="sr-only">Practice it!</h4>
+                                <p>Practice the dialogues with a partner:</p>
+                                <p class="laranja my-3"><b>Dialogue 1</b></p>
+                                <p>Customer: Excuse me, do you work here?</p>
+                                <p>Staff: Yes, I do. Can I help you?</p>
+                                <p>Customer: Yes. I need some pastries.</p>
+                                <p>Staff: The pastries are in the bakery section - that’s in aisle 7. They’re next to the bread.</p>
+                                <p>Customer: Ok, thank you.</p>
+                                <p class="laranja my-3"><b>Dialogue 2</b></p>
+                                <p>Customer: Excuse me, could I ask you a question?</p>
+                                <p>Staff: Of course. What can I do for you?</p>
+                                <p>Customer: Where can I find some butter?</p>
+                                <p>Staff: The butter is over there, where it says dairy. It’s in aisle 3, on the left.</p>
+                                <p>Customer: I see. Thanks for your help.</p>
+                                <p class="laranja my-3"><b>Dialogue 3</b></p>
+                                <p>Customer: Excuse me, can you help me, please?</p>
+                                <p>Staff: I’ll try!'</p>
+                                <p>Customer: I‘m looking for some apples.</p>
+                                <p>Staff: The produce section is in aisle 1, at the front of store, near the door where you came in.</p>
+                                <p>Customer: Sorry, can you repeat that?</p>
+                                <p>Staff: Of course. Go to the front of the store, and near the door, where you came in, you’ll see the fruit and vegetables.</p>
+                                <p class="mb-5">Customer: Right. Got it. Thanks so much.'</p>
+                                <p>Your turn: work with a partner. Create two dialogues to find the following items in a supermarket:</p>
+                                <ul>
+                                    <li>Ice-cream</li>
+                                    <li>Soda</li>
+                                    <li>Milk</li>
+                                    <li>Cookies</li>
+                                </ul>
+                            </div>
+
+                            <h3>Produce wordsearch</h3>
+                            <p>What else can you find in the produce section of the supermarket? Find and mark the words hidden inside the box.</p>
+                            <h2 class="text-black my-5">Espera para ODA</h2>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            <!-- Paginação-->
+            <!-- <footer class="text-center no-print d-flex justify-content-center mx-auto">
+                <ul class="pagination">
+    
+                </ul>
+            </footer> -->
+        </section>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
+        <!--Atividade arrasta e solta-->
+        <script src='atividades/arrasta_solta/dragula.min.js'></script>
+        <script src="atividades/arrasta_solta/game-custom.js"></script>
+        <!--Atividade associar colunas-->
+        <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
+        <!--Atividade de jogo da memória-->
+        <script src="atividades/jogo_memoria/jogoMemoria.js"></script>
+        <!--Atividade de verdadeiro ou falso-->
+        <script src="../assets/atividades/perguntas/perguntas.js"></script>
+        <!--Prog'n'roll - barra de progresso conforme rola a página-->
+        <script src="../assets/js/prognroll.min.js"></script>
+        <!--Scripts gerais-->
+        <script src="../assets/js/geral.js"></script>
+
+        <script>
+            $(function() {
+                $("body").prognroll();
+            });
+        </script>
+
+        <!-- Handtalk -->
+        <script>
+            var scriptElem=document.createElement("script");
+            scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+            scriptElem.charset="UTF-8",
+            scriptElem.onload=function(){
+                window.ht = new HT({
+                    token:"bf5b7efb148a829a126a0e0c9fd533bf",
+                    align:"top",
+                    videoEnabled: true,
+                    ytEmbedReplace: true,           
+                    mobileConfig:{align:"right",
+                                    actionsAlign:"top",
+                                    customButtonStyle:{
+                                        borderRadius:"6px",
+                                        size:"38px",
+                                        horizontalMargin:"13px",
+                                        bottomMargin:"140px",
+                                        rightMargin:"40px"}
+                                    }
+                    });        
+                $('.ht-skip').attr("aria-hidden","true")
+            },
+        document.body.appendChild(scriptElem);
+        
+        </script>
+    </body>
+</html>
