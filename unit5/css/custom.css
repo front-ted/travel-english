@@ -178,12 +178,9 @@ table tr td:last-child{
 }
 
 @media screen and (max-width: 1280px){
-	
+	.bloco-branco.stores, .bloco-branco.supermarket, .bloco-azulclaro.supermarket{background-image: none;}
 }
 @media screen and (max-width: 1180px){
-	.bloco-azul{
-		background: url('../img/figura_topo_2.png') no-repeat right 10% bottom 40px / 8%, #282f65;
-	}
 	.practice.dialogo{margin-top: 160px;}
 	.practice.dialogo::before{
 		left: 0;
@@ -197,7 +194,9 @@ table tr td:last-child{
 }
 @media screen and (max-width: 990px){
 	.carousel .carousel-item{min-height: unset;}
-	
+	.bloco-azul{
+		background-image: none;
+	}
 }
 @media screen and (max-width: 780px){
 	.carousel-control-next{
