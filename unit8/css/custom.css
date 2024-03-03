@@ -13,7 +13,7 @@ h2{
 	text-align: left;
 	text-transform: unset;
 	font-size: 26px;
-	color: #ad68d3;
+	color: #87c3fb;
 	margin-left: 0;
 }
 h4{color: #d8652a;}
@@ -22,7 +22,7 @@ h4{color: #d8652a;}
 	color: #000;
 }
 .bloco-azul{
-	background: url('../img/ilustra_maleta.png') no-repeat right 25% center / 20%, #282f65;
+	background: url('../img/ilustra.png') no-repeat right 25% center / 15%, #282f65;
 	padding: 40px 0;
 }
 .bloco-azul p, .bloco-azul li{color: #fff;}
@@ -142,90 +142,26 @@ table tr td:last-child{
 	font-weight: normal;
 	background: #fff;
 }
-.azul{color: #282f65;}
-.laranja{color: #d8652a;}
-.infografico1{
-	background: #fff;
-	padding: 20px;
-	padding-left: 260px;
-	border-radius: 20px;
-	max-width: 700px;
-	margin: 150px auto;
-	position: relative;
-}
-.infografico1::after{
-	content: '';
-	position: absolute;
-	width: 331px;
-	height: 443px;
-	background: url('../img/infografico_sintomas_1.png') no-repeat;
-	left: -100px;
-	top: -100px;
-}
-.info-azul{
-	width: 305px;
-	background: #282f65;
-	border-radius: 20px;
-	padding: 40px;
-	color: #fff;
-	margin: 50px auto;
-	margin-top: 150px;
-	position: relative;
-}
-.sintomas1::after{
-	content: '';
-	position: absolute;
-	width: 157px;
-	height: 159px;
-	background: url('../img/infografico_sintomas_2.png') no-repeat;
-	top: -130px;
-	margin: auto;
-	left: 0;
-	right: 0;
-}
-.sintomas2::after{
-	content: '';
-	position: absolute;
-	width: 157px;
-	height: 159px;
-	background: url('../img/infografico_sintomas_3.png') no-repeat;
-	top: -130px;
-	margin: auto;
-	left: 0;
-	right: 0;
-}
-.sintomas3::after{
-	content: '';
-	position: absolute;
-	width: 157px;
-	height: 159px;
-	background: url('../img/infografico_sintomas_4.png') no-repeat;
-	top: -130px;
-	margin: auto;
-	left: 0;
-	right: 0;
-}
-.sintomas4::after{
-	content: '';
-	position: absolute;
-	width: 157px;
-	height: 159px;
-	background: url('../img/infografico_sintomas_5.png') no-repeat;
-	top: -130px;
-	margin: auto;
-	left: 0;
-	right: 0;
+.bt-download{
+	background: url('../img/btn_download.png') no-repeat;
+	margin-bottom: -50px;
 }
 
-.bloco-branco.emergencies{
-	background-image: url('../img/emergencias_1.png'), url('../img/emergencias_2.png'), url('../img/emergencias_3.png');
+.bloco-branco.travel{
+	background-image: url('../img/ilustra_2.png'), url('../img/ilustra_3.png'), url('../img/ilustra_4.png');
 	background-repeat: no-repeat;
 	background-size: 10%;
-	background-position: right 5% top 5%, left 5% top 20%, right 5% center;
+	background-position: left 5% top 5%, right 5% top 20%, left 5% bottom 10%;
+}
+.bloco-azulclaro.planner{
+	background-image: url('../img/ilustra_5.png'), url('../img/ilustra_6.png');
+	background-repeat: no-repeat;
+	background-size: 8%;
+	background-position: right 5% top 10%, left 5% center;
 }
 
 @media screen and (max-width: 1280px){
-	
+	.bloco-branco.travel, .bloco-azulclaro.planner{background-image: none;}
 }
 @media screen and (max-width: 1180px){
 	.bloco-azul{
