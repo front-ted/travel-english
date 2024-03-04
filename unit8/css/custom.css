@@ -169,6 +169,28 @@ table tr td:last-child{
 	margin: auto;
 	z-index: 2;
 }
+.balao-esq{
+    background: #fff;
+    border-radius: 15px;
+    min-height: 45px;
+    position: relative;
+	padding: 5px 10px;
+	margin: 0 10px;
+}
+.balao-esq.cinza{background: #a0a7af;}
+.balao-esq.cinza:after{border-top: 20px solid #a0a7af;}
+.balao-esq:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+	bottom: 0;
+    left: -20px;
+    transform: rotate(180deg);
+}
 
 @media screen and (max-width: 1280px){
 	.bloco-branco.travel, .bloco-azulclaro.planner{background-image: none;}
