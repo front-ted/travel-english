@@ -33,7 +33,7 @@ h4{color: #d8652a;}
 	padding-left: 30px;
 	margin-bottom: 10px;
 }
-.bloco-branco{padding: 40px 0;}
+.bloco-branco{padding: 40px 0; position: relative;}
 h3{color: #c0101a;}
 #slots .box{
 	width: 210px;
@@ -61,7 +61,7 @@ h3{color: #c0101a;}
 }
 .practice{
 	background: #a3c2ed;
-	padding: 5px 20px;
+	padding: 30px;
 	border-radius: 20px;
 	padding-left: 250px;
 	position: relative;
@@ -79,8 +79,8 @@ h3{color: #c0101a;}
 }
 .practice p{margin-bottom: 0;}
 .important-note{
-	background: #a3c2ed;
-	padding: 5px 20px;
+	background: #ea8053;
+	padding: 30px;
 	border-radius: 20px;
 	padding-left: 250px;
 	position: relative;
@@ -100,6 +100,7 @@ h3{color: #c0101a;}
 .bloco-azulclaro{
 	background: #a3c2ed;
 	padding: 40px 0;
+	position: relative;
 }
 .bloco-azulclaro .practice{background: #fff;}
 
@@ -175,6 +176,15 @@ table tr td:last-child{
 	background-repeat: no-repeat;
 	background-size: 10%;
 	background-position: left 5% top 10%, right 5% top 25%, left 5% bottom 30%;
+}
+
+.divisoria{
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 2;
 }
 
 @media screen and (max-width: 1280px){

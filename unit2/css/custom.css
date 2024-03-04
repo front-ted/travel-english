@@ -34,7 +34,7 @@ h4{color: #d8652a;}
 	padding-left: 30px;
 	margin-bottom: 10px;
 }
-.bloco-branco{padding: 40px 0;}
+.bloco-branco{padding: 40px 0; position: relative;}
 h3{color: #c0101a;}
 #slots .box{
 	width: 210px;
@@ -62,7 +62,7 @@ h3{color: #c0101a;}
 }
 .practice{
 	background: #a3c2ed;
-	padding: 5px 20px;
+	padding: 30px;
 	border-radius: 20px;
 	padding-left: 250px;
 	position: relative;
@@ -80,8 +80,8 @@ h3{color: #c0101a;}
 }
 .practice p{margin-bottom: 0;}
 .important-note{
-	background: #a3c2ed;
-	padding: 5px 20px;
+	background: #ea8053;
+	padding: 30px;
 	border-radius: 20px;
 	padding-left: 250px;
 	position: relative;
@@ -101,6 +101,7 @@ h3{color: #c0101a;}
 .bloco-azulclaro{
 	background: #a3c2ed;
 	padding: 40px 0;
+	position: relative;
 }
 .bloco-azulclaro .practice{background: #fff;}
 .practice.dialogo{
@@ -323,6 +324,19 @@ table tr td:last-child{
 	background-size: 15%;
 	background-position: left 5% top 4%, right 5% top 10%, left 10% top 52%, right 10% top 53%;
 }
+
+.divisoria{
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 2;
+}
+
+.waiter-color{color: #272f64;}
+.samantha-color{color:#b92e90;}
+.joseph-color{color:#a3c2ed;}
 
 @media screen and (max-width: 1180px){
 	.bloco-azul{

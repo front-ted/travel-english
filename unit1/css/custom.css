@@ -33,7 +33,7 @@ h2{
 	padding-left: 30px;
 	margin-bottom: 10px;
 }
-.bloco-branco{padding: 40px 0;}
+.bloco-branco{padding: 40px 0; position: relative;}
 h3{color: #c0101a;}
 #slots .box{
 	width: 210px;
@@ -105,7 +105,7 @@ h3{color: #c0101a;}
 
 .practice{
 	background: #a3c2ed;
-	padding: 5px 20px;
+	padding: 30px;
 	border-radius: 20px;
 	padding-left: 250px;
 	position: relative;
@@ -123,8 +123,8 @@ h3{color: #c0101a;}
 }
 .practice p{margin-bottom: 0;}
 .important-note{
-	background: #a3c2ed;
-	padding: 5px 20px;
+	background: #ea8053;
+	padding: 30px;
 	border-radius: 20px;
 	padding-left: 250px;
 	position: relative;
@@ -144,6 +144,7 @@ h3{color: #c0101a;}
 .bloco-azulclaro{
 	background: #a3c2ed;
 	padding: 40px 0;
+	position: relative;
 }
 .travel-vocabulary .audio-player{
 	background: #272f64;
@@ -173,7 +174,6 @@ h3{color: #c0101a;}
 	url('../img/greetings_3.png') no-repeat right 15% top 50px / 25%;
 }
 .info-texto p{
-	margin-bottom: 0;
 	font-weight: bold;
 }
 .practice.dialogo{
@@ -233,6 +233,15 @@ h3{color: #c0101a;}
 	background: none;
 }
 figcaption{word-wrap: break-word;}
+
+.divisoria{
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 2;
+}
 
 @media screen and (max-width: 1180px){
 	.bloco-azul{
