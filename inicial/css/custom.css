@@ -29,9 +29,16 @@ body{
 	max-width: 60%;
     margin: 50px 0;
 }
+.idiomas{
+	max-width: 318px;
+    margin-right: 0;
+	margin-bottom: 40px;
+	float: right;
+}
 .menina{max-width: 500px;}
 .aviao{max-width: 700px;}
 .logo{max-width: 200px;}
+nav{clear: both;}
 nav li{
 	margin-top: 20px;
 	list-style: none;

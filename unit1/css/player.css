@@ -57,7 +57,6 @@
     vertical-align: text-top;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-weight: bold;
     text-align: center;
 }
 .audio-player .btn-player{
@@ -72,6 +71,7 @@
     margin-bottom: 0;
     transition: all .4s;
 }
+.audio1 .btn-player{margin-top: -10px;}
 .audio-player .btn-player:hover{
     transform: translateY(-3px);
 }
