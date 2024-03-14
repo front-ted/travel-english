@@ -25,6 +25,7 @@ h4{color: #d8652a;}
 	background: url('../img/topo_esquerda.png') no-repeat left 2% center / 8%,
 	url('../img/topo_direita.png') no-repeat right 15% bottom 40px / 15%, #282f65;
 	padding: 40px 0;
+	position: relative;
 }
 .bloco-azul p, .bloco-azul li{color: #fff;}
 .bloco-azul li{
@@ -222,6 +223,7 @@ span.john{color:#c0101a;}
 	right: 0;
 	margin: auto;
 	z-index: 2;
+	max-width: 100%;
 }
 
 .pin-map{

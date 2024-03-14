@@ -25,6 +25,7 @@ h4{color: #d8652a;}
 	background: url('../img/figura_topo_1.png') no-repeat left 2% center / 10%,
 	url('../img/figura_topo_2.png') no-repeat right 10% bottom 40px / 8%, #282f65;
 	padding: 40px 0;
+	position: relative;
 }
 .bloco-azul p, .bloco-azul li{color: #fff;}
 .bloco-azul li{
@@ -332,6 +333,7 @@ table tr td:last-child{
 	right: 0;
 	margin: auto;
 	z-index: 2;
+	max-width: 100%;
 }
 
 .waiter-color{color: #272f64;}

@@ -24,6 +24,7 @@ h4{color: #d8652a;}
 .bloco-azul{
 	background: url('../img/ilustra.png') no-repeat right 25% center / 15%, #282f65;
 	padding: 40px 0;
+	position: relative;
 }
 .bloco-azul p, .bloco-azul li{color: #fff;}
 .bloco-azul li{
@@ -168,6 +169,7 @@ table tr td:last-child{
 	right: 0;
 	margin: auto;
 	z-index: 2;
+	max-width: 100%;
 }
 .balao-esq{
     background: #fff;

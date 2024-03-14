@@ -25,6 +25,7 @@ h4{color: #d8652a;}
 	background: url('../img/topo_esquerda.png') no-repeat left 5% center / 8%,
 	url('../img/topo_direita.png') no-repeat right 20% bottom 40px / 10%, #282f65;
 	padding: 40px 0;
+	position: relative;
 }
 .bloco-azul p, .bloco-azul li{color: #fff;}
 .bloco-azul li{
@@ -213,6 +214,7 @@ table tr td:last-child{
 	right: 0;
 	margin: auto;
 	z-index: 2;
+	max-width: 100%;
 }
 
 @media screen and (max-width: 1280px){
