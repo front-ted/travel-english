@@ -60,8 +60,8 @@ window.onload = (event) => {
         e.stopPropagation()
         // audios:
         let number = $(this).prev()[0].innerText.toLowerCase();
-        let onumber = number.replace(/%20/g, " ")
-        console.log(onumber)
+        let onumber = number.replace(/%20/g, " ");
+        console.log(onumber);
         audio.setAttribute('src', `assets/audio/${onumber}.mp3`);
         audio.load();
         audio.play();
