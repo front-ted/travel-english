@@ -72,20 +72,20 @@ AudioPlayer = {
             btPlay.addEventListener('click', function(){
                 audio.play();
             })
-
-            btPause.addEventListener('click', function(){
+            
+            if(btPause!=null){btPause.addEventListener('click', function(){
                 audio.pause();
-            })  
+            })}  
 
-            seek.addEventListener('input', function(){
+            if(seek!=null){seek.addEventListener('input', function(){
                 audio.stopUpdate = true;
-            })
+            })}
 
-            seek.addEventListener('change', function(){
+            if(seek!=null){seek.addEventListener('change', function(){
                 console.log('change to:', this.value)
                 audio.currentTime = parseFloat(this.value);  
                 audio.stopUpdate = false;             
-            })
+            })}
 
             audio.addEventListener('timeupdate', function(){
                 this.updateSeek();
