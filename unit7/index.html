@@ -112,9 +112,18 @@
                             <p>Do you listen to any podcasts about travel? What do they talk about?  </p>
                             <p>Can you recommend any podcasts related to travel to your colleagues?</p>
                             <p>The podcast Globetrotters has a special episode about daily life and time in different countries. Read the description of the episode below.</p>
-                            <div class="spotify">
-                                <audio></audio>
+                            <div class="d-flex align-items-start justify-content-center mb-5">
+                                <img src="img/spotify.png" class="img-fluid">
+                                <div class="audio-player no-print mx-2">
+                                    <audio>
+                                        <source src="audios/unit7-cultural-awareness-intro.mp3" type="audio/mpeg">
+                                    </audio>
+                                    <div class="botoes">
+                                        <button title="Tocar" class="btn-play btn-player"></button>
+                                    </div>
+                                </div>
                             </div>
+                            
                             <div class="sr-only">
                                 <p>New podcast episode</p>
                                 <p>Daily life around the world</p>
@@ -199,7 +208,52 @@
                                 </div>
                             </div>
                             <p>Now, listen to the podcast to confirm your answers.</p>
-                            <h2 class="m-0 text-dark">Espera para podcast</h2>
+                            <div class="d-flex align-items-center mb-5">
+                                <div class="audio-player no-print mx-2">
+                                    <audio>
+                                        <source src="audios/unit7-cultural-awareness-podcast.mp3" type="audio/mpeg">
+                                    </audio>
+                                    <div class="botoes">
+                                        <button title="Tocar" class="btn-play btn-player"></button>
+                                        <button title="Pause" class="btn-pause btn-player"></button>
+                                        <button title="Transcrição" data-bs-toggle="modal"
+                                            data-bs-target="#modal-transcricao-audio1"
+                                            class="btn-transcricao btn-player"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade no-print" id="modal-transcricao-audio1" tabindex="-1"
+                                    aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                                        <div class="modal-content no-print">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Transcrição</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="m-0">Matthew: Hello, globetrotters, and welcome to another episode of "Globetrotters"! I'm your host, Matthew, and today, we're diving into the daily lives of people around the world. Joining us is a special guest who has explored the unique rhythms of daily life in different countries. Please welcome Luciana García!</p>
+                                                <p class="m-0">Luciana: Thank you, Matthew! Excited to be here.</p>
+                                                <p class="m-0">Matthew: Fantastic! Let's jump into it. Our first stop is Brazil. Luciana, what can you tell us about the lively daily routine in Brazil?</p>
+                                                <p class="m-0">Luciana: In Brazil, life is vibrant! Breakfast is a chill time with delicious fruits and strong coffee. Work starts a bit later, and lunch breaks are long. Dinner is filled with happiness, spent with family and friends. Brazilians aren't strict about being on time; it's more about enjoying the moment.</p>
+                                                <p class="m-0">Matthew: Sounds wonderful! Now, off to Nigeria. What's the daily scene like there?</p>
+                                                <p class="m-0">Luciana: Nigeria is rich in traditions. Breakfast includes local favorites like jollof rice. Work hours can be flexible, and being on time is important, especially for work. But, you know, things can start a bit late, and that's okay.</p>
+                                                <p class="m-0">Matthew: Great insights! Now, let's jet over to the United States. What's the deal with daily life there?</p>
+                                                <p class="m-0">Luciana: In the U.S., every day is different! Breakfast can be quick or a big affair. Work is on time, and meetings start when they should. Lunch breaks are short, and dinner times vary. Being on time is a way to show respect to others.</p>
+                                                <p class="m-0">Matthew: Interesting! Heading to Germany now. What's the German daily routine like?</p>
+                                                <p class="m-0">Luciana: Germany loves being on time! Breakfast is hearty, and work starts early. Lunch breaks are short for productivity. Evenings are all about family and culture. Germans appreciate having a plan and sticking to the schedule. </p>
+                                                <p class="m-0">Matthew: Got it! Italy is known for its relaxed lifestyle. What's daily life like there? </p>
+                                                <p class="m-0">Luciana: Italy is all about taking it slow. Breakfast is quick with coffee. Lunch is a long, enjoyable time. Work-life balance is crucial. Being on time isn't super strict; events might start a bit later, but it's about enjoying life.</p>
+                                                <p class="m-0">Matthew: Sounds lovely! Now, off to the land down under, Australia. What's the easygoing vibe there?</p>
+                                                <p class="m-0">Luciana: Australia is easygoing indeed! Breakfast is simple, work starts around 9 am. Lunch breaks are for soaking in the sun. Australians appreciate balance, and being on time is important, especially for work.</p>
+                                                <p class="m-0">Matthew: Great to know! Finally, let's explore Argentina. What's the daily rhythm there?</p>
+                                                <p class="m-0">Luciana: Argentina is rich in culture. Breakfast is light, and work starts in the morning. Lunch is a big deal, lasting a while. People aren't too strict about being on time, especially for social events. Evenings are all about family and friends.</p>
+                                                <p class="m-0">Matthew: Wonderful insights, Luciana! And to our listeners, understanding these differences helps us appreciate the beautiful tapestry of life around the world. Thank you for joining us on "Globetrotters"! Until next time, happy exploring!</p>
+                                                <p class="m-0">Luciana: Thank you, Matthew, and happy travels, everyone!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
                             <div class="sr-only">
                                 <p>Matthew: Hello, globetrotters, and welcome to another episode of "Globetrotters"! I'm your host, Matthew, and today, we're diving into the daily lives of people around the world. Joining us is a special guest who has explored the unique rhythms of daily life in different countries. Please welcome Luciana García!</p>
                                 <p>Luciana: Thank you, Matthew! Excited to be here.</p>

@@ -335,9 +335,16 @@
 
                             <h3>At a shoe store</h3>
                             <p>Carlos’s second stop is at a shoe store called Trendy Shoes. </p>
-                            <p>Listen to his conversation with a salesperson at the store and then do the exercise below.</p>
-                            <h2 class="my-3 text-dark">Espera para áudio</h2>
-                            <p class="salesperson"><span class="bege">Salesperson:</span> Hello! Welcome to Trendy Shoes. How can I assist you today?</p>
+                            <div class="d-flex align-items-center">
+                                <p>Listen to his conversation with a salesperson at the store and then do the exercise below.</p>
+                                <div class="audio-player no-print mx-2 mb-5">
+                                    <audio>
+                                        <source src="audios/unit5-audio2.mp3" type="audio/mpeg">
+                                    </audio>
+                                    <button title="Tocar" class="btn-play btn-player"></button>
+                                </div>
+                            </div>
+                            <p class="salesperson"><span class="bege">Salesperson:</span> Hello! Welcome to Trendy Shoes. How can I help you today?</p>
                             <p class="carlos"><span class="azul">Carlos:</span> Hi! I'm looking for a pair of comfortable sneakers.</p>
                             <p class="salesperson"><span class="bege">Salesperson:</span> Great choice! We have a variety of sneakers in different styles and colors. What color are you interested in? </p>
                             <p class="carlos"><span class="azul">Carlos:</span> I like black or blue sneakers. </p>
@@ -488,7 +495,40 @@
 
                             <h3>Dialogues in the supermarket</h3>
                             <p>Listen to three conversations: customers are asking staff for help in the supermarket.</p>
-                            <p class="laranja"><b>Dialogue 1</b></p>
+                            <div class="d-flex align-items-center mb-5">
+                                <p class="laranja m-0"><b>Dialogue 1</b></p>
+                                <div class="audio-player no-print mx-2">
+                                    <audio>
+                                        <source src="audios/unit5-audio3-dialogo1.mp3" type="audio/mpeg">
+                                    </audio>
+                                    <div class="botoes">
+                                        <button title="Tocar" class="btn-play btn-player"></button>
+                                        <button title="Pause" class="btn-pause btn-player"></button>
+                                        <button title="Transcrição" data-bs-toggle="modal"
+                                            data-bs-target="#modal-transcricao-audio1"
+                                            class="btn-transcricao btn-player"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade no-print" id="modal-transcricao-audio1" tabindex="-1"
+                                    aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                                        <div class="modal-content no-print">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Transcrição</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="m-0">Customer: Excuse me, do you work here?</p>
+                                                <p class="m-0">Staff: Yes, I do. Can I help you?</p>
+                                                <p class="m-0">Customer: Yes. I need some pastries.</p>
+                                                <p class="m-0">Staff: The pastries are in the bakery section - that’s in aisle 7. They’re next to the bread.</p>
+                                                <p class="m-0">Customer: Ok, thank you.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
                             <div class="sr-only">
                                 <p>Customer: Excuse me, do you work here?</p>
                                 <p>Staff: Yes, I do. Can I help you?</p>
@@ -496,8 +536,40 @@
                                 <p>Staff: The pastries are in the bakery section - that’s in aisle 7. They’re next to the bread.</p>
                                 <p>Customer: Ok, thank you.</p>
                             </div>
-                            <h2 class="text-black my-5">Espera para áudio</h2>
-                            <p class="laranja"><b>Dialogue 2</b></p>
+                            <div class="d-flex align-items-center mb-5">
+                                <p class="laranja m-0"><b>Dialogue 2</b></p>
+                                <div class="audio-player no-print mx-2">
+                                    <audio>
+                                        <source src="audios/unit5-audio3-dialogo2.mp3" type="audio/mpeg">
+                                    </audio>
+                                    <div class="botoes">
+                                        <button title="Tocar" class="btn-play btn-player"></button>
+                                        <button title="Pause" class="btn-pause btn-player"></button>
+                                        <button title="Transcrição" data-bs-toggle="modal"
+                                            data-bs-target="#modal-transcricao-audio2"
+                                            class="btn-transcricao btn-player"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade no-print" id="modal-transcricao-audio2" tabindex="-1"
+                                    aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                                        <div class="modal-content no-print">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Transcrição</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="m-0">Customer: Excuse me, could I ask you a question?</p>
+                                                <p class="m-0">Staff: Of course. What can I do for you?</p>
+                                                <p class="m-0">Customer: Where can I find some butter?</p>
+                                                <p class="m-0">Staff: The butter is over there, where it says dairy. It’s in aisle 3, on the left.</p>
+                                                <p class="m-0">Customer: I see. Thanks for your help.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
                             <div class="sr-only">
                                 <p>Customer: Excuse me, could I ask you a question?</p>
                                 <p>Staff: Of course. What can I do for you?</p>
@@ -505,8 +577,43 @@
                                 <p>Staff: The butter is over there, where it says dairy. It’s in aisle 3, on the left.</p>
                                 <p>Customer: I see. Thanks for your help.</p>
                             </div>
-                            <h2 class="text-black my-5">Espera para áudio</h2>
-                            <p class="laranja"><b>Dialogue 3</b></p>
+                            
+                            <div class="d-flex align-items-center mb-5">
+                                <p class="laranja m-0"><b>Dialogue 3</b></p>
+                                <div class="audio-player no-print mx-2">
+                                    <audio>
+                                        <source src="audios/unit5-audio3-dialogo3.mp3" type="audio/mpeg">
+                                    </audio>
+                                    <div class="botoes">
+                                        <button title="Tocar" class="btn-play btn-player"></button>
+                                        <button title="Pause" class="btn-pause btn-player"></button>
+                                        <button title="Transcrição" data-bs-toggle="modal"
+                                            data-bs-target="#modal-transcricao-audio3"
+                                            class="btn-transcricao btn-player"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade no-print" id="modal-transcricao-audio3" tabindex="-1"
+                                    aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                                        <div class="modal-content no-print">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Transcrição</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p class="m-0">Customer: Excuse me, can you help me, please?</p>
+                                                <p class="m-0">Staff: I’ll try!</p>
+                                                <p class="m-0">Customer: I‘m looking for some apples.</p>
+                                                <p class="m-0">Staff: The produce section is in aisle 1, at the front of store, near the door where you came in.</p>
+                                                <p class="m-0">Customer: Sorry, can you repeat that?</p>
+                                                <p class="m-0">Staff: Of course. Go to the front of the store, and near the door, where you came in, you’ll see the fruit and vegetables.</p>
+                                                <p class="m-0">Customer: Right. Got it. Thanks so much.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
                             <div class="sr-only">
                                 <p>Customer: Excuse me, can you help me, please?</p>
                                 <p>Staff: I’ll try!</p>
@@ -516,7 +623,6 @@
                                 <p>Staff: Of course. Go to the front of the store, and near the door, where you came in, you’ll see the fruit and vegetables.</p>
                                 <p>Customer: Right. Got it. Thanks so much.</p>
                             </div>
-                            <h2 class="text-black my-5">Espera para áudio</h2>
 
                             <p>Complete the table with the item, the section, the aisle number and the location for each dialogue.</p>
                             <h2 class="text-black my-5">Espera para ODA</h2>

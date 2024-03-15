@@ -236,6 +236,12 @@ table tr td:last-child{
 	max-width: 100%;
 }
 
+.bloco-branco.stores .btn-play{
+	width: unset;
+	height: unset;
+	background: unset;
+}
+
 @media screen and (max-width: 1280px){
 	
 }
