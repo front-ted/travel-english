@@ -1,0 +1,88 @@
+$green: rgb(110, 220, 128);
+$red: salmon;
+
+body {
+    background-color: rgb(147, 192, 235);
+}
+.ODA_london_tube {
+    width: fit-content;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 25px;
+    border: 2px solid #DA652A;
+    background-color: rgba(255, 255, 255, .6);
+    font-family: sans-serif;
+
+    .questao {
+        padding: 5px 25px;
+        margin: 5px;
+        border-radius: 5px;
+        position: relative;
+
+        p {
+            font-size: 15px;
+            margin: 5px 0;
+        }
+
+        select {
+            font-size: 14px;
+            margin: 5px 0;
+            border: 1px solid #333;
+            padding: 5px 15px;
+            cursor: pointer;
+            background-color: rgb(233, 233, 233);
+
+            &:hover {
+                background-color: rgb(242, 242, 242);
+            }
+        }
+
+        &.errado {
+            background-color: $red;
+
+            &::after {
+                content: '';
+                position: absolute;
+                height: 16px;
+                width: 16px;
+                right: 25px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-image: url('../img/x.svg');
+            }
+        }
+
+        &.correto {
+            background-color: $green;
+
+            &::after {
+                content: '';
+                position: absolute;
+                height: 16px;
+                width: 16px;
+                right: 25px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-image: url('../img/check.svg');
+            }
+        }
+    }
+
+    .check {
+        display: block;
+        margin: 30px auto 0 auto;
+        font-size: 16px;
+        padding: 5px 15px;
+        border: 1px solid #DA652A;
+        border-radius: 5px;
+        background-color: #DA652A;
+        color: white;
+        transition-duration: .2s;
+
+        &:hover {
+            background-color: white;
+            color: #DA652A;
+            cursor: pointer;
+        }
+    }
+}
