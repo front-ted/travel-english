@@ -1,0 +1,63 @@
+.wrapper.supermarket-aisles {
+    width: fit-content;
+    margin: 45px auto;
+}
+
+.supermarket-aisles table td {
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+.supermarket-aisles table th {
+    background-color: #97C4F0;
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: center;
+    color: white;
+}
+
+.supermarket-aisles table select {
+    width: 100px;
+    margin: 0 5px;
+    padding: 2px 3px;
+    cursor: pointer;
+}
+.supermarket-aisles table tr:nth-child(8) select {
+    max-width: 80px;
+    margin-right: 30px;
+}
+.supermarket-aisles table .correct {
+    position: relative;
+}
+
+.supermarket-aisles table .correct::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('../img/check.svg');
+    background-repeat: no-repeat;
+    background-color: green;
+    background-size: 14px;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.supermarket-aisles .check-answers {
+    display: block;
+    margin: 12px auto;
+    padding: 5px 18px;
+    border-radius: 5px;
+    border: 1px solid #97C4F0;
+    background-color: #97C4F0;
+    transition-duration: .3s;
+}
+
+.supermarket-aisles .check-answers:hover {
+    background-color: white;
+    transition-duration: .3s;
+}
