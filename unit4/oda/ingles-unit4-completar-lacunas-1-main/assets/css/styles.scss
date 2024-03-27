@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    background-color: #A3C2ED;
+}
+
+.ODA_complete-words {
+    max-width: 650px;
+    border: 2px solid #DA652A;
+    padding: 10px 25px;
+    background-color: rgba($color: #fff, $alpha: .7);
+    border-radius: 10px;
+
+    select {
+        font-size: 13px;
+        padding: 5px;
+        cursor: pointer;
+        border: none;
+        background-color: rgb(203,203,233);
+
+        &.correto {
+            background-color: greenyellow;
+            border: none;
+            pointer-events: none;
+        }
+        &.errado {
+            background-color: salmon;
+            border: none;
+        }
+    }
+    .check {
+        display: block;
+        margin: 30px auto 10px auto;
+        font-size: 16px;
+        padding: 5px 15px;
+        cursor: pointer;
+        background-color: #DA652A;
+        color: white;
+        border: 1px solid #DA652A;
+        border-radius: 8px;
+        transition-duration: .2s;
+
+        &:hover {
+            background-color: white;
+            color: #DA652A;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.ODA_booking_hotel {
+  background-color: #F2F2F6;
+  border-radius: 20px;
+  border: 1px solid #333;
+  padding: 15px 25px;
+  max-width: 700px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  font-family: Calibri, sans-serif;
+  position: relative;
+  /*
+    Set the color of the icon
+  */
+}
+.ODA_booking_hotel .row {
+  display: flex;
+  align-items: center;
+}
+.ODA_booking_hotel .input-container {
+  /* margin-right: 15px; */
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: fit-content;
+}
+.ODA_booking_hotel h4 {
+  margin-bottom: 6px;
+  margin-top: 0;
+  font-size: 16px;
+}
+.ODA_booking_hotel .row.single-row {
+  margin: 15px 15px;
+}
+.ODA_booking_hotel .title-select {
+  width: 100%;
+}
+.ODA_booking_hotel p.sub {
+  font-size: 14px;
+}
+.ODA_booking_hotel .confirm-booking {
+  cursor: pointer;
+}
+.ODA_booking_hotel .confirm-booking.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.ODA_booking_hotel .done-msg {
+  margin-top: -50px;
+  font-size: 15px;
+  opacity: 0;
+  pointer-events: none;
+  margin-bottom: 0;
+}
+.ODA_booking_hotel .done-msg.visible {
+  opacity: 1;
+}
+.ODA_booking_hotel #checkbox {
+  cursor: pointer;
+}
+.ODA_booking_hotel p.error {
+  background-color: salmon;
+  width: fit-content;
+  padding: 2px 15px 2px 2px;
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+.ODA_booking_hotel input.error,
+.ODA_booking_hotel select.error {
+  background-color: salmon;
+  border: none;
+}
+.ODA_booking_hotel input.disabled,
+.ODA_booking_hotel select.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.ODA_booking_hotel .loader {
+  padding: 0;
+  display: inline-block;
+}
+.ODA_booking_hotel input:not(#checkbox),
+.ODA_booking_hotel select {
+  /* height: 30px; */
+  font-size: 16px;
+  width: 100%;
+  max-width: 220px;
+  box-sizing: border-box;
+  padding: 6px;
+}
+.ODA_booking_hotel svg path,
+.ODA_booking_hotel svg rect {
+  fill: #272F64;
+}
+
+/*# sourceMappingURL=styles.css.map */
