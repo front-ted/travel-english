@@ -1,0 +1,157 @@
+// .conteudo {
+// 	width: 1920px;
+// 	height: 1080px;
+// 	position: fixed;
+// 	left: calc(50% - 1920px / 2);
+// 	top: calc(50% - 1080px / 2);
+// 	margin: auto;
+// }
+
+.container.corpo-humano {
+	background-color: #5e7991;
+	border-radius: 20px;
+	padding: 2%;
+}
+
+.corpo-humano {.intro-corpo {
+	color: white;
+	padding: 1%;
+	font-size: 18px;
+}
+
+.parte-do-corpo {
+	padding: 10px;
+	text-align: center;
+	line-height: 20px;
+	cursor: move;
+	border-radius: 10px;
+	margin: 1%;
+	font-weight: bold;
+}
+
+.parte-do-corpo:hover {
+	background-color: #5e7991;
+	color: white;
+}
+
+.opcoes {
+	margin: 1%;
+	background-color: #dbf1fd;
+	border-radius: 20px;
+}
+
+.item {
+	width: 100%;
+	height: 29px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #ff9200;
+	color: white;
+	display: flex;
+	align-content: center;
+	gap: 10px;
+	align-items: center;
+	align-content: center;
+	font-weight: bold;
+	border: 2px dashed rgb(255, 255, 255);
+	margin: 2%;
+	font-size: 20px;
+}
+
+.item::before {
+	content: "";
+	font-size: 30px;
+	font-weight: bold;
+	position: relative;
+}
+
+.item p {
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	font-size: 20px;
+}
+
+.item.acertou {
+	border: #008086;
+	background-color: #008086;
+	border-color: #008086;
+}
+
+.item.errou {
+	border: #e93535;
+	background-color: #e93535;
+}
+
+.item1::before {
+	content: "1"
+}
+
+.item2::before {
+	content: "2"
+}
+
+.item3::before {
+	content: "3"
+}
+
+.item4::before {
+	content: "4"
+}
+
+.item5::before {
+	content: "5"
+}
+
+.item6::before {
+	content: "6"
+}
+
+.item7::before {
+	content: "7"
+}
+
+.item8::before {
+	content: "8"
+}
+
+.item9::before {
+	content: "9"
+}
+
+.item10::before {
+	content: "10"
+}
+
+.item11::before {
+	content: "11"
+}
+
+.item12::before {
+	content: "12"
+}
+
+.item13::before {
+	content: "13"
+}
+
+.item14::before {
+	content: "14"
+}
+
+.item15::before {
+	content: "15"
+}
+
+.item16::before {
+	content: "16"
+}
+
+.item17::before {
+	content: "17"
+}
+
+.item18::before {
+	content: "18"
+}}

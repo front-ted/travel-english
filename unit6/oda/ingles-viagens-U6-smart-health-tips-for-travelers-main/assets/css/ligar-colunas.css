@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes efeitinho {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+.oda-smart-health { /***************************************************************/
+  /************************ conteúdo header **********************/
+  /***************************************************************/
+  /***************************************************************/
+  /************************* conteúdo game ***********************/
+  /***************************************************************/
+}
+.oda-smart-health .game-ligue-colunas {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fff;
+  font-size: 17px;
+  border-radius: 10px;
+  display: block;
+  border-radius: 10px;
+}
+.oda-smart-health .cabecalho {
+  border-radius: 10px;
+  animation: fadeInUp 1s ease-in-out;
+  margin-top: 2%;
+  width: 90%;
+}
+.oda-smart-health .h1-game {
+  color: #5e7991;
+  font-weight: bold;
+}
+.oda-smart-health .p-descricao {
+  color: #333;
+  font-size: 20px;
+  line-height: 1.5;
+  animation: fadeInUp 1s ease-in-out;
+}
+.oda-smart-health .row.body-game {
+  background-color: #5e7991;
+  border-radius: 10px;
+}
+.oda-smart-health .direita {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.oda-smart-health .btn-ligacao {
+  border-radius: 10px;
+  animation: fadeInUp 1s ease-in-out;
+  margin: 12px;
+}
+.oda-smart-health .item {
+  margin: 4%;
+  border: 2px solid #fff;
+  background-color: white;
+  box-shadow: 0px 4px 0px 0px rgba(51, 51, 51, 0.368627451);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.oda-smart-health .item:hover {
+  transform: scale(1.1);
+}
+.oda-smart-health .item::before {
+  content: "";
+  font-size: 23px;
+  font-weight: bold;
+  border-radius: 100%;
+  padding-inline: 3%;
+}
+.oda-smart-health .item1::before {
+  content: "1";
+}
+.oda-smart-health .item2::before {
+  content: "2";
+}
+.oda-smart-health .item3::before {
+  content: "3";
+}
+.oda-smart-health .item4::before {
+  content: "4";
+}
+.oda-smart-health .item5::before {
+  content: "5";
+}
+.oda-smart-health .item6::before {
+  content: "6";
+}
+.oda-smart-health .item7::before {
+  content: "7";
+}
+.oda-smart-health .item8::before {
+  content: "8";
+}
+.oda-smart-health .item9::before {
+  content: "9";
+}
+.oda-smart-health .item10::before {
+  content: "10";
+}
+.oda-smart-health .txtacao {
+  padding-inline: 2%;
+}
+.oda-smart-health .resp {
+  padding: 2%;
+  margin-inline: 7%;
+  font-size: 18px;
+  border: none;
+  width: 76%;
+  background-color: white;
+  box-shadow: 0px 4px 0px 0px rgba(51, 51, 51, 0.368627451);
+  text-align: left;
+}
+.oda-smart-health .resp:hover {
+  transform: scale(1.1);
+  background-color: white !important;
+}
+.oda-smart-health .acertou {
+  background-color: #5be189 !important;
+  color: #000 !important;
+  border-color: #008086;
+}
+
+/***************************************************************/
+/************************* conteúdo modal ***********************/
+/***************************************************************/
+.modal-smart-health-tips .modal-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.modal-smart-health-tips .modal-body {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-smart-health-tips .modal-header {
+  border-radius: 0;
+}
+
+.modal-smart-health-tips .modal-header h1 {
+  padding: 0;
+  margin-top: 15px;
+}
+
+.modal-smart-health-tips .modal-header h1 svg {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+.p-modal {
+  font-size: 17px;
+}
+
+.cor-errou {
+  background-color: #9a1d1d;
+  color: white;
+}
+
+.fecha-erro {
+  background-color: white;
+  color: #9a1d1d;
+  border: none;
+}
+
+.fecha-erro:hover {
+  background-color: #011d31;
+  color: #fff;
+}
+
+.cor-acerto {
+  background-color: #1e682b;
+  color: white;
+}
+
+.fecha-acerto {
+  background-color: white;
+  color: #002e08;
+  border: none;
+}
+
+.fecha-acerto:hover {
+  background-color: #011d31;
+  color: #fff;
+}
+
+/***************************************************************/
+/********************** Itens selecionados *********************/
+/***************************************************************/
+.selecionado {
+  border: 3px solid #ff9200;
+  box-shadow: 0px 4px 0px 0px #ff9200 !important;
+}
+
+/*# sourceMappingURL=ligar-colunas.css.map */
