@@ -27,6 +27,11 @@
         <link rel="stylesheet" href="../assets/css/template.css">
 
         <link rel="stylesheet" href="css/custom.css">
+
+        <!-- ODA -->
+        <link rel="stylesheet" href="oda/ingles-unit7-dos-and-donts-main/assets/js/dragula.min.css">
+        <link rel="stylesheet" href="oda/ingles-unit7-dos-and-donts-main/assets/css/game-custom.css">
+        <link rel="stylesheet" href="oda/ingles-unit7-jeopardy-game-main/assets/css/styles.css">
     
     </head>
     <body>
@@ -294,7 +299,104 @@
                             <h3>Your Guide to Dos and Don'ts Around the World</h3>
                             <p>Traveling to new places can be really exciting, full of new things to discover. But, just like at home, there are certain things you should and shouldn't do when you're in a different country. It's like learning the rules of a game. In this guide, we'll talk about the important dos and don'ts of traveling. Whether you've traveled a lot or it's your first time, these tips will help you have a great time and be respectful to the people and places you visit. Let's get started!</p>
                             <p>Drag the sentences below to the correct column.</p>
-                            <h2 class="m-0 text-dark">Espera para ODA</h2>
+                            
+                            <div class="wrapper oda-dos-donts">
+                                <div id="content-game">
+                                    <div class="container-fluid game-body no-print" style="padding:0;">
+                                        <div class="row">
+                                            <div class="col-10 align-self-start d-block m-auto">
+                                                <div class="row game-descricao">
+                                                    <p>Drag the sentences below to the correct column.</p>
+                                                </div>
+                                            </div>
+                                            <div id="slots" class="col-12 mt-5 mb-5">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-4 mt-3 mb-3">
+                                                        <div class="game-titulo">
+                                                            <p>Do's</p>
+                                                        </div>
+                                                        <div id="slot-1" class="slot">
+                    
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-4 mt-3 mb-3">
+                                                        <div class="game-titulo">
+                                                            <p>Don'ts</p>
+                                                        </div>
+                                                        <div id="slot-2" class="slot">
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                    
+                                            </div>
+                    
+                                            <div id="cardPile" class="game-itens-container">
+                                                <div id="card-1" class="card" data-target="slot-1">
+                                                    Be patient. 
+                                                </div>
+                    
+                                                <div id="card-3" class="card" data-target="slot-1">
+                                                    Respect other people’s personal space. 
+                                                </div>
+                    
+                                                <div id="card-5" class="card" data-target="slot-2">
+                                                    Complain about the cuisine. 
+                                                </div>
+                    
+                                                <div id="card-8" class="card" data-target="slot-1">
+                                                    Wait for your turn.
+                                                </div>
+                                                <div id="card-10" class="card" data-target="slot-1">
+                                                    Show respect in spiritual or religious places.
+                                                </div>
+                                                <div id="card-2" class="card" data-target="slot-1">
+                                                    Learn some phrases in the local language.
+                                                </div>
+                                                <div id="card-4" class="card" data-target="slot-2">
+                                                    Ignore dress codes. 
+                                                </div>
+                                                <div id="card-6" class="card" data-target="slot-2">
+                                                    Photograph local people without permission. 
+                                                </div>
+                                                <div id="card-7" class="card" data-target="slot-2">
+                                                    Bring cultural stereotypes with you on your journey. 
+                                                </div>
+                                                <div id="card-9" class="card" data-target="slot-2">
+                                                    Raise your voice when people don’t understand you. 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                    
+                                <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header bg-danger">
+                                                <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times    "></i> Oops! </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <!-- <div class="col-12 col-lg-4">
+                                                        <img src="assets/img/erro.png" class="img-fluid" alt="">
+                                                    </div> -->
+                                                    <div class="col-12 col-lg-12">
+                                                        <p>That's the wrong column! Try again.</p>
+                                                    </div>
+                                                </div>
+                    
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
 
                             <div class="practice">
                                 <h4 class="sr-only">Practice it!</h4>
@@ -304,7 +406,193 @@
                             <h3>Jeopardy Game: Global Culture Adventure</h3>
                             <p>Let’s play a Jeopardy game focused on culture in different countries.</p>
                             <p>Work in teams and follow your teacher’s instructions.</p>
-                            <h2 class="m-0 text-dark">Espera para ODA</h2>
+                            <div class="wrapper">
+                                <p>Call one or more friends and try to answer the following questions.</p>
+                                <div class="jeopardy-table">
+                                    <div class="tela-0">
+                                        <div class="text">
+                                            <p>To start the game, please write the name of the player:</p>
+                                            <input type="text" placeholder="Enter name..." name="" id="">
+                                            <button class="start-game disabled">Continue</button>
+                                        </div>
+                                    </div>
+                                    <div class="tela-1">
+                                        <div class="row">
+                                            <div class="jeopardy-column">
+                                                <div class="titles">
+                                                    <h4>Greetings and customs</h4>
+                                                </div>
+                                                <button data-question="question-01" class="jeopardy-btn">100 points</button>
+                                                <button data-question="question-06" class="jeopardy-btn">200 points</button>
+                                            </div>                    
+                                            <div class="jeopardy-column">
+                                                <div class="titles">
+                                                    <h4>Traditional<br> foods</h4>
+                                                </div>
+                                                <button data-question="question-02" class="jeopardy-btn">100 points</button>
+                                                <button data-question="question-07" class="jeopardy-btn">200 points</button>
+                                            </div>
+                                            <div class="jeopardy-column">
+                                                <div class="titles">
+                                                    <h4>Famous landmarks</h4>
+                                                </div>
+                                                <button data-question="question-03" class="jeopardy-btn">100 points</button>
+                                                <button data-question="question-08" class="jeopardy-btn">200 points</button>
+                                            </div>
+                                            <div class="jeopardy-column">
+                                                <div class="titles">
+                                                    <h4>Festivals and<br> celebrations</h4>
+                                                </div>
+                                                <button data-question="question-04" class="jeopardy-btn">100 points</button>
+                                                <button data-question="question-09" class="jeopardy-btn">200 points</button>
+                                            </div>
+                                            <div class="jeopardy-column">
+                                                <div class="titles">
+                                                    <h4>Flags and capitals</h4>
+                                                </div>
+                                                <button data-question="question-05" class="jeopardy-btn">100 points</button>
+                                                <button data-question="question-10" class="jeopardy-btn">200 points</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tela-2">
+                                        <div class="question question-01">
+                                            <h3>Greetings and customs - 100 points</h3>
+                                            <p>In this country, people often greet each other by bowing. What country is it? </p>
+                                            <button class="reveal-answer">Reveal answer</button>
+                                        </div>
+                        
+                                        <div class="question question-02">
+                                            <h3>Traditional foods - 100 points</h3>
+                                            <p>A classic American dish made with ground beef, cheese, lettuce, and tomatoes, often served in a
+                                                bun. What is the name of this popular dish? </p>
+                                            <button class="reveal-answer">Reveal answer</button>
+                                        </div>
+                        
+                                        <div class="question question-03">
+                                            <h3>Famous landmarks - 100 points</h3>
+                                            <p>The Eiffel Tower is located in the capital city of this country. What country is it? </p>
+                                            <button class="reveal-answer">Reveal answer</button>
+                                        </div>
+                                        <div class="question question-04">
+                                            <h3>Festivals and celebrations - 100 points</h3>
+                                            <p>Diwali is a festival celebrated in this country. What country is known for Diwali? </p>
+                                            <button class="reveal-answer">Reveal answer</button>
+                                        </div>
+                                        <div class="question question-05">
+                                            <h3>Flags and capitals - 100 points</h3>
+                                            <p>The red maple leaf is featured on the flag of this North American country. What country is it?
+                                            </p>
+                                            <button class="reveal-answer">Reveal answer</button>
+                                        </div>
+                                        <div class="question question-06">
+                                            <h3>Greetings and customs - 200 points</h3>
+                                            <p>When visiting this European country, it's common to greet someone with a warm "Hola." What
+                                                country is associated with this friendly greeting? </p>
+                                            <button class="reveal-answer">Reveal answer</button>
+                                        </div>
+                                        <div class="question question-07">
+                                            <h3>Traditional foods - 200 points</h3>
+                                            <p>Tacos are a traditional food in this country. Which country is famous for tacos? </p>
+                                            <button class="reveal-answer">Reveal answer</button>
+                                        </div>
+                                        <div class="question question-08">
+                                            <h3>Famous landmarks - 200 points</h3>
+                                            <p>The Great Wall is a famous landmark in this Asian country. What is the country? </p>
+                                            <button class="reveal-answer">Reveal answer</button>
+                                        </div>
+                                        <div class="question question-09">
+                                            <h3>Festivals and celebrations - 200 points</h3>
+                                            <p>Carnival is a vibrant celebration in this South American country. What is the country? </p>
+                                            <button class="reveal-answer">Reveal answer</button>
+                                        </div>
+                                        <div class="question question-10">
+                                            <h3>Flags and capitals - 200 points</h3>
+                                            <p>The capital city of Australia was designed by American architect Walter Burley Griffin. What is
+                                                the capital? </p>
+                                            <button class="reveal-answer">Reveal answer</button>
+                                        </div>
+                                        <div class="answer answer-01">
+                                            <h3>Japan</h3>
+                                            <p>Did you answer it correctly?</p>
+                                            <button data-points="100" class="continue btn-yes">Yes</button>
+                                            <button class="continue">No</button>
+                                        </div>
+                                        <div class="answer answer-02">
+                                            <h3>Hamburger</h3>
+                                            <p>Did you answer it correctly?</p>
+                                            <button data-points="100" class="continue btn-yes">Yes</button>
+                                            <button class="continue">No</button>
+                                        </div>
+                                        <div class="answer answer-03">
+                                            <h3>France</h3>
+                                            <p>Did you answer it correctly?</p>
+                                            <button data-points="100" class="continue btn-yes">Yes</button>
+                                            <button class="continue">No</button>
+                                        </div>
+                                        <div class="answer answer-04">
+                                            <h3>India</h3>
+                                            <p>Did you answer it correctly?</p>
+                                            <button data-points="100" class="continue btn-yes">Yes</button>
+                                            <button class="continue">No</button>
+                                        </div>
+                                        <div class="answer answer-05">
+                                            <h3>Canada</h3>
+                                            <p>Did you answer it correctly?</p>
+                                            <button data-points="100" class="continue btn-yes">Yes</button>
+                                            <button class="continue">No</button>
+                                        </div>
+                                        <div class="answer answer-06">
+                                            <h3>Spain</h3>
+                                            <p>Did you answer it correctly?</p>
+                                            <button data-points="200" class="continue btn-yes">Yes</button>
+                                            <button class="continue">No</button>
+                                        </div>
+                                        <div class="answer answer-07">
+                                            <h3>Mexico</h3>
+                                            <p>Did you answer it correctly?</p>
+                                            <button data-points="200" class="continue btn-yes">Yes</button>
+                                            <button class="continue">No</button>
+                                        </div>
+                                        <div class="answer answer-08">
+                                            <h3>China</h3>
+                                            <p>Did you answer it correctly?</p>
+                                            <button data-points="200" class="continue btn-yes">Yes</button>
+                                            <button class="continue">No</button>
+                                        </div>
+                                        <div class="answer answer-09">
+                                            <h3>Brazil</h3>
+                                            <p>Did you answer it correctly?</p>
+                                            <button data-points="200" class="continue btn-yes">Yes</button>
+                                            <button class="continue">No</button>
+                                        </div>
+                                        <div class="answer answer-10">
+                                            <h3>Canberra</h3>
+                                            <p>Did you answer it correctly?</p>
+                                            <button data-points="200" class="continue btn-yes">Yes</button>
+                                            <button class="continue">No</button>
+                                        </div>
+                                    </div>
+                                    <div class="tela-final">
+                                        <div class="text">
+                                            <p>Congratulations, <span class="playerName"></span>!</p>
+                                            <p>Your points:</p>
+                                            <p class="playerPoints"></p>
+                                            <button class="try-again">Try again</button>
+                                        </div>
+                                    </div>
+                                    <div class="points-container">
+                                        <p><span class="playerName"></span> points: <span class="playerPoints"></span></p>
+                                    </div>
+                                </div>
+                                <ol id="ranking">
+                                    <p>Ranking:</p>
+                                    <li id="rank-1"></li>
+                                    <li id="rank-2"></li>
+                                    <li id="rank-3"></li>
+                                </ol>
+                            </div>
+                            
                             <img src="img/ilustra_3.png" class="my-5 mx-auto img-fluid d-block">
                         </div>
                     </div>
@@ -362,5 +650,10 @@
         document.body.appendChild(scriptElem);
         
         </script>
+
+        <!-- ODA -->
+        <script src="oda/ingles-unit7-dos-and-donts-main/assets/js/dragula.min.js"></script>
+        <script src="oda/ingles-unit7-dos-and-donts-main/assets/js/game-custom.js"></script>
+        <script src="oda/ingles-unit7-jeopardy-game-main/assets/js/script.js"></script>
     </body>
 </html>

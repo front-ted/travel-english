@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 7 - Dos and Don'ts</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/game-custom.css">
+    <link rel="stylesheet" href="assets/js/dragula.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper oda-dos-donts">
+            <div id="content-game">
+                <div class="container-fluid game-body no-print" style="padding:0;">
+                    <div class="row">
+                        <div class="col-10 align-self-start d-block m-auto">
+                            <div class="row game-descricao">
+                                <p>Drag the sentences below to the correct column.</p>
+                            </div>
+                        </div>
+                        <div id="slots" class="col-12 mt-5 mb-5">
+                            <div class="row">
+                                <div class="col-12 col-md-4 mt-3 mb-3">
+                                    <div class="game-titulo">
+                                        <p>Do's</p>
+                                    </div>
+                                    <div id="slot-1" class="slot">
+
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 mt-3 mb-3">
+                                    <div class="game-titulo">
+                                        <p>Don'ts</p>
+                                    </div>
+                                    <div id="slot-2" class="slot">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="cardPile" class="game-itens-container">
+                            <div id="card-1" class="card" data-target="slot-1">
+                                Be patient. 
+                            </div>
+
+                            <div id="card-3" class="card" data-target="slot-1">
+                                Respect other people’s personal space. 
+                            </div>
+
+                            <div id="card-5" class="card" data-target="slot-2">
+                                Complain about the cuisine. 
+                            </div>
+
+                            <div id="card-8" class="card" data-target="slot-1">
+                                Wait for your turn.
+                            </div>
+                            <div id="card-10" class="card" data-target="slot-1">
+                                Show respect in spiritual or religious places.
+                            </div>
+                            <div id="card-2" class="card" data-target="slot-1">
+                                Learn some phrases in the local language.
+                            </div>
+                            <div id="card-4" class="card" data-target="slot-2">
+                                Ignore dress codes. 
+                            </div>
+                            <div id="card-6" class="card" data-target="slot-2">
+                                Photograph local people without permission. 
+                            </div>
+                            <div id="card-7" class="card" data-target="slot-2">
+                                Bring cultural stereotypes with you on your journey. 
+                            </div>
+                            <div id="card-9" class="card" data-target="slot-2">
+                                Raise your voice when people don’t understand you. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header bg-danger">
+                            <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times    "></i> Oops! </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <!-- <div class="col-12 col-lg-4">
+                                    <img src="assets/img/erro.png" class="img-fluid" alt="">
+                                </div> -->
+                                <div class="col-12 col-lg-12">
+                                    <p>That's the wrong column! Try again.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/dragula.min.js"></script>
+    <script src="assets/js/game-custom.js"></script>
+</body>
+
+</html>

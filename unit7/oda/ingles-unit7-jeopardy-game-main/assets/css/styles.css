@@ -1,0 +1,225 @@
+.wrapper {
+  position: relative;
+  width: fit-content;
+  margin: 50px auto;
+  padding: 20px 30px;
+  background-color: #A3C2ED;
+  border-radius: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  max-width: 100%;
+}
+.wrapper * {
+  box-sizing: border-box;
+}
+.wrapper p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.jeopardy-table {
+  position: relative;
+  background-color: #272F64;
+  color: white;
+  border-collapse: collapse;
+  height: fit-content;
+  width: fit-content;
+  display: block;
+  border: 1px solid white;
+  max-width: 100%;
+}
+.jeopardy-table .titles {
+  width: 140px;
+  height: 70px;
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid white;
+  background-color: rgb(210, 230, 255);
+  color: #272F64;
+}
+.jeopardy-table .titles h4 {
+  margin: 0;
+  padding: 0;
+}
+.jeopardy-table .jeopardy-btn {
+  padding: 15px 10px;
+  border: 1px solid white;
+  text-align: center;
+  width: 100%;
+  background-color: #272F64;
+  color: white;
+  height: 70px;
+  font-size: 16px;
+}
+.jeopardy-table .jeopardy-btn:hover {
+  cursor: pointer;
+  background-color: rgb(59, 67, 120);
+}
+.jeopardy-table .disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.jeopardy-table .question,
+.jeopardy-table .answer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #272F64;
+  border: 1px solid white;
+  padding: 15px 25px;
+  font-family: monospace;
+}
+.jeopardy-table .question h3,
+.jeopardy-table .answer h3 {
+  color: #E5D9A0;
+  text-align: center;
+  margin: 5px auto;
+  font-size: 18px;
+}
+.jeopardy-table .question p,
+.jeopardy-table .answer p {
+  margin: 15px 0;
+  color: white;
+  font-size: 16px;
+}
+.jeopardy-table .tela-0 input {
+  font-size: 18px;
+  padding: 5px 10px;
+}
+.jeopardy-table .reveal-answer,
+.jeopardy-table .continue,
+.jeopardy-table .start-game,
+.jeopardy-table .try-again {
+  border: none;
+  display: block;
+  font-size: 16px;
+  margin: 25px auto;
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: #E5D9A0;
+  cursor: pointer;
+}
+.jeopardy-table .reveal-answer:hover,
+.jeopardy-table .continue:hover,
+.jeopardy-table .start-game:hover,
+.jeopardy-table .try-again:hover {
+  background-color: rgb(249, 237, 180);
+}
+.jeopardy-table .answer {
+  text-align: center;
+  padding-top: 30px;
+}
+.jeopardy-table .answer .continue {
+  display: inline-block;
+  margin: 5px;
+}
+.jeopardy-table .answer h3 {
+  font-size: 26px;
+}
+.jeopardy-table .tela-0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 47, 100, 0.97);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jeopardy-table .tela-final {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272F64;
+}
+.jeopardy-table .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --bs-gutter-x: 0;
+}
+.jeopardy-table .row * {
+  padding: inherit;
+  margin-left: 0;
+  margin-right: 0;
+}
+.jeopardy-table .jeopardy-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.jeopardy-table h4 {
+  color: #272F64;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: rubik;
+}
+
+#ranking {
+  font-family: monospace;
+  color: black;
+  width: fit-content;
+  display: block;
+  margin: 15px auto;
+  padding-right: 30px;
+}
+#ranking p {
+  text-align: left;
+}
+#ranking li {
+  font-size: 18px;
+}
+
+.points-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  background-color: rgb(210, 230, 255);
+  color: #272F64;
+}
+.points-container p {
+  margin: 15px 0;
+}
+
+@media (max-width: 1440px) {
+  .jeopardy-table {
+    max-width: 700px;
+  }
+  .jeopardy-column {
+    max-width: 20%;
+  }
+  .jeopardy-column .titles {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .jeopardy-table {
+    max-width: 100%;
+  }
+  .jeopardy-table .jeopardy-column {
+    max-width: 100%;
+    width: 50%;
+  }
+  .jeopardy-table .jeopardy-column .titles {
+    width: 100%;
+  }
+  .jeopardy-table .row {
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
