@@ -1,0 +1,165 @@
+.oda-ready-travel {
+    .estilo-paragrafo {
+        color: white !important;
+        padding: 15px;
+        font-size: 18px;
+        background-color: #5e7991;
+        border-radius: 20px;
+    }
+
+    .p-cor {
+        color: #333;
+    }
+
+    .titulo {
+        text-align: center;
+        font-size: 33px;
+        margin-top: 4px;
+        color: #5e7991;
+        margin: 20px;
+        font-weight: bold;
+    }
+
+    .texto-intro {
+        color: #333;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .texto-tutorial,
+    .texto-jogo {
+        color: #333;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #form-tela1 {
+        margin: 12px;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        margin-top: 4%;
+    }
+
+    .jogadores {
+        color: #5e7991;
+        background-color: white;
+        margin: 17px;
+        padding: 19px;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+
+    .perguntinha {
+        background-color: white;
+        color: #5e7991;
+        margin: 5px;
+        font-weight: bold;
+        padding: 3%;
+        border-radius: 20px;
+    }
+
+    .btn-iniciar,
+    .btn-continuar,
+    .btn-revelar,
+    .btn-certo,
+    .btn-errado {
+        text-align: center;
+        background-color: #FFA500 !important;
+        color: #fff !important;
+        border: none;
+        padding-inline: 20%;
+        margin: 3px;
+    }
+
+
+    .btn-iniciar:hover,
+    .btn-continuar:hover,
+    .btn-revelar:hover,
+    .btn-certo:hover,
+    .btn-errado:hover {
+        color: white !important;
+        background-color: #5e7991;
+    }
+
+    #btn-fechar-modal {
+        text-align: center;
+        background-color: #FFA500 !important;
+        color: #fff !important;
+        border: none;
+        padding-inline: 20%;
+        margin: 3px;
+    }
+
+    #btn-fechar-modal:hover {
+        color: white !important;
+        background-color: #5e7991;
+    }
+
+    .btn-iniciar {
+        margin-top: 27px;
+    }
+
+    .accordion-button.som-clique.collapsed {
+        color: #5e7991;
+        font-weight: bold;
+        font-size: 20px !important;
+    }
+
+    .accordion-button:not(.collapsed) {
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+        color: white !important;
+        padding: 1%;
+        font-size: 20px !important;
+        background-color: #5e7991;
+    }
+
+    .titulo-resultado {
+        text-transform: uppercase !important;
+        color: #5e7991 !important;
+        text-align: center !important;
+        font-weight: bold !important;
+    }
+
+    .modal-jogo {
+        color: white;
+        font-weight: bold;
+        font-size: 20px !important;
+        background-color: #5e7991;
+    }
+
+    #corpoModal {
+        color: #333;
+        font-weight: bold;
+        font-size: 20px !important;
+    }
+
+    .body-modal-resultado {
+        background-color: #5e7991;
+        color: white;
+        padding: 27px;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        font-size: 23px;
+        border-radius: 20px;
+    }
+}

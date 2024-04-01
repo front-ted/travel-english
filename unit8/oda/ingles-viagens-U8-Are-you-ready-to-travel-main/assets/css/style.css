@@ -1,0 +1,145 @@
+.oda-ready-travel .estilo-paragrafo {
+  color: white !important;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #5e7991;
+  border-radius: 20px;
+}
+.oda-ready-travel .p-cor {
+  color: #333;
+}
+.oda-ready-travel .titulo {
+  text-align: center;
+  font-size: 33px;
+  margin-top: 4px;
+  color: #5e7991;
+  margin: 20px;
+  font-weight: bold;
+}
+.oda-ready-travel .texto-intro {
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+.oda-ready-travel .texto-tutorial,
+.oda-ready-travel .texto-jogo {
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.oda-ready-travel #form-tela1 {
+  margin: 12px;
+}
+.oda-ready-travel .form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-top: 4%;
+}
+.oda-ready-travel .jogadores {
+  color: #5e7991;
+  background-color: white;
+  margin: 17px;
+  padding: 19px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.oda-ready-travel .perguntinha {
+  background-color: white;
+  color: #5e7991;
+  margin: 5px;
+  font-weight: bold;
+  padding: 3%;
+  border-radius: 20px;
+}
+.oda-ready-travel .btn-iniciar,
+.oda-ready-travel .btn-continuar,
+.oda-ready-travel .btn-revelar,
+.oda-ready-travel .btn-certo,
+.oda-ready-travel .btn-errado {
+  text-align: center;
+  background-color: #FFA500 !important;
+  color: #fff !important;
+  border: none;
+  padding-inline: 20%;
+  margin: 3px;
+}
+.oda-ready-travel .btn-iniciar:hover,
+.oda-ready-travel .btn-continuar:hover,
+.oda-ready-travel .btn-revelar:hover,
+.oda-ready-travel .btn-certo:hover,
+.oda-ready-travel .btn-errado:hover {
+  color: white !important;
+  background-color: #5e7991;
+}
+.oda-ready-travel #btn-fechar-modal {
+  text-align: center;
+  background-color: #FFA500 !important;
+  color: #fff !important;
+  border: none;
+  padding-inline: 20%;
+  margin: 3px;
+}
+.oda-ready-travel #btn-fechar-modal:hover {
+  color: white !important;
+  background-color: #5e7991;
+}
+.oda-ready-travel .btn-iniciar {
+  margin-top: 27px;
+}
+.oda-ready-travel .accordion-button.som-clique.collapsed {
+  color: #5e7991;
+  font-weight: bold;
+  font-size: 20px !important;
+}
+.oda-ready-travel .accordion-button:not(.collapsed) {
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  color: white !important;
+  padding: 1%;
+  font-size: 20px !important;
+  background-color: #5e7991;
+}
+.oda-ready-travel .titulo-resultado {
+  text-transform: uppercase !important;
+  color: #5e7991 !important;
+  text-align: center !important;
+  font-weight: bold !important;
+}
+.oda-ready-travel .modal-jogo {
+  color: white;
+  font-weight: bold;
+  font-size: 20px !important;
+  background-color: #5e7991;
+}
+.oda-ready-travel #corpoModal {
+  color: #333;
+  font-weight: bold;
+  font-size: 20px !important;
+}
+.oda-ready-travel .body-modal-resultado {
+  background-color: #5e7991;
+  color: white;
+  padding: 27px;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 23px;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -28,6 +28,8 @@
 
         <link rel="stylesheet" href="css/custom.css">
     
+        <!-- ODA -->
+        <link rel="stylesheet" href="oda/ingles-viagens-U8-Are-you-ready-to-travel-main/assets/css/style.css">
     </head>
     <body>
         <!-- Preloader OBRIGATÓRIO -->
@@ -61,7 +63,117 @@
                         <div class="container">
                             <h3>Are you ready to travel?</h3>
                             <p>Let’s play a game to review what we have learned from unit 1 to 7 and get ready for our next trip!</p>
-                            <h2 class="m-0 text-dark">Espera para ODA</h2>
+                            
+                            <div class="oda-ready-travel">
+                                <div class="container">
+                                  <div class="row justify-content-center">
+                                    <div class="col-md-6">
+                                      <h1 class="titulo justify-content-center">Are you ready to travel?</h1>
+                                      <div id="tela1">
+                                        <div class="estilo-paragrafo">
+                                          <p>Let’s play a game to review what we have learned from unit 1 to 7 and get ready for our next trip! </p>
+                                        </div>
+                                        <form id="form-tela1">
+                                          <div class="form-group">
+                                            <input type="text" class="form-control" id="jogador1" required placeholder="Player 1's name">
+                                          </div>
+                                          <div class="form-group">
+                                            <input type="text" class="form-control" id="jogador2" required placeholder="Player 2's name">
+                                          </div>
+                                          <button type="submit" class="btn btn-lg btn-iniciar btn-block som-clique w-100">Start</button>
+                                        </form>
+                                      </div>
+                                      
+                                      <!-- Tela 2: Tutorial -->
+                                      <div id="tela2" style="display: none;">
+                                        <div class="texto-tutorial estilo-paragrafo">
+                                          <p><strong>Welcome to the Knowledge Challenge!</strong> </p>
+                                          <p>This is a fun game for two players, where you'll have the opportunity to test your knowledge with a series of questions. Each player will answer one question at a time, taking turns. Simply read the question aloud, try to guess the answer, and click to reveal if you got it right or wrong. The player with the most points at the end wins! Let's get started and see who's the master of knowledge!</p>
+                                        </div>
+                                        <button id="btn-continuar" class="btn btn-lg btn-continuar btn-block som-clique w-100">Continue</button>
+                                      </div>
+                                      
+                                      <!-- Tela 3: Jogo -->
+                                      <div id="tela3" style="display: none;">
+                                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                                          <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                              <button class="accordion-button som-clique" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                                Game tutorial
+                                              </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                              <div class="accordion-body">
+                                                <p class="p-cor">This is a fun game for two players, where you'll have the opportunity to test your knowledge with a series of questions. Each player will answer one question at a time, taking turns. Simply read the question aloud, try to guess the answer, and click to reveal if you got it right or wrong. The player with the most points at the end wins! Let's get started and see who's the master of knowledge!</p>
+                                              </div>
+                                            </div>
+                                          </div>  
+                                        </div>
+                                        <div class="texto-jogo estilo-paragrafo">
+                                          <h3>Placar:</h3>
+                                          <div class="placar row">
+                                            <div class="col jogadores"><span class="nome-jogador-1"></span> <span id="placar-jogador1">0</span></div>
+                                            <div class="col jogadores"><span class="nome-jogador-2"></span> <span id="placar-jogador2">0</span></div>
+                                          </div>
+                                          <p class="perguntinha" id="pergunta">Pergunta:</p>
+                                        </div>
+                            
+                                        <button id="btn-revelar" class="btn btn-lg btn-revelar btn-block som-clique w-100">Reveal answer</button>
+                                      </div>
+                                      
+                                      <!-- Tela 4: Resposta -->
+                                      <div id="tela4" style="display: none;">
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button som-clique" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                              Game tutorial
+                                            </button>
+                                          </h2>
+                                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                              <p>This is a fun game for two players, where you'll have the opportunity to test your knowledge with a series of questions. Each player will answer one question at a time, taking turns. Simply read the question aloud, try to guess the answer, and click to reveal if you got it right or wrong. The player with the most points at the end wins! Let's get started and see who's the master of knowledge!</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="texto-jogo estilo-paragrafo justify-content-center">
+                                          <h3>Placar:</h3>
+                                          <div class="placar row">
+                                            <div class="col jogadores"><span class="nome-jogador-1"></span> <span id="placar-jogador1-2">0</span></div>
+                                            <div class="col jogadores"><span class="nome-jogador-2"></span> <span id="placar-jogador2-2">0</span></div>
+                                          </div>
+                                          <p class="perguntinha" id="pergunta-2">Pergunta:</p>
+                                          <p id="resposta">Resposta:</p>
+                                        </div>
+                                        <button id="btn-certo" class="btn btn-lg btn-certo btn-block som-clique">Right</button>
+                                        <button id="btn-errado" class="btn btn-lg btn-errado btn-block som-clique">Wrong</button>
+                                      </div>
+                              
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="modalFimJogo" tabindex="-1" role="dialog" aria-labelledby="modalFimJogoLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-header modal-jogo">
+                                              <h5 class="modal-title w-100" id="modalFimJogoLabel">Fim do Jogo</h5>
+                                            </div>
+                                            <div class="modal-body" id="corpoModal">
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <audio id="audio-acerto">
+                                    <source src="oda/ingles-viagens-U8-Are-you-ready-to-travel-main/assets/audio/acerto.mp3" type="audio/mpeg">
+                                  </audio>
+                                  
+                                  <audio id="audio-errado">
+                                    <source src="oda/ingles-viagens-U8-Are-you-ready-to-travel-main/assets/audio/erro.mp3" type="audio/mpeg">
+                                  </audio>
+                              </div>
                             
                             <h3>At the customs</h3>
                             <p>Martha has just arrived in the United States. Now, she has to go through the customs, but she is not nervous, because she is prepared to answer the officer’s questions. Watch the video and do the exercise below.</p>
@@ -301,5 +413,6 @@
         document.body.appendChild(scriptElem);
         
         </script>
+        <script src="oda/ingles-viagens-U8-Are-you-ready-to-travel-main/assets/js/script.js"></script>
     </body>
 </html>
