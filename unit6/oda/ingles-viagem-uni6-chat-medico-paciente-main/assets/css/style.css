@@ -1,0 +1,147 @@
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.caixa-de-chat {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+}
+
+.btn-chat {
+  margin-bottom: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.perfil-img {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.img-direita {
+  margin-left: 10px;
+}
+
+
+.mensagem {
+  display: flex;
+  align-items: center;
+}
+
+.mensagem-texto {
+  background-color: white;
+  color: #333;
+  border: 1px solid #acacac;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.mensagem .content {
+  padding: 10px;
+  background-color: #e6f7ff;
+  border: 1px solid #b3d9ff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.continuarChat {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  margin: 1rem;
+}
+
+.msgDigitando {
+  color: #007bff;
+  margin-top: 5px;
+}
+
+:root {
+  --size: 20px;
+  --corFundo: #272324;
+  --corCafe: #48A8E0;
+  --corVermelhoEscuro: #3D8EBE;
+  --corVermelho: #4AAEE8;
+}
+
+.loading {
+  --animacao: 1100ms;
+}
+
+.loading .bolinha {
+
+  --item-size: calc(var(--size) / 2);
+  width: var(--item-size);
+  height: var(--item-size);
+  display: inline-block;
+  margin: 0 1px;
+  border-radius: 50%;
+  border: 3px solid var(--clr-spinner);
+  animation: spinner-bolinha var(--animacao) ease-in-out infinite;
+  margin: 1px;
+}
+
+@keyframes spinner-bolinha {
+
+  0%,
+  100% {
+    transform: translateY(40%);
+  }
+
+  50% {
+    transform: translateY(-40%);
+  }
+}
+
+.loading .bolinha:nth-child(1) {
+  --clr-spinner: var(--corVermelho);
+  animation-delay: calc(var(--animacao) / 6 * -1);
+}
+
+.loading .bolinha:nth-child(2) {
+  --clr-spinner: var(--corVermelhoEscuro);
+  animation-delay: calc(var(--animacao) / 6 * -2);
+}
+
+.loading .bolinha:nth-child(3) {
+  --clr-spinner: var(--corCafe);
+  animation-delay: calc(var(--animacao) / 6 * -3);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.material-symbols-outlined {
+  font-size: 40px !important;
+}
+
+.material-icons.icone-volume {
+  margin-inline: 2%;
+  color: #007bff;
+}
+
+.material-icons.icone-volume:hover {
+  color: white;
+}
+
+.controle-som i {
+  vertical-align: middle;
+}
