@@ -30,6 +30,11 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.oda-ready-travel .texto-jogo h3 {
+  margin: 0;
+  color: white;
+  font-weight: 400;
+}
 .oda-ready-travel #form-tela1 {
   margin: 12px;
 }

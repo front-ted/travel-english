@@ -270,3 +270,7 @@ table tr td:last-child{
 @media screen and (max-width: 690px){
 	.bloco-flavors{background-image: none;}
 }
+
+.hq-title {
+	text-align: center;
+}
