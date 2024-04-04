@@ -545,3 +545,12 @@ tbody td:first-child{border-left: 0;}
         background-position: left -155px center, right 5% center;
     }
 }
+.btn-quiz {
+    display: block;
+    margin: 15px auto;
+    width: fit-content;
+    background-color: transparent;
+}
+.btn-quiz:hover {
+    transform: scale(1.05);
+}

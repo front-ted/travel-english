@@ -1,4 +1,4 @@
-$('.check').click(function () {
+$('.ODA_ingles_form .check').click(function () {
     let arrayExercicios = $('select');
     console.log(arrayExercicios)
     for (let i = 0; i < arrayExercicios.length; i++) {

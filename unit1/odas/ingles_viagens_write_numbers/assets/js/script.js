@@ -7,8 +7,8 @@ const answers = {
     5: "five hundred",
     6: "nine hundred and ninety-nine"
 }
-$('.check').click(function () {
-    const inputArray = $('input');
+$('.ODA_ingles_write_words .check').click(function () {
+    const inputArray = $('.ODA_ingles_write_words input');
 
     for (let i = 0; i < inputArray.length; i++) {
         let value = inputArray[i].value.toLowerCase();
