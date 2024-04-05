@@ -1,146 +1,116 @@
-.conteudo {
-	width: 1920px;
-	height: 1080px;
-	position: fixed;
-	left: calc(50% - 1920px / 2);
-	top: calc(50% - 1080px / 2);
-	margin: auto;
+.oda-cultural-differences .obj-cultural {
+  background-color: #5e7991;
+  border-radius: 20px;
+  padding: 2%;
+}
+.oda-cultural-differences .intro-corpo {
+  color: white;
+  padding: 1%;
+  font-size: 18px;
+}
+.oda-cultural-differences .nome-pais {
+  padding: 10px;
+  text-align: center;
+  line-height: 20px;
+  cursor: move;
+  border-radius: 10px;
+  margin: 1%;
+  font-weight: bold;
+}
+.oda-cultural-differences .nome-pais:hover {
+  background-color: #5e7991;
+  color: white;
+}
+.oda-cultural-differences .opcoes {
+  background-color: #dbf1fd;
+  border-radius: 20px;
+}
+.oda-cultural-differences .item {
+  width: 91%;
+  height: 87px;
+  padding: 37px;
+  border-radius: 10px;
+  background-color: #ff9200;
+  color: white;
+  display: flex;
+  align-content: center;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+  border: 2px dashed rgb(255, 255, 255);
+  margin: 4%;
+  font-size: -1px;
+}
+.oda-cultural-differences .item::before {
+  content: "";
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+}
+.oda-cultural-differences .item p {
+  text-align: center;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+}
+.oda-cultural-differences .item.acertou {
+  border: #008086;
+  background-color: #008086;
+  border-color: #008086;
+}
+.oda-cultural-differences .item.errou {
+  border: #e93535;
+  background-color: #e93535;
+}
+.oda-cultural-differences .item1::before {
+  content: "1";
+}
+.oda-cultural-differences .item2::before {
+  content: "2";
+}
+.oda-cultural-differences .item3::before {
+  content: "3";
+}
+.oda-cultural-differences .item4::before {
+  content: "4";
+}
+.oda-cultural-differences .item5::before {
+  content: "5";
+}
+.oda-cultural-differences .item6::before {
+  content: "6";
+}
+.oda-cultural-differences .item7::before {
+  content: "7";
+}
+.oda-cultural-differences .item8::before {
+  content: "8";
+}
+.oda-cultural-differences .item9::before {
+  content: "9";
+}
+.oda-cultural-differences .item10::before {
+  content: "10";
+}
+.oda-cultural-differences .costume {
+  background-color: #dbf1fd;
+  border-radius: 9px;
+  padding: 2px;
+  margin: 8px;
+  padding-inline: 13px;
+}
+.oda-cultural-differences .modal-correto {
+  background-color: #008086;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+.oda-cultural-differences .modal-errado {
+  background-color: #e93535;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
 }
 
-.container.obj-cultural {
-	background-color: #5e7991;
-	border-radius: 20px;
-	padding: 2%;
-}
-
-.intro-corpo {
-	color: white;
-	padding: 1%;
-	font-size: 18px;
-}
-
-.nome-pais {
-	padding: 10px;
-	text-align: center;
-	line-height: 20px;
-	cursor: move;
-	border-radius: 10px;
-	margin: 1%;
-	font-weight: bold;
-}
-
-.nome-pais:hover {
-	background-color: #5e7991;
-	color: white;
-}
-
-.opcoes {
-	margin: 1%;
-	background-color: #dbf1fd;
-	border-radius: 20px;
-}
-
-.item {
-	width: 91%;
-	height: 87px;
-	padding: 37px;
-	border-radius: 10px;
-	background-color: #ff9200;
-	color: white;
-	display: flex;
-	align-content: center;
-	gap: 10px;
-	align-items: center;
-	font-weight: bold;
-	border: 2px dashed rgb(255, 255, 255);
-	margin: 4%;
-	font-size: -1px;
-}
-
-.item::before {
-	content: "";
-	font-size: 30px;
-	font-weight: bold;
-	position: relative;
-}
-
-.item p {
-	text-align: center;
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
-	font-size: 20px;
-}
-
-.item.acertou {
-	border: #008086;
-	background-color: #008086;
-	border-color: #008086;
-}
-
-.item.errou {
-	border: #e93535;
-	background-color: #e93535;
-}
-
-.item1::before {
-	content: "1"
-}
-
-.item2::before {
-	content: "2"
-}
-
-.item3::before {
-	content: "3"
-}
-
-.item4::before {
-	content: "4"
-}
-
-.item5::before {
-	content: "5"
-}
-
-.item6::before {
-	content: "6"
-}
-
-.item7::before {
-	content: "7"
-}
-
-.item8::before {
-	content: "8"
-}
-
-.item9::before {
-	content: "9"
-}
-
-.item10::before {
-	content: "10"
-}
-
-.costume {
-	background-color: #dbf1fd;
-	border-radius: 9px;
-	padding: 2px;
-	margin: 8px;
-	padding-inline: 13px;
-}
-
-.modal-correto {
-	background-color: #008086;
-    color:white;
-	font-weight: bold;
-	font-size: 25px;
-}
-
-.modal-errado {
-	background-color:#e93535;
-    color:white;
-	font-weight: bold;
-	font-size: 25px;
-}
+/*# sourceMappingURL=style.css.map */

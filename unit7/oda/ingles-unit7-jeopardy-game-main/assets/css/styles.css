@@ -220,6 +220,12 @@
   .jeopardy-table .row {
     flex-wrap: wrap;
   }
+  .jeopardy-table .text {
+    max-width: 100%;
+  }
+  .jeopardy-table .tela-0 input {
+    max-width: 90%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
