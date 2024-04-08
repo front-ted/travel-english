@@ -1,4 +1,5 @@
 .ODA_ingles_viagens_cartas {
+  margin-bottom: 70px;
   /* Efeito de card no hover */
 }
 .ODA_ingles_viagens_cartas .wrapper {
@@ -8,9 +9,8 @@
   margin: 25px auto;
   border-radius: 20px;
   position: relative;
-  background: rgb(102, 113, 134);
-  background: radial-gradient(circle, rgb(102, 113, 134) 0%, rgb(94, 168, 189) 100%);
-  height: 880px;
+  background: transparent;
+  height: 840px;
   width: 905px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

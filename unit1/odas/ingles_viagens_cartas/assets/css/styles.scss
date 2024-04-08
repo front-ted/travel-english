@@ -1,4 +1,6 @@
 .ODA_ingles_viagens_cartas {
+    margin-bottom:70px;
+
     .wrapper {
         width: fit-content;
         padding: 20px 70px;
@@ -6,8 +8,8 @@
         margin: 25px auto;
         border-radius: 20px;
         position: relative;
-        background: rgb(102, 113, 134);
-        background: radial-gradient(circle, rgba(102, 113, 134, 1) 0%, rgba(94, 168, 189, 1) 100%);
+        background: transparent;
+        // background: radial-gradient(circle, rgba(102, 113, 134, 1) 0%, rgba(94, 168, 189, 1) 100%);
         height: 840px;
         width: 905px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
