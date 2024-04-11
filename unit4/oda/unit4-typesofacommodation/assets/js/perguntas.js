@@ -52,6 +52,7 @@ var perguntas = [
                     title: "Drag in drop",
                     alt:"img1",
                 },
+                texto: 'Hotel',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }
@@ -63,7 +64,8 @@ var perguntas = [
                     src: "custom/img/menores/img4.jpg",
                     title: "Drag in drop",
                     alt:"img2",
-                },  
+                },
+                texto: 'Resort',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }           
@@ -75,7 +77,8 @@ var perguntas = [
                     src: "custom/img/menores/img2.jpg",
                     title: "Drag in drop",
                     alt:"img3",
-                },     
+                },
+                texto: 'Hostel',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }        
@@ -88,6 +91,7 @@ var perguntas = [
                     title: "Drag in drop",
                     alt:"img4",
                 }, 
+                texto: 'Camping',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }            
@@ -100,6 +104,7 @@ var perguntas = [
                     title: "Drag in drop",
                     alt:"img5",
                 },
+                texto: 'Apartment',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }             
@@ -133,7 +138,8 @@ var perguntas = [
                     src: "custom/img/menores/img2.jpg",
                     title: "Drag in drop",
                     alt:"img3",
-                },     
+                },
+                texto: 'Hostel',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }        
@@ -145,7 +151,8 @@ var perguntas = [
                     src: "custom/img/menores/img4.jpg",
                     title: "Drag in drop",
                     alt:"img2",
-                },  
+                },
+                texto: 'Resort',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }           
@@ -157,7 +164,8 @@ var perguntas = [
                     src: "custom/img/menores/img3.jpg",
                     title: "Drag in drop",
                     alt:"img4",
-                },           
+                },
+                texto: 'Camping',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }  
@@ -169,7 +177,8 @@ var perguntas = [
                     src: "custom/img/menores/img1.jpg",
                     title: "Drag in drop",
                     alt:"img5",
-                },     
+                },
+                texto: 'Apartment',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }        
@@ -182,6 +191,7 @@ var perguntas = [
                     title: "Drag in drop",
                     alt:"img1",
                 },
+                texto: 'Hotel',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }
@@ -214,6 +224,7 @@ var perguntas = [
                     title: "Drag in drop",
                     alt:"img1",
                 },
+                texto: 'Hotel',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }
@@ -225,7 +236,8 @@ var perguntas = [
                     src: "custom/img/menores/img2.jpg",
                     title: "Drag in drop",
                     alt:"img3",
-                },     
+                },
+                texto: 'Hostel',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }        
@@ -237,7 +249,8 @@ var perguntas = [
                     src: "custom/img/menores/img1.jpg",
                     title: "Drag in drop",
                     alt:"img5",
-                },     
+                },
+                texto: 'Apartment',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }        
@@ -249,7 +262,8 @@ var perguntas = [
                     src: "custom/img/menores/img4.jpg",
                     title: "Drag in drop",
                     alt:"img2",
-                },  
+                },
+                texto: 'Resort',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }           
@@ -261,7 +275,8 @@ var perguntas = [
                     src: "custom/img/menores/img3.jpg",
                     title: "Drag in drop",
                     alt:"img4",
-                },           
+                },
+                texto: 'Camping',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }  
@@ -294,6 +309,7 @@ var perguntas = [
                     title: "Drag in drop",
                     alt:"img1",
                 },
+                texto: 'Hotel',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }
@@ -305,7 +321,8 @@ var perguntas = [
                     src: "custom/img/menores/img2.jpg",
                     title: "Drag in drop",
                     alt:"img3",
-                },     
+                },
+                texto: 'Hostel',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }        
@@ -317,7 +334,8 @@ var perguntas = [
                     src: "custom/img/menores/img3.jpg",
                     title: "Drag in drop",
                     alt:"img4",
-                },           
+                },
+                texto: 'Camping',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }  
@@ -329,7 +347,8 @@ var perguntas = [
                     src: "custom/img/menores/img1.jpg",
                     title: "Drag in drop",
                     alt:"img5",
-                },     
+                },
+                texto: 'Apartment',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }        
@@ -341,7 +360,8 @@ var perguntas = [
                     src: "custom/img/menores/img4.jpg",
                     title: "Drag in drop",
                     alt:"img2",
-                },  
+                },
+                texto: 'Resort',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }           
@@ -375,6 +395,7 @@ var perguntas = [
                     title: "Drag in drop",
                     alt:"img1",
                 },
+                texto: 'Hotel',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }
@@ -386,7 +407,8 @@ var perguntas = [
                     src: "custom/img/menores/img2.jpg",
                     title: "Drag in drop",
                     alt:"img3",
-                },     
+                },
+                texto: 'Hostel',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }        
@@ -399,7 +421,8 @@ var perguntas = [
                     src: "custom/img/menores/img1.jpg",
                     title: "Drag in drop",
                     alt:"img5",
-                },     
+                },
+                texto: 'Apartment',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }        
@@ -411,7 +434,8 @@ var perguntas = [
                     src: "custom/img/menores/img4.jpg",
                     title: "Drag in drop",
                     alt:"img2",
-                },  
+                },
+                texto: 'Resort',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }           
@@ -424,7 +448,8 @@ var perguntas = [
                     src: "custom/img/menores/img3.jpg",
                     title: "Drag in drop",
                     alt:"img4",
-                },           
+                },
+                texto: 'Camping',
                 relacionarCom: { 
                     texto: "Drag and drop the correct image to the field below." 
                 }  

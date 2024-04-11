@@ -498,6 +498,14 @@ var verificarContainers = function (el){
     console.warn("O número de containers preenchidos são: ", coutEl)
     console.log("Pergunta atual", pergunta_atual)
 
+    // Audio
+    // let word = ($(el)[0].target.children[0].innerText.replace('/', '_'));
+    let childNodes = $(el)[0].target.children[0].childNodes;
+    let word = (childNodes[childNodes.length - 1].textContent.replace('/', '_'));
+    word = word.replace(' ', '_');
+    let audio = new Audio(`./assets/audio/${word}.mp3`);
+    audio.play();
+
     if(coutEl >=  $($(".top-slide")[pergunta_atual-1]).find(".container-alvo").length){ // Verifica o contador e dispara a validação
 
         let idSlide =  $($(".top-slide")[pergunta_atual-1]).find(".respostas").attr("id");

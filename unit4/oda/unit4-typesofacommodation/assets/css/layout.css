@@ -275,6 +275,8 @@ button.bto-dragindrop-item
     margin:10px;
     border: 3px solid #64998a;
     box-shadow: 0 3px 0 #64998a;
+    font-size: 1px;
+    color: transparent;
   }
   button.bto-dragindrop-item::before {
     content: unset;
