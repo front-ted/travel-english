@@ -65,6 +65,7 @@ var perguntas = [
                     alt:"Photograph of a large vehicle.",
                     fonte: "Figure 14: Means of transportation 1. Source:  <a class='link-fonte' href='https://unsplash.com/photos/parked-blue-and-black-compertur-bus-T5jzpRTVF1U' target='_blank'>&lt;https://unsplash.com/photos/parked-blue-and-black-compertur-bus-T5jzpRTVF1U&gt;</a> Accessed on: 12/12/2023.",
                 },
+                // texto: "Bus",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -82,6 +83,7 @@ var perguntas = [
                     alt:"Photograph of an underground vehicle.",
                     fonte: "Figure 16: Means of transportation 3. Source:  <a class='link-fonte' href='https://unsplash.com/photos/person-near-train-qZ6if8WXl7E' target='_blank'>&lt;https://unsplash.com/photos/person-near-train-qZ6if8WXl7E&gt;</a> Accessed on: 12/12/2023.",
                 },
+                // texto: "Subway",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -99,6 +101,7 @@ var perguntas = [
                     alt:"Photograph of a woman crossing a street on a two-wheeled motor vehicle.",
                     fonte: "Figure 20: Crosswalk. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/beautiful-belarus-person-city_25610045.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/beautiful-belarus-person-city_25610045.htm&gt;</a> Accessed on: 12/14/2023.",
                 },
+                // texto: "Scooter",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -137,6 +140,7 @@ var perguntas = [
                     alt:"Photograph of a long vehicle on trails in the countryside.",
                     fonte: "Figure 15: Means of transportation 2. Source:  <a class='link-fonte' href='https://unsplash.com/photos/orange-train-between-fall-trees-El5zuQAtfeo' target='_blank'>&lt;https://unsplash.com/photos/orange-train-between-fall-trees-El5zuQAtfeo&gt;</a> Accessed on: 12/12/2023.",
                 },
+                // texto: "Train",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -154,6 +158,7 @@ var perguntas = [
                     alt:"Photograph of a woman crossing a street on a two-wheeled motor vehicle.",
                     fonte: "Figure 20: Crosswalk. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/beautiful-belarus-person-city_25610045.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/beautiful-belarus-person-city_25610045.htm&gt;</a> Accessed on: 12/14/2023.",
                 },
+                // texto: "Scooter",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -171,6 +176,7 @@ var perguntas = [
                     alt:"Sleek silver camper van parked on gravel, surrounded by green trees under a clear blue sky, with a snow-capped mountain in the backdrop.",
                     fonte: "Figure 23: Tourism. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/young-adults-travelling-winter-time_21088082.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/young-adults-travelling-winter-time_21088082.htm&gt;</a> Accessed on: 12/16/2023.",
                 },
+                // texto: "Van",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -209,6 +215,7 @@ var perguntas = [
                     alt:"Photograph of an underground vehicle.",
                     fonte: "Figure 16: Means of transportation 3. Source:  <a class='link-fonte' href='https://unsplash.com/photos/person-near-train-qZ6if8WXl7E' target='_blank'>&lt;https://unsplash.com/photos/person-near-train-qZ6if8WXl7E&gt;</a> Accessed on: 12/12/2023.",
                 },
+                // texto: "Subway",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -225,6 +232,7 @@ var perguntas = [
                     alt:"Photograph of a yacht docked in a sea port.",
                     fonte: "Figure 17: Yacht. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/marine-parking-boats-yachts-turkey-yacht-docked-sea-port_11176177.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/marine-parking-boats-yachts-turkey-yacht-docked-sea-port_11176177.htm&gt;</a> Accessed on: 12/12/2023.",
                 },
+                // texto: "boat",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -241,6 +249,7 @@ var perguntas = [
                     alt:"Photograph of a man riding down the hill.",
                     fonte: "Figure 18: Down the hill. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/pensive-man-riding-down-hill_12116232.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/pensive-man-riding-down-hill_12116232.htm&gt;</a> Accessed on: 12/14/2023.",
                 },
+                // texto: "Bike",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -278,6 +287,7 @@ var perguntas = [
                     alt:"Photograph of a large vehicle.",
                     fonte: "Figure 14: Means of transportation 1. Source:  <a class='link-fonte' href='https://unsplash.com/photos/parked-blue-and-black-compertur-bus-T5jzpRTVF1U' target='_blank'>&lt;https://unsplash.com/photos/parked-blue-and-black-compertur-bus-T5jzpRTVF1U&gt;</a> Accessed on: 12/12/2023.",
                 },
+                // texto: "Bus",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -295,6 +305,7 @@ var perguntas = [
                     alt:"Photograph of a yacht docked in a sea port.",
                     fonte: "Figure 17: Yacht. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/marine-parking-boats-yachts-turkey-yacht-docked-sea-port_11176177.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/marine-parking-boats-yachts-turkey-yacht-docked-sea-port_11176177.htm&gt;</a> Accessed on: 12/12/2023.",
                 },
+                // texto: "Boat",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -311,6 +322,7 @@ var perguntas = [
                     alt:"Photograph of a man riding down the hill.",
                     fonte: "Figure 18: Down the hill. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/pensive-man-riding-down-hill_12116232.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/pensive-man-riding-down-hill_12116232.htm&gt;</a> Accessed on: 12/14/2023.",
                 },
+                // texto: "Bike",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -349,6 +361,7 @@ var perguntas = [
                     alt:"Photograph of a long vehicle on trails in the countryside.",
                     fonte: "Figure 15: Means of transportation 2. Source:  <a class='link-fonte' href='https://unsplash.com/photos/orange-train-between-fall-trees-El5zuQAtfeo' target='_blank'>&lt;https://unsplash.com/photos/orange-train-between-fall-trees-El5zuQAtfeo&gt;</a> Accessed on: 12/12/2023.",
                 },
+                // texto: "Train",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -366,6 +379,7 @@ var perguntas = [
                     alt:"Photograph of a yacht docked in a sea port.",
                     fonte: "Figure 17: Yacht. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/marine-parking-boats-yachts-turkey-yacht-docked-sea-port_11176177.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/marine-parking-boats-yachts-turkey-yacht-docked-sea-port_11176177.htm&gt;</a> Accessed on: 12/12/2023.",
                 },
+                // texto: "Boat",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -382,6 +396,7 @@ var perguntas = [
                     alt:"Photograph of a man riding down the hill.",
                     fonte: "Figure 18: Down the hill. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/pensive-man-riding-down-hill_12116232.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/pensive-man-riding-down-hill_12116232.htm&gt;</a> Accessed on: 12/14/2023.",
                 },
+                // texto: "Bike",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -421,6 +436,7 @@ var perguntas = [
                     alt:"Photograph of a man riding down the hill.",
                     fonte: "Figure 18: Down the hill. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/pensive-man-riding-down-hill_12116232.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/pensive-man-riding-down-hill_12116232.htm&gt;</a> Accessed on: 12/14/2023.",
                 },
+                // texto: "Bike",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -437,6 +453,7 @@ var perguntas = [
                     alt:"Photograph of a flying vehicle in the sky.",
                     fonte: "Figure 19: Air travel. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/airplane-flying-cloudy-sky_5869139.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/airplane-flying-cloudy-sky_5869139.htm&gt;</a> Accessed on: 12/14/2023.",
                 },
+                // texto: "Airplane",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -453,6 +470,7 @@ var perguntas = [
                     alt:"Photograph of a woman crossing a street on a two-wheeled motor vehicle.",
                     fonte: "Figure 20: Crosswalk. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/beautiful-belarus-person-city_25610045.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/beautiful-belarus-person-city_25610045.htm&gt;</a> Accessed on: 12/14/2023.",
                 },
+                // texto: "Scooter",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -491,6 +509,7 @@ var perguntas = [
                     alt:"Photograph of a woman crossing a street on a two-wheeled motor vehicle.",
                     fonte: "Figure 20: Crosswalk. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/beautiful-belarus-person-city_25610045.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/beautiful-belarus-person-city_25610045.htm&gt;</a> Accessed on: 12/14/2023.",
                 },
+                // texto: "Scooter",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -507,6 +526,7 @@ var perguntas = [
                     alt:"Person sitting on a black motorcycle, holding a helmet, with a modern building in the background.",
                     fonte: "Figure 21: Lipstick. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/medium-shot-senior-woman-with-motorcycle_74765898.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/medium-shot-senior-woman-with-motorcycle_74765898.htm&gt;</a> Accessed on: 12/14/2023.",
                 },
+                // texto: "Motorcycle",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -523,6 +543,7 @@ var perguntas = [
                     alt:"Mud-covered SUV in front of a snowy mountain, highlighting its off-road capabilities.",
                     fonte: "Figure 22: Countryside. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/full-shot-couple-near-car_10970765.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/full-shot-couple-near-car_10970765.htm&gt;</a> Accessed on: 12/16/2023.",
                 },
+                // texto: "Car",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -560,6 +581,7 @@ var perguntas = [
                     alt:"Photograph of a large vehicle.",
                     fonte: "Figure 14: Means of transportation 1. Source:  <a class='link-fonte' href='https://unsplash.com/photos/parked-blue-and-black-compertur-bus-T5jzpRTVF1U' target='_blank'>&lt;https://unsplash.com/photos/parked-blue-and-black-compertur-bus-T5jzpRTVF1U&gt;</a> Accessed on: 12/12/2023.",
                 },
+                // texto: "Bus",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -577,6 +599,7 @@ var perguntas = [
                     alt:"Person sitting on a black motorcycle, holding a helmet, with a modern building in the background.",
                     fonte: "Figure 21: Lipstick. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/medium-shot-senior-woman-with-motorcycle_74765898.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/medium-shot-senior-woman-with-motorcycle_74765898.htm&gt;</a> Accessed on: 12/14/2023.",
                 },
+                // texto: "Motorcycle",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -593,6 +616,7 @@ var perguntas = [
                     alt:"Mud-covered SUV in front of a snowy mountain, highlighting its off-road capabilities.",
                     fonte: "Figure 22: Countryside. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/full-shot-couple-near-car_10970765.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/full-shot-couple-near-car_10970765.htm&gt;</a> Accessed on: 12/16/2023.",
                 },
+                // texto: "Car",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -631,6 +655,7 @@ var perguntas = [
                     alt:"Photograph of a long vehicle on trails in the countryside.",
                     fonte: "Figure 15: Means of transportation 2. Source:  <a class='link-fonte' href='https://unsplash.com/photos/orange-train-between-fall-trees-El5zuQAtfeo' target='_blank'>&lt;https://unsplash.com/photos/orange-train-between-fall-trees-El5zuQAtfeo&gt;</a> Accessed on: 12/12/2023.",
                 },
+                // texto: "Train",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -648,6 +673,7 @@ var perguntas = [
                     alt:"Mud-covered SUV in front of a snowy mountain, highlighting its off-road capabilities.",
                     fonte: "Figure 22: Countryside. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/full-shot-couple-near-car_10970765.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/full-shot-couple-near-car_10970765.htm&gt;</a> Accessed on: 12/16/2023.",
                 },
+                // texto: "Car",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -664,6 +690,7 @@ var perguntas = [
                     alt:"Sleek silver camper van parked on gravel, surrounded by green trees under a clear blue sky, with a snow-capped mountain in the backdrop.",
                     fonte: "Figure 23: Tourism. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/young-adults-travelling-winter-time_21088082.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/young-adults-travelling-winter-time_21088082.htm&gt;</a> Accessed on: 12/16/2023.",
                 },
+                // texto: "Van",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -701,6 +728,7 @@ var perguntas = [
                     alt:"Photograph of an underground vehicle.",
                     fonte: "Figure 16: Means of transportation 3. Source:  <a class='link-fonte' href='https://unsplash.com/photos/person-near-train-qZ6if8WXl7E' target='_blank'>&lt;https://unsplash.com/photos/person-near-train-qZ6if8WXl7E&gt;</a> Accessed on: 12/12/2023.",
                 },
+                // texto: "Subway",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -718,6 +746,7 @@ var perguntas = [
                     alt:"Mud-covered SUV in front of a snowy mountain, highlighting its off-road capabilities.",
                     fonte: "Figure 22: Countryside. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/full-shot-couple-near-car_10970765.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/full-shot-couple-near-car_10970765.htm&gt;</a> Accessed on: 12/16/2023.",
                 },
+                // texto: "Car",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
@@ -734,6 +763,7 @@ var perguntas = [
                     alt:"Sleek silver camper van parked on gravel, surrounded by green trees under a clear blue sky, with a snow-capped mountain in the backdrop.",
                     fonte: "Figure 23: Tourism. Source:  <a class='link-fonte' href='https://www.freepik.com/free-photo/young-adults-travelling-winter-time_21088082.htm' target='_blank'>&lt;https://www.freepik.com/free-photo/young-adults-travelling-winter-time_21088082.htm&gt;</a> Accessed on: 12/16/2023.",
                 },
+                // texto: "Van",
                 relacionarCom: { 
                    
                     texto: "Drag and drop the right word here.",
