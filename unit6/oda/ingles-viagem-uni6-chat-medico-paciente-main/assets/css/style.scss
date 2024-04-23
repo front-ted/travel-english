@@ -1,4 +1,16 @@
+:root {
+    --size: 20px;
+    --corFundo: #272324;
+    --corCafe: #48A8E0;
+    --corVermelhoEscuro: #3D8EBE;
+    --corVermelho: #4AAEE8;
+}
 .oda-describing-symptoms {
+
+    h1 {
+        font-size: 36px;
+    }
+
     .container-wrapper {
         display: flex;
         justify-content: center;
@@ -9,7 +21,7 @@
     .caixa-de-chat {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        // width: 300px;
         margin: 20px;
     }
 
@@ -48,6 +60,15 @@
         margin: 8px;
         display: flex;
         align-items: center;
+        padding-left: 55px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+
+        p {
+            margin: 0;
+            line-height: 20px;
+        }
     }
 
     .mensagem .content {
@@ -61,29 +82,27 @@
     .continuarChat {
         background-color: #007bff;
         color: #fff;
-        padding: 10px;
+        padding: 10px 20px;
         margin: 1rem;
+        width: fit-content;
     }
 
     .msgDigitando {
         color: #007bff;
         margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    :root {
-        --size: 20px;
-        --corFundo: #272324;
-        --corCafe: #48A8E0;
-        --corVermelhoEscuro: #3D8EBE;
-        --corVermelho: #4AAEE8;
-    }
+    
 
     .loading {
         --animacao: 1100ms;
     }
 
     .loading .bolinha {
-
+        --size: 20px;
         --item-size: calc(var(--size) / 2);
         width: var(--item-size);
         height: var(--item-size);
@@ -134,13 +153,19 @@
         font-size: 40px !important;
     }
 
-    .material-icons.icone-volume {
-        margin-inline: 2%;
-        color: #007bff;
+    .icone-volume {
+        margin-right: 10px;
+        fill: #007bff;
+        width: 90px;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        width: 30px;
+        transform: translateY(-50%);
     }
 
-    .material-icons.icone-volume:hover {
-        color: white;
+    .controle-som:hover .icone-volume {
+        fill: #A3C2ED;
     }
 
     .controle-som i {
