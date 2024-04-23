@@ -65,12 +65,14 @@
     height: 40px;
     border: 0;
     color: #00838D;
+    background-size: contain;
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: center center;
     margin-top: 0;
     margin-bottom: 0;
     transition: all .4s;
+    margin-right: 10px;
 }
 .audio-player .btn-player:hover{
     transform: translateY(-3px);
@@ -80,10 +82,10 @@
     background-image: url(../img/play.png);
 }
 .audio-player .btn-pause{
-    background-image: url(../../assets/images/bt_pause.svg);
+    background-image: url(../img/pause.png);
 }
 .audio-player .btn-transcricao{
-    background-image: url(../../assets/images/bt_text.svg);
+    background-image: url(../img/transcricao.png);
 }
 .audio-player .btn-player:active, .audio-player .btn-player:focus{
     transform: translateY(-3px);

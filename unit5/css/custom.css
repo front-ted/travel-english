@@ -22,7 +22,7 @@ h4{color: #d8652a;}
 	color: #000;
 }
 .bloco-azul{
-	background: url('../img/ilustra_topo.png') no-repeat right 40% center / 12%, #282f65;
+	background: url('../img/ilustra_topo.png') no-repeat right 40% center / auto 85%, #282f65;
 	padding: 40px 0;
 	position: relative;
 }
