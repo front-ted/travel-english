@@ -12,10 +12,10 @@
     }
 
     .container-wrapper {
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-        margin-left: 1.5rem;
+        // display: flex;
+        // justify-content: center;
+        // margin-top: 2rem;
+        // margin-left: 1.5rem;
     }
 
     .caixa-de-chat {
@@ -23,6 +23,9 @@
         flex-direction: column;
         // width: 300px;
         margin: 20px;
+        align-items: center;
+        border: 2px solid white;
+        background-color: rgba($color: #5aaaff, $alpha: .2);
     }
 
     .btn-chat {
@@ -64,6 +67,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
         position: relative;
+        max-width: 500px;
 
         p {
             margin: 0;
@@ -90,6 +94,7 @@
     .msgDigitando {
         color: #007bff;
         margin-top: 5px;
+        margin-bottom: 15px;
         display: flex;
         justify-content: center;
         align-items: center;

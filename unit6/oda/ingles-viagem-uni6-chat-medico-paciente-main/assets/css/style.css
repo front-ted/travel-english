@@ -9,16 +9,13 @@
 .oda-describing-symptoms h1 {
   font-size: 36px;
 }
-.oda-describing-symptoms .container-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  margin-left: 1.5rem;
-}
 .oda-describing-symptoms .caixa-de-chat {
   display: flex;
   flex-direction: column;
   margin: 20px;
+  align-items: center;
+  border: 2px solid white;
+  background-color: rgba(90, 170, 255, 0.2);
 }
 .oda-describing-symptoms .btn-chat {
   margin-bottom: 10px;
@@ -54,6 +51,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   position: relative;
+  max-width: 500px;
 }
 .oda-describing-symptoms .mensagem-texto p {
   margin: 0;
@@ -76,6 +74,7 @@
 .oda-describing-symptoms .msgDigitando {
   color: #007bff;
   margin-top: 5px;
+  margin-bottom: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
