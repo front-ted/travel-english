@@ -1,6 +1,11 @@
 $(function () {
     init();
     montar_slides();
+    $('.help-btn').hide();
+    if (localStorage.getItem('quiz-alert-nao-mostrar-novamente') == 'true') {
+        $('.alert').hide();
+        $('.help-btn').fadeIn();
+    }
     function pontuar(validacao) {
         if (validacao == true) { cout_acertos++; $("#acertos").text(cout_acertos) }
     }
@@ -25,6 +30,7 @@ $(function () {
     });
 
     $("body").on("click", "[data-action='quiz-nav']", function () { // Navegação dos botões próximo para trocar de slide
+        $("body").removeClass("nav_ativa")
         $("#navegacao").hide();
         if (pergunta_atual <= nro_perguntas) {
             $(".top-slide").eq(pergunta_atual - 2).fadeOut("fast", function () {
@@ -101,6 +107,57 @@ $(function () {
         location.href = "index.html"
     });
 
+    $('.respostas .bto-dragindrop-item').on('touch click', function (e) {
+        $('.alert').fadeOut();
+        $('.help-btn').fadeIn();
+        const selectedAnswer = this;
+        const parent = $(this).parent()[0];
+        const respostasContainer = $(this).parents('.top-slide').find('.respostas');
+        const containerAlvo = $(this).parents('.top-slide').find('.container-alvo');
+        if (parent.classList.contains('container-alvo')) {
+            e.stopPropagation();
+            respostasContainer.append($(this));
+            $("#navegacao").fadeOut();
+        } else {
+            if (containerAlvo.length == 1) {
+                console.log('container alvo = 1')
+                if (containerAlvo.children().length > 0) {
+                    respostasContainer.append(containerAlvo.children()[0]);
+                    $("#navegacao").fadeOut();
+                }
+                containerAlvo.append(selectedAnswer);
+                verificarContainers(containerAlvo);
+            }
+            let contador = 1;
+            if (containerAlvo.length > 1) {
+                for (let i = 0; i < containerAlvo.length; i++) {
+                    if (containerAlvo[i].children.length == 0) {
+                        containerAlvo[i].append(selectedAnswer);
+                        break;
+                    } else {
+                        contador++
+                    }
+                }
+                if (contador == containerAlvo.length) { verificarContainers(containerAlvo); }
+            }
+        }
+    });
+
+    $('.fechar-alert').click(function () {
+        $(this).parents('.alert').fadeOut();
+        $('.help-btn').fadeIn();
+    });
+
+    $('.dont-show-btn').click(function () {
+        localStorage.setItem('quiz-alert-nao-mostrar-novamente', 'true');
+        $(this).parents('.alert').fadeOut();
+        $('.help-btn').fadeIn();
+    });
+
+    $('.help-btn').click(function () {
+        $('.help-btn').fadeOut();
+        $('.alert').fadeIn();
+    });
 });
 
 
@@ -142,7 +199,6 @@ let templates = function (i) {
         default: // Caso não exista uma opção correta no type, coloca o quiz como padrão
             templateQuiz(i);
             break;
-
     }
 
 }
@@ -234,7 +290,8 @@ let templateDragInDrop = function (i) {
     container.addClass("d-flex");
     container.addClass("text-center");
 
-    perguntas[i].respostas.forEach((alternativas, index) => {
+    // Embaralha as respostas antes de usar.
+    perguntas[i].respostas.sort(() => Math.random() - 0.5).forEach((alternativas, index) => {
         if (alternativas.validacao === true) {
             let imagem = "";
             let fonte = "";
@@ -265,7 +322,7 @@ let templateDragInDrop = function (i) {
     let respostas = $("<div></div>");
     respostas.addClass("respostas");
     respostas.addClass("dragindrop");
-    respostas.prop("id", "#resposta" + i)
+    respostas.prop("id", "resposta" + i)
 
     let nro_respostas = perguntas[i].respostas.length;
 
@@ -300,8 +357,35 @@ let templateDragInDrop = function (i) {
 
     }
 
-    topSlidePai.append(respostas);
+    // implementa o alert com instruções sobre clique/drag
+    let alertInstrucao = $("<div></div>");
+    alertInstrucao.addClass('alert alert-primary align-items-center');
+    let msgContainer = $("<div></div>");
+    msgContainer.addClass('d-flex align-items-center');
+    alertInstrucao.append(msgContainer);
+    alertInstrucao.prop('role', 'alert');
+    msgContainer.append('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:"><path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>');
+    msgContainer.append("<p>" + 'Clique para selecionar uma resposta, ou arraste-a até o espaço desejado.' + "</p>");
+    let alertFooter = $("<div></div>");
+    alertFooter.addClass('d-flex justify-content-end alert-footer');
+    let dontShowBtn = $("<button></button");
+    dontShowBtn.text("Não mostrar novamente");
+    dontShowBtn.addClass('dont-show-btn');
+    alertFooter.append(dontShowBtn);
+    let closeBtn = $("<button></button");
+    closeBtn.addClass('fechar-alert')
+    closeBtn.text("Fechar");
+    alertFooter.append(closeBtn);
+    alertInstrucao.append(alertFooter);
 
+    //implementa botão de ajuda p ver instruções novamente
+    let helpBtn = $("<button></button>");
+    helpBtn.append('<svg height="40px" width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm169.8-90.7c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>');
+    helpBtn.addClass('help-btn');
+
+    topSlidePai.append(alertInstrucao);
+    $(destino).append(helpBtn);
+    topSlidePai.append(respostas);
     $(destino).append(topSlidePai);
 }
 
@@ -441,7 +525,6 @@ let montar_slide_final = function () {
 
 let init = function () {
     cout_perguntas(nro_perguntas);
-
 }
 
 // Gameplay: Dragindrop
@@ -450,6 +533,7 @@ let dragging_element;
 $("body").on("dragstart", ".bto-dragindrop-item", function (ev) {
     dragging_element = $(this)
     $(dragging_element).addClass("ondragging");
+    $('.container-alvo').addClass('ativo');
 })
 
 // DRAG OVER
@@ -471,18 +555,31 @@ $("body").on("dragover", ".dragindrop", function (ev) {
 $("body").on("drop", ".container-alvo", function (ev) {
     ev.preventDefault();
     ev.target.append(dragging_element[0]);
-    dragging_element.removeClass("ondragging")
-    verificarContainers(ev);
+    dragging_element.removeClass("ondragging");
+    console.log()
+    let containerAlvo = $(ev.target).parents('.top-slide').find('.container-alvo');
+    if (containerAlvo.length == 1) { verificarContainers(ev) }
+    if (containerAlvo.length > 1) {
+        let contador = 0;
+        for (let i = 0; i < containerAlvo.length; i++) {
+            if (containerAlvo[i].children.length > 0){ contador++ }
+        }
+        console.log(contador)
+        if (containerAlvo.length == contador) {
+            verificarContainers(ev)
+        }
+    }
 });
 $("body").on("drop", ".dragindrop", function (ev) {
     ev.preventDefault();
-
     $(this).append(dragging_element[0]);
     dragging_element.removeClass("ondragging")
     // DROP
-    verificarContainers(ev);
+    // verificarContainers(ev);
 });
-
+$("body").on("dragend", function () {
+    $('.container-alvo').removeClass('ativo');
+});
 var verificarContainers = function (el) {
     // Quantos containers tem, quantos botões tem dentro do container 1 e do 2
     let coutEl = 0;
@@ -493,22 +590,12 @@ var verificarContainers = function (el) {
     console.warn("O número de containers preenchidos são: ", coutEl)
     console.log("Pergunta atual", pergunta_atual)
 
-    // Audio
-    let word = ($(el)[0].target.children[0].innerText.replace('/', '_'));
-    word = word.replace(' ', '_');
-    console.log(word)
-    let audio = new Audio(`./assets/audio/${word}.mp3`);
-    audio.play();
-
     if (coutEl >= $($(".top-slide")[pergunta_atual - 1]).find(".container-alvo").length) { // Verifica o contador e dispara a validação
 
         let idSlide = $($(".top-slide")[pergunta_atual - 1]).find(".respostas").attr("id");
         let respostasPai = $(idSlide);
         respostasPai.find(".bto").prop("disabled", true);
         respostasPai.find(".bto").addClass("desativar")
-
-
-
         //let validacao = perguntas[idSlide].respostas[userOption].validacao;
         mostrarNavPadrao("dragindrop-test");
     } else {
@@ -517,7 +604,7 @@ var verificarContainers = function (el) {
 }
 
 var mostrarNavPadrao = (type) => {
-
+    $("body").addClass("nav_ativa");
     if (type == "avancar") {
         $("#navegacao .bto-nav").text("Avançar");
         $("#navegacao .bto-nav").attr("data-action", "quiz-nav");
@@ -529,3 +616,11 @@ var mostrarNavPadrao = (type) => {
     $("#navegacao").fadeIn("fast");
 }
 
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+// Exemplo de uso:
+// const numeroInteiroInclusivo = getRandomIntInclusive(1, 100); 
+// Retorna um número entre 1 e 100 (inclusive)

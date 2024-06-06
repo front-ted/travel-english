@@ -2,7 +2,7 @@ $(function () {
     init();
     montar_slides();
     $('.help-btn').hide();
-    if (localStorage.getItem('quiz-alert-nao-mostrar-novamente') == 'true') {
+    if (localStorage.getItem('quiz-alert-nao-mostrar-novamente')=='true'){
         $('.alert').hide();
         $('.help-btn').fadeIn();
     }
@@ -109,7 +109,6 @@ $(function () {
 
     $('.respostas .bto-dragindrop-item').on('touch click', function (e) {
         $('.alert').fadeOut();
-        $('.help-btn').fadeIn();
         const selectedAnswer = this;
         const parent = $(this).parent()[0];
         const respostasContainer = $(this).parents('.top-slide').find('.respostas');
@@ -119,27 +118,12 @@ $(function () {
             respostasContainer.append($(this));
             $("#navegacao").fadeOut();
         } else {
-            if (containerAlvo.length == 1) {
-                console.log('container alvo = 1')
-                if (containerAlvo.children().length > 0) {
-                    respostasContainer.append(containerAlvo.children()[0]);
-                    $("#navegacao").fadeOut();
-                }
-                containerAlvo.append(selectedAnswer);
-                verificarContainers(containerAlvo);
+            if (containerAlvo.children().length > 0) {
+                respostasContainer.append(containerAlvo.children()[0]);
+                $("#navegacao").fadeOut();
             }
-            let contador = 1;
-            if (containerAlvo.length > 1) {
-                for (let i = 0; i < containerAlvo.length; i++) {
-                    if (containerAlvo[i].children.length == 0) {
-                        containerAlvo[i].append(selectedAnswer);
-                        break;
-                    } else {
-                        contador++
-                    }
-                }
-                if (contador == containerAlvo.length) { verificarContainers(containerAlvo); }
-            }
+            containerAlvo.append(selectedAnswer);
+            verificarContainers(containerAlvo);
         }
     });
 
@@ -555,20 +539,8 @@ $("body").on("dragover", ".dragindrop", function (ev) {
 $("body").on("drop", ".container-alvo", function (ev) {
     ev.preventDefault();
     ev.target.append(dragging_element[0]);
-    dragging_element.removeClass("ondragging");
-    console.log()
-    let containerAlvo = $(ev.target).parents('.top-slide').find('.container-alvo');
-    if (containerAlvo.length == 1) { verificarContainers(ev) }
-    if (containerAlvo.length > 1) {
-        let contador = 0;
-        for (let i = 0; i < containerAlvo.length; i++) {
-            if (containerAlvo[i].children.length > 0){ contador++ }
-        }
-        console.log(contador)
-        if (containerAlvo.length == contador) {
-            verificarContainers(ev)
-        }
-    }
+    dragging_element.removeClass("ondragging")
+    verificarContainers(ev);
 });
 $("body").on("drop", ".dragindrop", function (ev) {
     ev.preventDefault();
