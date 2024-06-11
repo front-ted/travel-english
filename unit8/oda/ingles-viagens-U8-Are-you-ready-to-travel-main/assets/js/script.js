@@ -1,6 +1,6 @@
 $(document).ready(function () {
   const perguntas = [
-    "Which of these are good recommendations for international tourists? Dress appropriately. Learn a little bit about the language. Criticize the food.",
+    "Which of these are good recommendations for international tourists? A)Dress appropriately. B)Learn a little bit about the language. C)Criticize the food.",
     "Give directions to go from Senac to the nearest supermarket.",
     "Cite 3 different types of accommodation. ",
     "Where is sushi from?",
@@ -22,12 +22,12 @@ $(document).ready(function () {
     "What can you buy at an electronics store? ",
     "What cultural customs do you associate with the United States?",
     "Cite 3 customs and traditions of Brazil. ",
-    "Which of the following are common problems you can have at a hotel? The bathroom is dirty. The staff is very nice. The internet isn’t working. ",
+    "Which of the following are common problems you can have at a hotel? A)The bathroom is dirty. B)The staff is very nice. C)The internet isn’t working. ",
 
 
     "Share ideas of podcasts and Youtube channels for travelers. ",
     "What time do you usually: Have breakfast?  Have lunch? Have dinner? ",
-    "Which of the following are respectful practices? Photographing people without their permission. Waiting for your turn. Learning some phrases in the local language",
+    "Which of the following are respectful practices? A)Photographing people without their permission.  B)Waiting for your turn.  C)Learning some phrases in the local language",
     "What are the parts of a meal? "
   ];
 
@@ -82,8 +82,8 @@ $(document).ready(function () {
     $('#tela4').show();
     $('#placar-jogador1-2').text($('#placar-jogador1').text());
     $('#placar-jogador2-2').text($('#placar-jogador2').text());
-    $('#pergunta-2').text(`Pergunta: ${perguntas[indicePerguntaAtual]}`);
-    $('#resposta').text(`Resposta: ${respostas[indicePerguntaAtual]}`);
+    $('#pergunta-2').text(`Question: ${perguntas[indicePerguntaAtual]}`);
+    $('#resposta').text(`Answer: ${respostas[indicePerguntaAtual]}`);
   });
 
   $('#btn-certo').click(function () {
@@ -116,7 +116,7 @@ $(document).ready(function () {
   });
 
   function exibirPergunta() {
-    $('#pergunta').text(`Pergunta: ${perguntas[indicePerguntaAtual]}`);
+    $('#pergunta').text(`Question: ${perguntas[indicePerguntaAtual]}`);
   }
 
   function proximaPergunta() {

@@ -80,7 +80,7 @@
     background-image: url(../img/play.png);
 }
 .audio-player .btn-pause{
-    background-image: url(../../assets/images/bt_pause.svg);
+    background-image: url(../../assets/images/pause_p.png);
 }
 .audio-player .btn-transcricao{
     background-image: url(../../assets/images/bt_text.svg);

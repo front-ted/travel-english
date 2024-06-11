@@ -3,7 +3,7 @@ var estruturageral = {
         positiva:{
            texto: [
                 "Great job! You nailed it!",
-                "If you’d like, you can practice again by clicking the button below."
+                "If you want to, you can practice again by clicking on the button bellow."
             ],
             
         },
@@ -40,7 +40,7 @@ var estruturageral = {
 
 var lista_feedbacks_genericos = {
 
-    positivo: ["Awesome! You got it right!", "Congratulations! You’re a city places expert!"],
+    positivo: ["Awesome! You got it right!", "Congratulations! You’re a hotel staff expert!"],
     negativo: ["Almost there!", "Oops, not quite."]
 
 }
