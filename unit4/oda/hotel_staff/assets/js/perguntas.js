@@ -359,7 +359,7 @@ var perguntas = [
 
         titulo: "03/08 - Hotel Staff",
         pergunta: {
-            texto: "A person who manages the operations of a hotel. "        
+            texto: "A person who cleans hotel rooms. "        
         },
         respostas: [
             {

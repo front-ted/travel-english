@@ -114,11 +114,19 @@ $(function () {
         const parent = $(this).parent()[0];
         const respostasContainer = $(this).parents('.top-slide').find('.respostas');
         const containerAlvo = $(this).parents('.top-slide').find('.container-alvo');
+
         if (parent.classList.contains('container-alvo')) {
             e.stopPropagation();
             respostasContainer.append($(this));
             $("#navegacao").fadeOut();
         } else {
+            // audio
+            let word = $(this)[0].innerText.trim().replace('/', '_');
+            word = word.replace(' ', '_');
+            console.log(word)
+            let audio = new Audio(`./assets/audio/${word}.mp3`);
+            audio.play();
+            
             if (containerAlvo.length == 1) {
                 console.log('container alvo = 1')
                 if (containerAlvo.children().length > 0) {
@@ -556,13 +564,19 @@ $("body").on("drop", ".container-alvo", function (ev) {
     ev.preventDefault();
     ev.target.append(dragging_element[0]);
     dragging_element.removeClass("ondragging");
-    console.log()
+
+    // audio
+    let word = $(this).children()[0].innerText.trim().replace('/', '_');
+    word = word.replace(' ', '_');
+    let audio = new Audio(`./assets/audio/${word}.mp3`);
+    audio.play();
+
     let containerAlvo = $(ev.target).parents('.top-slide').find('.container-alvo');
     if (containerAlvo.length == 1) { verificarContainers(ev) }
     if (containerAlvo.length > 1) {
         let contador = 0;
         for (let i = 0; i < containerAlvo.length; i++) {
-            if (containerAlvo[i].children.length > 0){ contador++ }
+            if (containerAlvo[i].children.length > 0) { contador++ }
         }
         console.log(contador)
         if (containerAlvo.length == contador) {
