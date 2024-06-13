@@ -76,15 +76,15 @@
                                   </div>
                                   <div class="coluna-pais">
                                     <div class="opcoes row">
-                                      <div data-resp="1 " class="nome-pais col nome-pais-1 " draggable="true">Japan</div>
-                                      <div data-resp="2 " class="nome-pais col nome-pais-2 " draggable="true">The United States </div>
-                                      <div data-resp="3 " class="nome-pais col nome-pais-3 " draggable="true">England</div>
-                                      <div data-resp="4 " class="nome-pais col nome-pais-4 " draggable="true">Brazil</div>
+                                        <div data-resp="3 " class="nome-pais col nome-pais-3 " draggable="true">England</div>
+                                        <div data-resp="6 " class="nome-pais col nome-pais-6 " draggable="true">Mexico</div>
+                                        <div data-resp="4 " class="nome-pais col nome-pais-4 " draggable="true">Brazil</div>
+                                        <div data-resp="7 " class="nome-pais col nome-pais-7 " draggable="true">Canada</div>
+                                        <div data-resp="9 " class="nome-pais col nome-pais-9 " draggable="true">Israel</div>
+                                        <div data-resp="2 " class="nome-pais col nome-pais-2 " draggable="true">The United States </div>
+                                        <div data-resp="8 " class="nome-pais col nome-pais-8 " draggable="true">Spain </div>
+                                        <div data-resp="1 " class="nome-pais col nome-pais-1 " draggable="true">Japan</div>
                                       <div data-resp="5 " class="nome-pais col nome-pais-5 " draggable="true">The United Arab Emirates</div>
-                                      <div data-resp="6 " class="nome-pais col nome-pais-6 " draggable="true">Mexico</div>
-                                      <div data-resp="7 " class="nome-pais col nome-pais-7 " draggable="true">Canada</div>
-                                      <div data-resp="8 " class="nome-pais col nome-pais-8 " draggable="true">Spain </div>
-                                      <div data-resp="9 " class="nome-pais col nome-pais-9 " draggable="true">Israel</div>
                                       <div data-resp="A" class="nome-pais col nome-pais-A" draggable="true">Morocco</div>
                                     </div>
                                   </div>
@@ -148,6 +148,47 @@
                                   </div>
                                 </div>
                               </div>
+                              <div class="modal fade" id="feedback-modal-positivo" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header modal-correto">
+                                      <h1 class="modal-title fs-5">Congratulations! You got it right!</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                            
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            
+                              <div class="modal fade" id="feedback-modal-negativo" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-header modal-errado">
+                                      <h1 class="modal-title fs-5">Oops! That's not quite right.</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      This country doesn't match the space for this custom. Please try again!
+                                    
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <audio id="audio-acerto">
+                                <source src="oda/ingles-viagens-U7-cultural-differences-main/assets/audio/acerto.mp3" type="audio/mpeg">
+                              </audio>
+                            
+                              <audio id="audio-errado">
+                                <source src="oda/ingles-viagens-U7-cultural-differences-main/assets/audio/erro.mp3" type="audio/mpeg">
+                              </audio>
                             <div class="sr-only">
                                 <h4>Japan</h4>
                                 <p>Removing shoes indoors</p>

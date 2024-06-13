@@ -113,4 +113,31 @@
   font-size: 25px;
 }
 
+#feedback-modal-positivo .modal-header,
+#feedback-modal-negativo .modal-header {
+  border-radius: 5px;
+}
+
+#feedback-modal-negativo .modal-header {
+  background-color: #e93535;
+}
+
+#feedback-modal-positivo .modal-header h1,
+#feedback-modal-negativo .modal-header h1 {
+  padding: 10px;
+}
+
+#feedback-modal-positivo .modal-body,
+#feedback-modal-negativo .modal-body {
+  border-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+}
+
+#feedback-modal-positivo .modal-footer,
+#feedback-modal-negativo .modal-footer {
+  background-color: white;
+}
+
 /*# sourceMappingURL=style.css.map */

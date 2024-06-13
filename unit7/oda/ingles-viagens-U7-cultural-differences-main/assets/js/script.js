@@ -68,25 +68,60 @@ $(document).ready(function () {
     var feedbackModalNegativo = $("#feedback-modal-negativo");
 
     if (partePais === espacoPais) {
-        $(this).removeClass('bg-danger');
-        $(this).addClass('bg-success');
-        $("#audio-acerto")[0].play();
-        fornecerFeedback(true, feedbacks[espacoPais]);
+      $(this).removeClass('bg-danger');
+      $(this).addClass('bg-success');
+      $("#audio-acerto")[0].play();
+      fornecerFeedback(true, feedbacks[espacoPais]);
     } else {
-        $(this).addClass('bg-danger');
-        $(".nome-pais").removeClass('dragging');
-        $("#audio-errado")[0].play();
-        feedbackModalNegativo.modal("show");
+      $(this).addClass('bg-danger');
+      $(".nome-pais").removeClass('dragging');
+      $("#audio-errado")[0].play();
+      feedbackModalNegativo.modal("show");
     }
-});
+  });
 
-function fornecerFeedback(acertou, motivo) {
-    if (acertou) {
-        var feedbackModalPositivo = $("#feedback-modal-positivo");
-        var feedbackTexto = feedbackModalPositivo.find(".modal-body");
-        feedbackTexto.text("Parabéns! " + motivo);
-        feedbackModalPositivo.modal("show");
+  $(".nome-pais").on("click", function (event) {
+    // event.preventDefault();
+    const feedbackModalNegativo = $("#feedback-modal-negativo");
+    // checa qual container esta vazio e insere a opcao nele:
+    console.log($(this))
+    let opcao = $(this);
+    let opcoesContainer = $('.opcoes')
+    let espacos = $('.espaco-da-cultura');
+    let opcaoResp = opcao[0].dataset.resp;
+    let containerResp;
+    for (let i = 0; i < espacos.length; i++) {
+      if (espacos[i].children.length == 0) {
+        espacos[i].append(opcao[0]);
+        containerResp = espacos[i].dataset.resp
+        break;
+      }
     }
-}
+
+    if (opcaoResp == containerResp) {
+      $(this).removeClass('bg-danger');
+      $(this).addClass('bg-success');
+      $("#audio-acerto")[0].play();
+      fornecerFeedback(true, feedbacks[containerResp.trim()]);
+    } else {
+      $(this).addClass('bg-danger');
+      $(".nome-pais").removeClass('dragging');
+      $("#audio-errado")[0].play();
+      feedbackModalNegativo.modal("show");
+      setTimeout(() => {
+        opcoesContainer.append(opcao[0]);
+        opcao[0].classList.remove('bg-danger');
+      }, 1500);
+    }
+  });
+
+  function fornecerFeedback(acertou, motivo) {
+    if (acertou) {
+      var feedbackModalPositivo = $("#feedback-modal-positivo");
+      var feedbackTexto = feedbackModalPositivo.find(".modal-body");
+      feedbackTexto.text("Congratulations! " + motivo);
+      feedbackModalPositivo.modal("show");
+    }
+  }
 
 });

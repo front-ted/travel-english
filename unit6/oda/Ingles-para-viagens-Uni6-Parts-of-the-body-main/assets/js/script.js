@@ -69,4 +69,36 @@ $(document).ready(function () {
 
 
   });
+
+  $(".parte-do-corpo").on("click", function (event) {
+    
+    // checa qual container esta vazio e insere a opcao nele:
+    console.log($(this))
+    let opcao = $(this);
+    let opcoesContainer = $('.opcoes')
+    let espacos = $('.espaco-do-corpo');
+    let opcaoResp = opcao[0].dataset.resp;
+    let containerResp;
+    for (let i = 0; i < espacos.length; i++) {
+      if (espacos[i].children.length == 0) {
+        espacos[i].append(opcao[0]);
+        containerResp = espacos[i].dataset.resp
+        break;
+      }
+    }
+
+    if (opcaoResp == containerResp) {
+      $(this).parent().removeClass('bg-danger');
+      $(this).parent().addClass('bg-success');
+      $("#audio-acerto")[0].play();
+    } else {
+      $(this).parent().addClass('bg-danger');
+      $(".nome-pais").removeClass('dragging');
+      $("#audio-errado")[0].play();
+      setTimeout(() => {
+        opcoesContainer.append(opcao[0]);
+        opcao[0].classList.remove('bg-danger');
+      }, 1500);
+    }
+  });
 });
